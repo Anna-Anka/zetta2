@@ -1,0 +1,16 @@
+/* stylelint-disable */
+
+// * Standart
+@import "fonts";
+@import "vars";
+@import "reset";
+@import "mixins";
+@import "libs";
+@import "global";
+
+// * Components
+@import "./components/header";
+@import "./components/footer";
+
+// * Home-page
+
