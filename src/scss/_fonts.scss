@@ -11,5 +11,8 @@
     }
 }
 
-//Arimo
-//@include font-face(Arimo, Arimo-Regular, 400);
+@include font-face(Manrope, Manrope-Regular, 400);
+@include font-face(Manrope, Manrope-Medium, 500);
+@include font-face(Manrope, Manrope-SemiBold, 600);
+@include font-face(Manrope, Manrope-Bold, 700);
+@include font-face(Manrope, Manrope-ExtraBold, 800);

@@ -1,0 +1,28 @@
+.salons-mobile {
+	display: none;
+	margin-bottom: 41px;
+
+	@include mq('phone') {
+		display: flex;
+	}
+
+	&__img {
+		@include bg-img;
+		width: 161px;
+		height: 145px;
+		background-size: cover;
+		border-radius: 9px 9px 55px;
+
+		&:not(:last-child) {
+			margin-right: 18px;
+		}
+
+		&--left {
+			border-radius: 55px 9px 9px 9px;
+		}
+
+		&--right {
+			border-radius: 9px 55px 9px 9px;
+		}
+	}
+}

@@ -6,11 +6,55 @@
 @import "reset";
 @import "mixins";
 @import "libs";
+@import "animation";
 @import "global";
 
 // * Components
-@import "./components/header";
+
+// * Header
+@import "./components/header/header";
+@import "./components/header/burger-menu";
+@import "./components/header/menu";
+@import "./components/header/burger";
+@import "./components/header/contacts";
+@import "./components/header/search";
+
+// * interactive
+@import "./components/interactive/interactive";
+@import "./components/interactive/interactive-box";
+
+// * mobile
+@import "./components/mobile/mobile-menu";
+@import "./components/mobile/mobile-chat";
+
+// * cards
+@import "./components/cards/product-card";
+@import "./components/cards/article-card";
+@import "./components/cards/video-card";
+
+// * salons
+@import "./components/salons/salons";
+@import "./components/salons/salons-mobile";
+@import "./components/salons/salons-tabs";
+
+// * articles
+@import "./components/articles/articles";
+@import "./components/articles/sorting";
+
+@import "./components/modal";
+@import "./components/socials";
+@import "./components/advantages";
+@import "./components/new-models";
+@import "./components/forms";
+@import "./components/videos";
+@import "./components/breadcrumbs";
 @import "./components/footer";
 
 // * Home-page
 
+// * Offer
+@import "./home-page/offer/offer";
+@import "./home-page/offer/offer-mobile";
+
+// * Product-page
+@import "./product-page/product-info";

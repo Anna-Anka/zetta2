@@ -1,0 +1,36 @@
+@include('./components/links/_head.html',
+{ 'title' : 'ZETTA — Фабрика кухкни | Страница товара' }
+)
+
+@include('./components/_header.html')
+
+@include('./components/_breadcrumbs.html', {
+    'count' : '4',
+    '1' : 'Главная',
+    '2' : 'Каталог',
+    '3' : 'Современная кухня',
+    'current' : 'Модена'
+})
+
+@include('./components/_mobile-menu.html')
+
+@include('./components/modals/_modal-call.html')
+
+@include('./components/modals/_modal-froze.html')
+
+<main class="main">
+    <h1 class="sr-only">
+        ZETTA — Фабрика кухни
+    </h1>
+    @include('./product-page/_product-info.html')
+</main>
+
+@include('./components/_footer.html')
+
+@include('./components/links/_bottom.html')
+
+<!-- Videos sevaral -->
+<!-- @include('./components/_videos.html', {
+    'class' : 'videos--several section',
+    'videos' : 'several'
+}) -->

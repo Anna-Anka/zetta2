@@ -1,0 +1,39 @@
+.video-card {
+	display: flex;
+	flex-direction: column-reverse;
+	align-self: flex-start;
+	padding-bottom: 32px;
+	@include bottom-line;
+
+	@include mq('phone') {
+		padding-bottom: 18px;
+	}
+
+	&__img {
+		width: 100%;
+		height: 360px;
+		margin-bottom: 26px;
+		border-radius: 10px;
+
+		@include mq('xl') {
+			height: 330px;
+		}
+
+		@include mq('phone') {
+			height: 191px;
+			margin-bottom: 16px;
+		}
+	}
+
+	&__title {
+		display: inline-block;
+		color: $dark-700;
+		font-weight: $fw-800;
+		font-size: 22px;
+		line-height: 1.1;
+
+		@include mq('phone') {
+			font-size: 20px;
+		}
+	}
+}

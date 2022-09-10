@@ -1,0 +1,37 @@
+<section class="modal modal--call">
+    <div class="modal__body">
+        <div class="modal__content">
+            <div class="modal__top">
+                <h2 class="modal__title">Заказать обратный звонок</h2>
+                <button class="modal__close" type="button">
+                    <span class="sr-only">Закрыть окно</span>
+                </button>
+            </div>
+            <form class="modal__form" action="#">
+                <div class="modal__items">
+                    <div class="modal__item">
+                        <label class="sr-only" for="call-name">
+                            Ваше имя
+                        </label>
+                        <input class="modal__field" id="call-name" name="name" type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="modal__item">
+                        <label class="sr-only" for="call-tel">
+                            Ваш номер телефона
+                        </label>
+                        <input class="modal__field" id="call-tel" name="tel" type="tel" placeholder="Ваш номер телефона" required>
+                    </div>
+                </div>
+                <button class="modal__button btn" type="submit">Заказать обратный звонок</button>
+                <div class="modal__agreement">
+                    <label>
+                        <input class="modal__check" type="checkbox" name="agree">
+                        Я согласен(а) на
+                        <span class="modal__visible"></span>
+                    </label>
+                    <a class="modal__link" href="#">обработку персональных данных</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

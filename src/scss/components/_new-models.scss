@@ -1,0 +1,84 @@
+.new-models {
+	&__title {
+		margin-bottom: 50px;
+
+		@include mq('phone') {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__accent {
+		color: $orange-500;
+	}
+
+	&__wrapper {
+		position: relative;
+
+		@include mq('phone') {
+			margin-bottom: 39px;
+		}
+	}
+
+	&__items {
+		@include mq('phone') {
+			display: block;
+			transform: translate3d(0, 0, 0) !important;
+			transition-duration: none !important;
+		}
+	}
+
+	&__item {
+		position: relative;
+		box-sizing: border-box;
+		max-width: 100%;
+
+		&:not(:last-child) {
+			@include mq('phone') {
+				margin-bottom: 39px;
+			}
+		}
+	}
+
+	&__swiper {
+		margin: 0;
+		overflow: hidden;
+	}
+
+	&__button {
+		top: 210px;
+		background-color: $orange-500;
+		transform: translateY(-50%);
+
+		&--prev {
+			left: 15px;
+		}
+
+		&--next {
+			right: 15px;
+		}
+
+		@include mq('phone') {
+			display: none;
+		}
+	}
+
+	&__more {
+		display: none;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		max-width: 326px;
+		margin: 0 auto;
+		padding: 7px;
+		color: $orange-500;
+		font-weight: $fw-700;
+		font-size: 12px;
+		line-height: 1.1;
+		border: 2px solid $orange-500;
+		border-radius: 9px;
+
+		@include mq('phone') {
+			display: flex;
+		}
+	}
+}

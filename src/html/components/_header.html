@@ -1,6 +1,150 @@
 <header class="header">
-    <form action="#">
-        <label class="sr-only" for="name">Введите ваше имя</label>
-        <input class="form__field" name="name" type="text" placeholder="text" id="name" required>
-    </form>
+    <div class="container container--large">
+        <nav class="header__wrapper">
+            <a class="header__logo logo" href="#">
+                <picture>
+                    <source srcset="img/logo.avif" type="image/avif">
+                    <source srcset="img/logo.webp" type="image/webp">
+                    <img class="logo__img" src="img/logo.png" alt="Логотип" width="165" height="105" loading="lazy">
+                </picture>
+            </a>
+            <div class="header__box">
+                <div class="header__top">
+                    <div class="header__inner">
+                        <ul class="header__left">
+                            <li class="header__left-item">
+                                <a class="header__left-link" href="#">Компания</a>
+                            </li>
+                            <li class="header__left-item">
+                                <a class="header__left-link" href="#">Запись в салон</a>
+                            </li>
+                            <li class="header__left-item">
+                                <a class="header__left-link" href="#">Сотрудничество</a>
+                            </li>
+                        </ul>
+                        <div class="header__right">
+                            <button class="header__search" type="button">Поиск</button>
+                            <form class="search search--header" action="#">
+                                <label class="sr-only" for="search-field">Поиск</label>
+                                <input class="search__field" type="search" name="search" id="search-field" placeholder="Поиск..." required>
+                                <button class="search__button" type="submit">
+                                    <span class="sr-only">Найти</span>
+                                </button>
+                            </form>
+                            <ul class="contacts contacts--header">
+                                <li class="contacts__item">
+                                    <a class="contacts__link contacts__link--email" href="mailto:operator2@zetta.ru">
+                                        operator2@zetta.ru
+                                    </a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a class="contacts__link contacts__link--phone" href="tel:+74951896592">
+                                        + 7 (495) 189-65-92
+                                    </a>
+                                </li>
+                            </ul>
+                            <button class="header__call call" type="button">Обратный звонок</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--catalog" href="#"> Каталог</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Акции</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--active" href="#">Услуги</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Заказать проект</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">О компании</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Адрес салона</a>
+                        </li>
+                    </ul>
+
+                    <button class="btn header__btn" type="button">Запись на замер</button>
+                </div>
+            </div>
+            <button class="burger" type="button">
+                <span class="burger__text">Меню</span>
+                <span class="burger__line"></span>
+            </button>
+            <a class="header__tel" href="tel:+74951896592">
+                <span class="sr-only">Позвонить</span>
+            </a>
+            <div class="burger-menu">
+                <div class="burger-menu__top">
+                    <form class="search" action="#">
+                        <label class="sr-only" for="search-field-burger">Поиск</label>
+                        <input class="search__field" type="search" name="search" id="search-field-burger" placeholder="Поиск" required>
+                        <button class="search__button" type="submit">
+                            <span class="sr-only">Найти</span>
+                        </button>
+                    </form>
+                    <ul class="contacts contacts--burger">
+                        <li class="contacts__item">
+                            <a class="contacts__link contacts__link--email" href="mailto:operator2@zetta.ru">
+                                operator2@zetta.ru
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link contacts__link--phone" href="tel:+74951896592">
+                                + 7 (495) 189-65-92
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="burger-menu__call call" type="button">Обратный звонок</button>
+                <ul class="burger-menu__bottom">
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link burger-menu__link--catalog" href="#">
+                            Каталог
+                        </a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#">
+                            Акции
+                        </a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#">
+                            Услуги
+                        </a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#">
+                            Заказать проект
+                        </a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#">
+                            Сотрудничество
+                        </a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#">
+                            Запись в салон
+                        </a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#">
+                            О компании
+                        </a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#">
+                            Адрес салона
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </header>

@@ -1,5 +1,5 @@
 // * Swiper
-//import '../../node_modules/swiper/swiper-bundle.min.js'
+import '../../node_modules/swiper/swiper-bundle.min.js'
 
 // * inputmask
 //import '../../node_modules/maskedinput/dist/min/jquery.inputmask.bundle.min.js'
@@ -26,4 +26,4 @@
 //import '../../node_modules/choices.js/public/assets/scripts/choices.min.js'
 
 // * mixitup
-//import '../../node_modules/mixitup/dist/mixitup.min.js'
+//import '../../node_modules/mixitup/dist/mixitup.js'

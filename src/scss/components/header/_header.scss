@@ -1,0 +1,231 @@
+.header {
+	position: relative;
+	margin-bottom: 22px;
+	color: $dark-700;
+	font-weight: 600;
+
+	&--active {
+		.header__box {
+			@include mq('xl') {
+				display: flex;
+				justify-content: flex-end;
+			}
+		}
+
+		.header__call {
+			@include mq('xl') {
+				z-index: 20;
+				display: block;
+				margin-right: 35px;
+			}
+
+			@include mq('phone') {
+				display: none;
+			}
+		}
+	}
+
+	@include mq('xxl') {
+		margin-bottom: 29px;
+		padding-top: 10px;
+	}
+
+	@include mq('phone') {
+		margin-bottom: 11px;
+		padding-top: 14px;
+	}
+
+	&__inner,
+	&__top,
+	&__left,
+	&__wrapper,
+	&__right {
+		display: flex;
+	}
+
+	&__wrapper {
+		align-items: flex-end;
+
+		@include mq('xl') {
+			align-items: center;
+		}
+
+		@include mq('phone') {
+			justify-content: space-between;
+			width: 100%;
+			margin-left: 0;
+		}
+	}
+
+	&__box {
+		width: 100%;
+
+		@include mq('phone') {
+			width: 0;
+		}
+	}
+
+	&__inner {
+		align-items: center;
+		width: 100%;
+		max-width: 100%;
+		padding: 14px 24px 14px 45px;
+		line-height: 1.1;
+		background-image: linear-gradient(
+			269.99deg,
+			rgba(191, 191, 191, 0) 0,
+			#ecebeb 40.62%,
+			rgba(191, 191, 191, 0) 104.69%
+		);
+
+		@include mq('xl') {
+			padding: 0;
+			background-image: none;
+		}
+	}
+
+	&__logo {
+		z-index: 20;
+
+		@include mq('phone') {
+			order: 2;
+			margin-right: auto;
+		}
+	}
+
+	&__left {
+		margin-right: auto;
+
+		@include mq('xl') {
+			display: none;
+		}
+	}
+
+	&__left,
+	&__right {
+		align-items: center;
+	}
+
+	&__left-item {
+		&:not(:last-child) {
+			@include adaptiv-value('margin-right', 39, 0, 1);
+
+			@include mq('xxl') {
+				margin-right: 30px;
+			}
+		}
+	}
+
+	&__search {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			top: 2px;
+			left: 0;
+			content: '';
+			@include bg-img;
+
+			@include mq('xxl') {
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+
+		@include mq('xxl') {
+			width: 26px;
+			height: 26px;
+			font-size: 0;
+		}
+
+		@include mq('xl') {
+			display: none;
+		}
+	}
+
+	&__search {
+		padding-left: 23px;
+
+		@include adaptiv-value('margin-right', 40, -30, 1);
+
+		@include mq('xxl') {
+			margin-right: 30px;
+		}
+
+		&::before {
+			width: 13px;
+			height: 13px;
+			background-image: url('../img/icons/search.svg');
+		}
+	}
+
+	&__call {
+		@include mq('xl') {
+			display: none;
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-top: 17px;
+		padding-left: 45px;
+
+		@include mq('xxl') {
+			justify-content: space-between;
+		}
+
+		@include mq('xl') {
+			padding-top: 0;
+			padding-left: 0;
+		}
+	}
+
+	&__btn {
+		z-index: 20;
+		padding: 13px 44px;
+		font-weight: $fw-800;
+		font-size: 16px;
+		border-radius: 12px;
+
+		@include mq('xxl') {
+			padding: 13px 30px;
+		}
+
+		@include mq('xl') {
+			margin-right: 42px;
+			margin-left: auto;
+		}
+
+		@include mq('phone') {
+			display: none;
+		}
+	}
+
+	&__tel {
+		z-index: 20;
+		display: none;
+		min-width: 37px;
+		height: 37px;
+		background-image: url('../img/icons/phone.svg');
+		background-size: 20px;
+		border: 2px solid $white;
+		border-radius: 50%;
+		filter: invert(69%) sepia(96%) saturate(4152%) hue-rotate(5deg)
+			brightness(107%) contrast(101%);
+		@include bg-img;
+
+		@include mq('phone') {
+			display: block;
+			order: 3;
+		}
+	}
+}
+
+.call {
+	color: $orange-500;
+	text-align: right;
+	border-bottom: 1px solid $orange-500;
+}

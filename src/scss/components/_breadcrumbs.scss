@@ -1,0 +1,27 @@
+.breadcrumbs {
+	padding-bottom: 20px;
+
+	@include mq('xl') {
+		display: none;
+	}
+
+	&__items {
+		display: flex;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 5px;
+		}
+	}
+
+	&__link {
+		color: rgba($dark-700, 0.5);
+		font-weight: $fw-600;
+		line-height: 1.1;
+
+		&--current {
+			color: $orange-500;
+		}
+	}
+}

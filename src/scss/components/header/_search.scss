@@ -1,0 +1,81 @@
+.search {
+	position: relative;
+	align-self: flex-start;
+	width: 100%;
+	max-width: 423px;
+
+	&--header {
+		position: absolute;
+		bottom: 100%;
+		left: 50%;
+		z-index: 100;
+		width: 100%;
+		max-width: 713px;
+		padding: 33px;
+		background-color: $white;
+		border-radius: 16px;
+		box-shadow: 3px 5px 25px rgba($black, 0.15);
+		transform: translate(-50%, 100%);
+		visibility: hidden;
+
+		opacity: 0;
+		backdrop-filter: blur(37px);
+		transition: opacity 0.4s, bottom 0.4s;
+
+		.search__field {
+			padding: 12px 40px 12px 25px;
+			font-size: 14px;
+		}
+
+		.search__button {
+			right: 50px;
+			width: 15px;
+			height: 16px;
+			filter: invert(30%) sepia(90%) saturate(2336%) hue-rotate(358deg)
+				brightness(100%) contrast(110%);
+		}
+	}
+
+	&--active {
+		bottom: -22px;
+		visibility: visible;
+		opacity: 1;
+
+		@include mq('tablet') {
+			display: none;
+		}
+	}
+
+	@include mq('phone') {
+		display: none;
+	}
+
+	&__field {
+		width: 100%;
+		padding: 16px 70px 16px 40px;
+		line-height: 1.1;
+		border: 1px solid $grey-270;
+		border-radius: 12px;
+		transition: border-color 0.3s;
+
+		&::placeholder {
+			color: $grey-350;
+			font-weight: $fw-600;
+		}
+
+		&:focus {
+			border-color: $orange-500;
+		}
+	}
+
+	&__button {
+		position: absolute;
+		top: 50%;
+		right: 40px;
+		width: 20px;
+		height: 21px;
+		background-image: url('../img/icons/search.svg');
+		transform: translateY(-50%);
+		@include bg-img;
+	}
+}

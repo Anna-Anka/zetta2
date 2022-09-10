@@ -1,16 +1,53 @@
 @include('./components/links/_head.html',
-{ 'title' : 'text' }
+{ 'title' : 'ZETTA — Фабрика кухкни | Главная страница' }
 )
-<!--  -->
+
 @include('./components/_header.html')
+
+@include('./components/_mobile-menu.html')
+
+@include('./components/modals/_modal-call.html')
+
+@include('./components/modals/_modal-froze.html')
+
 <main class="main">
-    <picture>
-        <source srcset="img/cover.avif" type="image/avif">
-        <source srcset="img/cover.webp" type="image/webp">
-        <img loading="lazy" src="img/cover.jpg" width="" height="" class="image" alt="Обложка канала MaxGraph">
-    </picture>
+    <h1 class="sr-only">
+        ZETTA — Фабрика кухкни
+    </h1>
+
+    @include('./home-page/_offer.html')
+
+    @include('./components/_advantages.html', {
+    'img' : '1',
+    'title' : 'Приемущества фабрики ',
+    'accent' : 'ZETTA'
+    })
+
+    @include('./components/_new-models.html')
+
+    @include('./components/_salons.html')
+
+    @include('./components/_forms.html', {
+    'class' : 'design',
+    'title' : 'Закажите <span class="form__accent">бесплатную</span> разработку дизайн- проекта кухни',
+    'text' : 'Результат отправим Вам онлайн'
+    })
+
+    @include('./components/_articles.html')
+
+    @include('./components/_videos.html', {
+        'class' : 'videos--full',
+        'videos' : 'full'
+    })
+
+    @include('./components/_forms.html', {
+    'class' : 'checklist',
+    'title' : 'Отправка на почту <span class="form__accent">чек-листа</span>',
+    'text' : 'на что обратить внимание, при выборе кухни'
+    })
+
 </main>
 
 @include('./components/_footer.html')
-<!--  -->
+
 @include('./components/links/_bottom.html')

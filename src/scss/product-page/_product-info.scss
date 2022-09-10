@@ -1,0 +1,197 @@
+.product-info {
+	padding-bottom: 67px;
+
+	@include mq('phone') {
+		padding-bottom: 40px;
+	}
+
+	&__swiper {
+		margin-bottom: 25px;
+	}
+
+	&__item,
+	&__img {
+		border-radius: 10px;
+	}
+
+	&__link {
+		display: inline-block;
+	}
+
+	&__img {
+		height: 772px;
+		object-fit: cover;
+
+		@include mq('phone') {
+			height: 220px;
+		}
+	}
+
+	&__button {
+		background-color: $orange-500;
+
+		&--next {
+			right: 30px;
+		}
+
+		&--prev {
+			left: 30px;
+		}
+
+		@include mq('phone') {
+			display: none;
+		}
+	}
+
+	.swiper-pagination-bullets {
+		bottom: 40px;
+
+		@include mq('phone') {
+			bottom: 20px;
+		}
+	}
+
+	&__content,
+	&__left,
+	&__right,
+	&__cost {
+		display: flex;
+		align-items: center;
+
+		@include mq('phone') {
+			align-items: flex-start;
+		}
+	}
+
+	&__content {
+		position: relative;
+		justify-content: space-between;
+		padding-bottom: 24px;
+		@include bottom-line;
+
+		@include mq('phone') {
+			flex-direction: column;
+		}
+	}
+
+	&__left {
+		margin-right: 30px;
+
+		&--active {
+			.product-info__info {
+				color: $orange-500;
+
+				&::before {
+					color: $orange-500;
+					border-color: $orange-500;
+				}
+			}
+
+			.product-info__hidden {
+				@include mq('phone') {
+					bottom: 160px;
+				}
+			}
+		}
+
+		@include mq('phone') {
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__left,
+	&__right {
+		&--active {
+			.product-info__hidden {
+				bottom: 65px;
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+	}
+
+	&__right {
+		&--active {
+			.product-info__detail {
+				color: $orange-500;
+
+				&::before {
+					color: $orange-500;
+					border-color: $orange-500;
+				}
+			}
+
+			.product-info__hidden {
+				@include mq('phone') {
+					bottom: 115px;
+				}
+			}
+		}
+	}
+
+	&__hidden {
+		width: 100%;
+		max-width: 740px;
+
+		&--right {
+			right: 0;
+			left: unset;
+		}
+	}
+
+	&__info {
+		@include info;
+	}
+
+	&__right {
+		@include mq('phone') {
+			flex-direction: column;
+			justify-content: space-between;
+			width: 100%;
+		}
+	}
+
+	&__title,
+	&__price {
+		margin-right: 20px;
+		color: $dark-700;
+		font-weight: $fw-800;
+		font-size: 24px;
+		line-height: 1.1;
+
+		@include mq('xl') {
+			font-size: 20px;
+		}
+
+		@include mq('phone') {
+			font-size: 18px;
+		}
+	}
+
+	&__cost {
+		margin-right: 50px;
+
+		@include mq('phone') {
+			margin-right: 0;
+			margin-bottom: 25px;
+		}
+	}
+
+	&__detail {
+		@include info;
+
+		&::before {
+			top: 2px;
+		}
+	}
+
+	&__btn {
+		padding: 11px 38px;
+		border-radius: 16px;
+
+		@include mq('phone') {
+			width: 100%;
+		}
+	}
+}
