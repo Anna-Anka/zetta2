@@ -10,9 +10,6 @@ import '../../node_modules/swiper/swiper-bundle.min.js'
 // * rateyo
 //import '../../node_modules/rateyo/src/jquery.rateyo.js'
 
-// * formstyler
-//import '../../node_modules/jquery-form-styler/dist/jquery.formstyler.js'
-
 // * datepicker
 //import '../../node_modules/air-datepicker/dist/js/datepicker.min.js'
 
