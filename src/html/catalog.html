@@ -13,34 +13,38 @@
 <main class="main">
     <div class="catalog">
         <div class="container container--large">
-            <h1 class="catalog__title title">
+            <h1 class="title title--page">
                 Каталог
             </h1>
     
             <section>
                 <h2 class="sr-only">Каталог товаров</h2>
                 @include('./catalog-page/_catalog-filters.html')
+                @include('./components/_sort.html', {
+                    '1' : 'По цене',
+                    '2' : 'По популярности',
+                    '3' : 'По умолчанию',
+                    '4' : 'По рейтингу',
+                })
                 @include('./catalog-page/_catalog-goods.html')
             </section>
         </div>
     </div>
-
-
-    @include('./components/_forms.html', {
-    'class' : 'design',
-    'title' : 'Закажите <span class="form__accent">бесплатную</span> разработку дизайн- проекта кухни',
-    'text' : 'Результат отправим Вам онлайн'
-    })
-
-    @include('./components/_salons.html')
-
-    @include('./components/_forms.html', {
-    'class' : 'checklist',
-    'title' : 'Отправка на почту <span class="form__accent">чек-листа</span>',
-    'text' : 'на что обратить внимание, при выборе кухни'
-    })
-
 </main>
+
+@include('./components/_forms.html', {
+'class' : 'design',
+'title' : 'Закажите <span class="form__accent">бесплатную</span> разработку дизайн- проекта кухни',
+'text' : 'Результат отправим Вам онлайн'
+})
+
+@include('./components/_salons.html')
+
+@include('./components/_forms.html', {
+'class' : 'checklist',
+'title' : 'Отправка на почту <span class="form__accent">чек-листа</span>',
+'text' : 'на что обратить внимание, при выборе кухни'
+})
 
 @include('./components/_footer.html')
 

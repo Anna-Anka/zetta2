@@ -109,6 +109,10 @@ body {
 	@include mq('phone') {
 		font-size: 32px;
 	}
+
+    &--page {
+        margin-bottom: 25px;
+    }
 }
 
 .swiper-button-next,

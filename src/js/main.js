@@ -11,9 +11,6 @@ import './_swipers';
 // * text-hidden
 import './_text-hidden';
 
-// * catalog-page
-import './_catalog-page'
-
 // * product-page
 import './_product-page'
 

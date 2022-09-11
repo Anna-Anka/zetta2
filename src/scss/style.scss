@@ -50,6 +50,7 @@
 @import "./components/forms";
 @import "./components/videos";
 @import "./components/breadcrumbs";
+@import "./components/sort";
 @import "./components/footer";
 
 // * Home-page
@@ -61,7 +62,6 @@
 // * Catalog-page
 @import "./catalog-page/catalog-goods";
 @import "./catalog-page/catalog-filters";
-@import "./catalog-page/catalog-sort";
 
 // * Product-page
 @import "./product-page/product-info";
@@ -71,4 +71,7 @@
 @import "./product-page/product-price";
 @import "./product-page/product-characteristics";
 @import "./product-page/stock";
+
+// * Discounts-page
+@import "./discounts-page/discounts-section";
 
