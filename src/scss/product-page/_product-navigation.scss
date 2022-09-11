@@ -1,0 +1,49 @@
+.product-navigation {
+	padding-bottom: 60px;
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-right: -30px;
+		margin-bottom: -30px;
+
+		@include mq('phone') {
+			justify-content: flex-start;
+			margin-right: -30px;
+			margin-bottom: -30px;
+		}
+	}
+
+	&__item {
+		margin-right: 35px;
+		margin-bottom: 35px;
+
+		@include mq('phone') {
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		padding: 15px 35px;
+		color: $dark-700;
+		font-weight: $fw-700;
+		font-size: 18px;
+		line-height: 1.1;
+		border: 1px solid $grey-400;
+		border-radius: 16px;
+		transition: color 0.4s, border-color 0.4s;
+
+		@include mq('phone') {
+			padding: 9px 20px;
+			font-size: 11px;
+		}
+
+		&:hover {
+			color: $orange-500;
+			border-color: $orange-500;
+		}
+	}
+}

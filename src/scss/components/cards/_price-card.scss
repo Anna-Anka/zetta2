@@ -1,0 +1,55 @@
+.price-card {
+	width: 100%;
+	font-weight: $fw-800;
+	line-height: 1.1;
+
+	&__counter {
+		display: block;
+		color: $orange-500;
+		font-size: 18px;
+
+		@include mq('phone') {
+			font-size: 10px;
+		}
+	}
+
+	&__number {
+		font-size: 24px;
+
+		@include mq('phone') {
+			font-size: 14px;
+		}
+	}
+
+	&__img {
+		width: 100%;
+		max-width: 310px;
+		height: 264px;
+		margin-bottom: 10px;
+		object-fit: contain;
+
+		@include mq('phone') {
+			max-width: 137px;
+			height: 130px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 7px;
+		font-size: 18px;
+
+		@include mq('phone') {
+			margin-bottom: 3px;
+			font-size: 10px;
+		}
+	}
+
+	&__price {
+		color: $orange-500;
+		font-size: 20px;
+
+		@include mq('phone') {
+			font-size: 11px;
+		}
+	}
+}

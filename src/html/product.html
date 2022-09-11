@@ -23,14 +23,25 @@
         ZETTA — Фабрика кухни
     </h1>
     @include('./product-page/_product-info.html')
+
+    @include('./product-page/_product-navigation.html')
+
+    @include('./product-page/_product-about.html')
+
+    @include('./product-page/_product-colors.html')
+
+    @include('./product-page/_product-price.html')
+
+    @include('./components/_videos.html', {
+        'class' : 'videos--several section',
+        'videos' : 'several'
+    })
+
+    @include('./product-page/_product-characteristics.html')
+
+    @include('./product-page/_stock.html')
 </main>
 
 @include('./components/_footer.html')
 
 @include('./components/links/_bottom.html')
-
-<!-- Videos sevaral -->
-<!-- @include('./components/_videos.html', {
-    'class' : 'videos--several section',
-    'videos' : 'several'
-}) -->

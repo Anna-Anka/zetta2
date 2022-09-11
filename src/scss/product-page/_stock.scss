@@ -1,0 +1,53 @@
+.stock {
+	&__top {
+		position: relative;
+		z-index: 10;
+		display: flex;
+		align-items: flex-end;
+		justify-content: space-between;
+		margin-bottom: 50px;
+
+		@include mq('phone') {
+			flex-direction: column;
+			align-items: flex-start;
+            margin-bottom: 35px;
+		}
+	}
+
+	&__title {
+
+		@include mq('phone') {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__swiper {
+        overflow: visible;
+	}
+
+	&__items {
+
+		@include mq('phone') {
+			display: block;
+		}
+	}
+
+	&__item {
+		border-radius: 60px 15px;
+
+		&:not(:last-child) {
+			@include mq('phone') {
+				margin-bottom: 25px;
+			}
+		}
+
+		@include mq('phone') {
+			max-width: 100%;
+			border-radius: 40px 6px;
+		}
+	}
+
+	&__more {
+		@include more;
+	}
+}

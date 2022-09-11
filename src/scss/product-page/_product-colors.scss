@@ -1,0 +1,63 @@
+.colors {
+	&__title {
+		margin-bottom: 60px;
+
+		@include mq('phone') {
+			margin-bottom: 47px;
+		}
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		@include bottom-line;
+		margin-right: -50px;
+		margin-bottom: -15px;
+
+		@include mq('phone') {
+			margin-right: -20px;
+		}
+	}
+
+	&__item {
+		margin-right: 50px;
+		margin-bottom: 50px;
+
+		@include mq('phone') {
+			margin-right: 20px;
+			margin-bottom: 30px;
+		}
+	}
+
+	&__img {
+		display: inline-block;
+		width: 100%;
+		max-width: 140px;
+		height: 189px;
+		margin-bottom: 12px;
+		object-fit: contain;
+		border-radius: 10px;
+
+		@include mq('tablet') {
+			max-width: 115px;
+			height: 156px;
+		}
+
+		@include mq('phone') {
+			max-width: 78px;
+			height: 105px;
+			margin-bottom: 7px;
+		}
+	}
+
+	&__name {
+		color: $dark-700;
+		font-weight: $fw-800;
+		font-size: 18px;
+		line-height: 1.1;
+
+		@include mq('phone') {
+			font-size: 13px;
+		}
+	}
+}

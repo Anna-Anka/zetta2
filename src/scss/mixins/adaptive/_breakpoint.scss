@@ -4,7 +4,6 @@ $breakpoints: (
     "phone": 1000px,
     "xl": 1200px,
     "xxl": 1310px,
-    "tablet": 1750px,
 );
 
 @mixin mq($width, $type: max) {

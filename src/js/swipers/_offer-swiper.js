@@ -9,5 +9,5 @@ export const offerSwiper = () => {
 				prevEl: '.offer__button--prev',
 			},
 		});
-	}
+	};
 };

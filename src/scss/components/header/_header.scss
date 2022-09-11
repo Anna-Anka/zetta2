@@ -1,6 +1,6 @@
 .header {
 	position: relative;
-	margin-bottom: 22px;
+	padding-bottom: 22px;
 	color: $dark-700;
 	font-weight: 600;
 
@@ -26,12 +26,10 @@
 	}
 
 	@include mq('xxl') {
-		margin-bottom: 29px;
 		padding-top: 10px;
 	}
 
 	@include mq('phone') {
-		margin-bottom: 11px;
 		padding-top: 14px;
 	}
 

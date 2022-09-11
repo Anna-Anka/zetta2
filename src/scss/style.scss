@@ -31,6 +31,8 @@
 @import "./components/cards/product-card";
 @import "./components/cards/article-card";
 @import "./components/cards/video-card";
+@import "./components/cards/price-card";
+@import "./components/cards/stock-card";
 
 // * salons
 @import "./components/salons/salons";
@@ -58,3 +60,10 @@
 
 // * Product-page
 @import "./product-page/product-info";
+@import "./product-page/product-navigation";
+@import "./product-page/product-about";
+@import "./product-page/product-colors";
+@import "./product-page/product-price";
+@import "./product-page/product-characteristics";
+@import "./product-page/stock";
+

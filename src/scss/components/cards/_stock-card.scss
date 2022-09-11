@@ -1,0 +1,76 @@
+.stock-card {
+	padding: 30px;
+	background-color: $white;
+	border-radius: 60px 15px;
+	box-shadow: 0 33px 75px rgba($black, 0.05), 0 0 15px rgba($black, 0.05), 15px 3px 30px rgba($black, 0.04);
+
+	@include mq('phone') {
+		padding: 18px 18px 20px;
+		border-radius: 40px 6px;
+		box-shadow: 0 5px 7px rgba($black, 0.03), 0 0 5px rgba($black, 0.05);
+	}
+
+	&__image {
+		display: inline-block;
+		height: 250px;
+		margin-bottom: 20px;
+		filter: drop-shadow(0 3px 75px rgba($black, 0.05)) drop-shadow(0 0 15px rgba($black, 0.05)) drop-shadow(15px 3px 30px rgba($black, 0.04));
+
+		@include mq('phone') {
+			height: 146px;
+		}
+	}
+
+	&__img {
+		height: 100%;
+		object-fit: cover;
+		border-radius: 15px 60px;
+	}
+
+	&__title {
+		margin-bottom: 13px;
+		color: $dark-700;
+		font-weight: $fw-800;
+		font-size: 24px;
+		line-height: 1.2;
+
+		@include mq('phone') {
+			margin-bottom: 10px;
+			font-size: 17px;
+		}
+	}
+
+	&__link {
+		position: relative;
+		display: inline-block;
+		padding-right: 28px;
+
+		&::before {
+			position: absolute;
+			top: 8px;
+			right: 0;
+			width: 16px;
+			height: 20px;
+			background-image: url('../img/icons/more.svg');
+			filter: invert(72%) sepia(85%) saturate(2239%) hue-rotate(359deg) brightness(101%) contrast(106%);
+			content: '';
+			@include bg-img;
+
+			@include mq('phone') {
+				width: 10px;
+				height: 10px;
+			}
+		}
+	}
+
+	&__text {
+		width: 100%;
+		max-width: 510px;
+		line-height: 1.1;
+
+		@include mq('phone') {
+			max-width: 280px;
+			font-size: 14px;
+		}
+	}
+}
