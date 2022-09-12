@@ -33,7 +33,10 @@
     'text' : 'Результат отправим Вам онлайн'
     })
 
-    @include('./components/_articles.html')
+    @include('./components/_articles.html', {
+    'container' : 'container',
+    'bottom' : 'button'
+    })
 
     @include('./components/_videos.html', {
         'class' : 'videos--full',
