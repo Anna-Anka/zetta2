@@ -1,0 +1,182 @@
+.service-top {
+	&__wrapper {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		justify-content: space-between;
+		min-height: 750px;
+		padding-top: 110px;
+
+		@include mq('xl') {
+			flex-direction: column;
+			justify-content: flex-start;
+			min-height: 480px;
+			padding-top: 0;
+            padding-bottom: 80px;
+		}
+
+		@include mq('phone') {
+			min-height: auto;
+			padding-top: 200px;
+			padding-bottom: 60px;
+		}
+	}
+
+	&__content,
+	&__text {
+		align-self: flex-start;
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 610px;
+
+		@include mq('xl') {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 20px;
+
+		@include mq('phone') {
+			margin-bottom: 15px;
+			font-size: 22px;
+		}
+	}
+
+	&__accent {
+		color: $orange-500;
+	}
+
+	&__subtitle {
+		margin-bottom: 20px;
+		color: $dark-700;
+		font-size: 20px;
+
+		@include mq('phone') {
+			font-size: 16px;
+		}
+	}
+
+	&__link {
+		position: relative;
+		width: fit-content;
+		padding: 14px 71px 14px 41px;
+		border-radius: 16px;
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			right: 41px;
+			width: 16px;
+			height: 20px;
+			background-image: url('../img/icons/more.svg');
+			transform: translateY(-50%);
+			content: '';
+			@include bg-img;
+		}
+	}
+
+	&__text {
+		position: relative;
+		max-width: 380px;
+		padding-top: 15px;
+
+		&::before,
+		&::after {
+			position: absolute;
+			left: 0;
+			width: 100%;
+			content: '';
+		}
+
+		&::before {
+			top: 0;
+			height: 1px;
+			background-color: $grey-400;
+		}
+
+		&::after {
+			bottom: -135px;
+			height: 90px;
+			background-image: url('../img/service-top/decor.svg');
+			@include bg-img;
+
+			@include mq('xl') {
+				top: 70px;
+				right: -140px;
+				bottom: unset;
+				left: unset;
+				width: 200px;
+				height: 40px;
+				transform: rotate(-90deg);
+			}
+
+			@include mq('phone') {
+				display: none;
+			}
+		}
+
+		p {
+			&:not(:last-child) {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	&__bg {
+		position: absolute;
+		top: -62px;
+		right: -20%;
+		z-index: -1;
+		width: 100%;
+		max-width: 1193px;
+		height: 750px;
+		background-repeat: no-repeat;
+		background-position: left center;
+		background-size: cover;
+
+		@include mq('xxl') {
+			right: -30%;
+		}
+
+		@include mq('xl') {
+			top: 0;
+			right: -46%;
+			height: 480px;
+		}
+
+		@include mq('phone') {
+			right: unset;
+			left: 0;
+			width: 390px;
+			height: 180px;
+		}
+
+		&::before {
+			position: absolute;
+			top: -36px;
+			left: -144px;
+			width: 100%;
+			max-width: 1200px;
+			height: 800px;
+			background-image: url('../img/service-top/bg-linear.png');
+			content: '';
+			@include bg-img;
+
+			@include mq('xl') {
+				top: -128px;
+				left: -155px;
+                height: 682px;
+			}
+
+			@include mq('phone') {
+				top: -44px;
+				left: -67px;
+				width: 490px;
+				height: 290px;
+			}
+		}
+	}
+}
