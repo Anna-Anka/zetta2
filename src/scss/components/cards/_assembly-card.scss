@@ -1,0 +1,28 @@
+.assembly-card {
+	display: flex;
+	flex-direction: column;
+	padding: 70px 30px 30px;
+	background-color: $white;
+	border: 1px solid $grey-400;
+	border-radius: 17px 105px 17px 17px;
+
+	@include mq('phone') {
+		padding: 40px 20px 20px;
+	}
+
+	&__bg {
+		width: 100%;
+		max-width: 270px;
+		height: 170px;
+		margin-bottom: 20px;
+		@include bg-img;
+
+		@include mq('phone') {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__text {
+		color: $dark-700;
+	}
+}

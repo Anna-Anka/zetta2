@@ -33,6 +33,7 @@
 @import "./components/cards/video-card";
 @import "./components/cards/price-card";
 @import "./components/cards/stock-card";
+@import "./components/cards/assembly-card";
 
 // * salons
 @import "./components/salons/salons";
@@ -78,4 +79,5 @@
 
 // * Service-page
 @import "./service-page/service-top";
+@import "./service-page/assembly";
 

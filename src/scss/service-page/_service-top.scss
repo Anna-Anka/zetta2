@@ -18,7 +18,7 @@
 		@include mq('phone') {
 			min-height: auto;
 			padding-top: 200px;
-			padding-bottom: 60px;
+			padding-bottom: 30px;
 		}
 	}
 
@@ -56,25 +56,6 @@
 
 		@include mq('phone') {
 			font-size: 16px;
-		}
-	}
-
-	&__link {
-		position: relative;
-		width: fit-content;
-		padding: 14px 71px 14px 41px;
-		border-radius: 16px;
-
-		&::before {
-			position: absolute;
-			top: 50%;
-			right: 41px;
-			width: 16px;
-			height: 20px;
-			background-image: url('../img/icons/more.svg');
-			transform: translateY(-50%);
-			content: '';
-			@include bg-img;
 		}
 	}
 

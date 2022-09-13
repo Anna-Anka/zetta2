@@ -53,6 +53,25 @@ body {
 		background-color: transparent;
 		border: 2px solid $orange-500;
 	}
+
+    &--more {
+        position: relative;
+		width: fit-content;
+		padding: 14px 71px 14px 41px;
+		border-radius: 16px;
+        
+        &::before {
+            position: absolute;
+			top: 50%;
+			right: 41px;
+			width: 16px;
+			height: 20px;
+			background-image: url('../img/icons/more.svg');
+			transform: translateY(-50%);
+			content: '';
+			@include bg-img;
+        }
+    }
 }
 
 .container {

@@ -1,0 +1,54 @@
+<section class="assembly">
+    <div class="container">
+        <div class="assembly__wrapper">
+            <div class="assembly__content">
+                <h2 class="assembly__title title">
+                    Сборка и <span class="assembly__accent">установка</span>
+                </h2>
+                <p class="assembly__subtext">
+                    Наряду с разработкой проекта, замером и доставкой, установка кухни производится нашей компанией бесплатно*.
+                </p>
+                <p class="assembly__text">
+                    Наша компания осуществляет полный комплекс услуг по монтажу мебели. В том числе встраивание и подключение бытовой техники (кроме подключения к газовым коммуникациям, вытяжки к воздуховоду).
+                </p>
+                <div class="assembly__buttons">
+                    <button class="assembly__more btn btn--more">Подробнее</button>
+                    <div class="assembly__arrows">
+                        <button class="assembly__button assembly__button--prev swiper-button-prev" type="button">
+                        </button>
+                        <button class="assembly__button assembly__button--next swiper-button-next" type="button">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="assembly__box swiper">
+              <ul class="assembly__items swiper-wrapper">
+                 <li class="assembly__item swiper-slide">
+                    @include('./../components/cards/_assembly-card.html', {
+                        'img' : '1',
+                        'text' : 'Для оптимального расположения точек подключения бытовой техники, нашими специалистами разработаны рекомендации по подготовке помещения.'
+                    })
+                 </li>
+                <li class="assembly__item swiper-slide">
+                    @include('./../components/cards/_assembly-card.html', {
+                    'img' : '2',
+                    'text' : 'Подключение бытовой техники, приобретенной в наших фирменных салонах вместе с кухонным гарнитуром, производится бесплатно.'
+                    })
+                </li>
+                <li class="assembly__item swiper-slide">
+                    @include('./../components/cards/_assembly-card.html', {
+                    'img' : '3',
+                    'text' : 'Работы производятся в заранее оговоренное с заказчиком время, в подготовленном помещении. Чтобы монтаж был правильным и занимал меньше времени мы разработали Требования по подготовке помещения, с которыми можно ознакомиться в разделе Документация по продукции.'
+                    })
+                </li>
+                <li class="assembly__item swiper-slide">
+                    @include('./../components/cards/_assembly-card.html', {
+                    'img' : '1',
+                    'text' : 'Для оптимального расположения точек подключения бытовой техники, нашими специалистами разработаны рекомендации по подготовке помещения.'
+                    })
+                </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</section>
