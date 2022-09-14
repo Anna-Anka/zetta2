@@ -262,13 +262,7 @@
 
 	&__subtitle {
 		margin-bottom: 10px;
-		color: $dark-700;
-		font-weight: $fw-800;
-		font-size: 24px;
-
-		@include mq('phone') {
-			font-size: 20px;
-		}
+		@include subtitle;
 	}
 
 	&__link {

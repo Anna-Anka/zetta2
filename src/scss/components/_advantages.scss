@@ -242,14 +242,11 @@
 	&__subheadding {
 		display: inline-block;
 		margin-bottom: 11px;
-		color: $dark-700;
+		@include subtitle;
 		font-weight: $fw-800;
-		font-size: 22px;
-		line-height: 1.1;
 
 		@include mq('phone') {
 			margin-bottom: 5px;
-			font-size: 20px;
 		}
 	}
 

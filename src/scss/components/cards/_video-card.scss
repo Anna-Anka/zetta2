@@ -27,13 +27,6 @@
 
 	&__title {
 		display: inline-block;
-		color: $dark-700;
-		font-weight: $fw-800;
-		font-size: 22px;
-		line-height: 1.1;
-
-		@include mq('phone') {
-			font-size: 20px;
-		}
+		@include subtitle;
 	}
 }

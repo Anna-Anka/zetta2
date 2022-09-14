@@ -51,6 +51,7 @@
 
 	&__item {
 		display: flex;
+        box-sizing: border-box;
 
 		@include mq('phone') {
 			height: unset;

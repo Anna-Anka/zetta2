@@ -1,0 +1,85 @@
+.stages {
+	padding-top: 15px;
+
+	&__items {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 30px;
+		margin-bottom: 50px;
+
+		@include mq('phone') {
+			grid-template-columns: 1fr;
+			gap: 0;
+			margin-bottom: 30px;
+		}
+	}
+
+	&__item {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			top: 22px;
+			left: 42px;
+			width: 98%;
+			height: 1px;
+			background-color: $orange-500;
+			content: '';
+
+			@include mq('phone') {
+				top: 0;
+				right: unset;
+				left: 15px;
+				width: 1px;
+				height: 100%;
+			}
+		}
+
+		&:last-child {
+			.stage-card {
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	&__text {
+		margin-bottom: 50px;
+		line-height: 1.1;
+
+		@include mq('phone') {
+			margin-bottom: 30px;
+		}
+
+		p {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	&__info {
+		padding: 40px 20px;
+		background-color: $white;
+		border-radius: 16px;
+		box-shadow: 0 3px 80px rgba($black, 0.05), 0 0 16px rgba($black, 0.05),
+			16px 3px 32px rgba($black, 0.04);
+	}
+
+	&__headding {
+		@include subtitle;
+		@include info;
+		margin-bottom: 15px;
+		padding-left: 30px;
+
+		&::before {
+			top: 0;
+			left: 0;
+			color: $orange-500;
+			border-color: $orange-500;
+		}
+
+        @include mq('phone') {
+            font-size: 18px;
+        }
+	}
+}

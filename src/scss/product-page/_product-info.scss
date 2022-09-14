@@ -155,10 +155,7 @@
 	&__title,
 	&__price {
 		margin-right: 20px;
-		color: $dark-700;
-		font-weight: $fw-800;
-		font-size: 24px;
-		line-height: 1.1;
+		@include subtitle;
 
 		@include mq('xl') {
 			font-size: 20px;

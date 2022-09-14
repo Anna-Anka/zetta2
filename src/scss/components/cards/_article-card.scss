@@ -27,10 +27,7 @@
 	}
 
 	&__title {
-		color: $dark-700;
-		font-weight: $fw-700;
-		font-size: 22px;
-		line-height: 1.2;
+		@include subtitle;
 
 		@include mq('xl') {
 			font-size: 22px;

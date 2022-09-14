@@ -31,10 +31,7 @@
 
 	&__title {
 		margin-bottom: 15px;
-		color: $dark-700;
-		font-weight: $fw-800;
-		font-size: 20px;
-
+		@include subtitle;
 		@include mq('phone') {
 			margin-bottom: 10px;
 		}
