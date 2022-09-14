@@ -1,0 +1,19 @@
+.questions {
+	&__title {
+		margin-bottom: 60px;
+
+		@include mq('phone') {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__accent {
+		color: $orange-500;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+		}
+	}
+}

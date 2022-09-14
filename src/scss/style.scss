@@ -35,6 +35,7 @@
 @import "./components/cards/stock-card";
 @import "./components/cards/assembly-card";
 @import "./components/cards/stage-card";
+@import "./components/cards/question-card";
 
 // * salons
 @import "./components/salons/salons";
@@ -85,4 +86,5 @@
 // * Froze-page
 @import "./froze-page/froze-top";
 @import "./froze-page/stages";
+@import "./froze-page/questions";
 
