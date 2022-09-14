@@ -23,9 +23,9 @@
 	}
 
 	@include mq('phone') {
+		margin-bottom: 60px;
 		padding-top: 60px;
 		padding-bottom: 105px;
-		margin-bottom: 60px;
 	}
 
 	&__wrapper {
