@@ -2,7 +2,17 @@
     <button class="question-card__top" type="button">
         <span class="question-card__title">@title</span>
     </button>
-    <div class="question-card__text">
-        @text
-    </div>
+
+    @if(context.class === 'normal') {
+        <div class="question-card__content">
+            <div class="question-card__text">@box</div>
+        </div>
+    }
+
+    @if(context.class === 'list') {
+        <div class="question-card__content">
+            <ul class="question-card__items">@box</ul>
+        </div>
+    }
+
 </article>

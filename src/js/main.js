@@ -14,4 +14,7 @@ import './_text-hidden';
 // * product-page
 import './_product-page'
 
+// * froze-page
+import './_froze-page'
+
 

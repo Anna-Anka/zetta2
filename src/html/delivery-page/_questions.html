@@ -1,0 +1,45 @@
+<section class="questions section">
+    <div class="container">
+        <h2 class="questions__title title">
+            <span class="questions__accent">Замеры</span>
+            помещения
+        </h2>
+        <ul class="questions__items">
+            <li class="questions__item">
+                @include('./../components/cards/_question-card.html', {
+                'title' : 'Гарантии и преимущества доставки',
+                'class' : 'list',
+                'box' : '<li class="question-card__item">погрузку с соблюдением правил перевозок и обеспечением максимальной безопасности гарнитура во время поездки;</li><li class="question-card__item">разгрузку и подъем на нужный этаж;</li><li class="question-card__item">складирование в помещении, где будет производиться монтаж.</li>'
+            })
+            </li>
+            <li class="questions__item">
+                @include('./../components/cards/_question-card.html', {
+                'title' : 'Гарантии и преимущества доставки',
+                'class' : 'list',
+                'box' : '<li class="question-card__item">погрузку с соблюдением правил перевозок и обеспечением максимальной безопасности гарнитура во время поездки;</li><li class="question-card__item">разгрузку и подъем на нужный этаж;</li>'
+            })
+            </li>
+            <li class="questions__item">
+                @include('./../components/cards/_question-card.html', {
+                'title' : 'Сроки доставки',
+                'class' : 'list',
+                'box' : '<li class="question-card__item">погрузку с соблюдением правил перевозок и обеспечением максимальной безопасности гарнитура во время поездки;</li>'
+            })
+            </li>
+            <li class="questions__item">
+                @include('./../components/cards/_question-card.html', {
+                'title' : 'Для физических лиц',
+                'class' : 'list',
+                'box' : '<li class="question-card__item">разгрузку и подъем на нужный этаж;</li>'
+            })
+            </li>
+            <li class="questions__item">
+                @include('./../components/cards/_question-card.html', {
+                'title' : 'Для физических лиц',
+                'class' : 'list',
+                'box' : '<li class="question-card__item">складирование в помещении, где будет производиться монтаж.</li>'
+            })
+            </li>
+        </ul>
+    </div>
+</section>

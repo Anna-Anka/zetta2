@@ -61,24 +61,38 @@
 		padding: 40px;
 		background-color: $white;
 		border-radius: 16px;
-		box-shadow: 0 3px 80px rgba($black, 0.05), 0 0 16px rgba($black, 0.05), 16px 3px 32px rgba($black, 0.04);
+		box-shadow: 0 3px 80px rgba($black, 0.05), 0 0 16px rgba($black, 0.05),
+			16px 3px 32px rgba($black, 0.04);
+
+		@include mq('phone') {
+			padding: 30px;
+		}
 	}
 
 	&__headding {
 		@include subtitle;
 		@include info;
 		margin-bottom: 15px;
+		padding-right: 0;
 		padding-left: 30px;
+
+		@include mq('xl') {
+			padding-right: 0;
+		}
 
 		&::before {
 			top: 3px;
 			left: 0;
 			color: $orange-500;
 			border-color: $orange-500;
+
+			@include mq('phone') {
+				top: 0;
+			}
 		}
 
-        @include mq('phone') {
-            font-size: 18px;
-        }
+		@include mq('phone') {
+			font-size: 18px;
+		}
 	}
 }
