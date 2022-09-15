@@ -1,5 +1,5 @@
 export const interactiveFunction = () => {
-    if (document.querySelector('.offer')) {
+    if (document.querySelector('.offer') || document.querySelector('.installation-top')) {
         $('.interactive__item').click(function (event) {
             if ($('.interactive').hasClass('interactive')) {
                 $('.interactive__btn').not($(this).children('.interactive__btn')).removeClass('interactive__btn--active');

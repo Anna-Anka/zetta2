@@ -55,6 +55,7 @@
 @import "./components/breadcrumbs";
 @import "./components/sort";
 @import "./components/delivery-section";
+@import "./components/questions";
 @import "./components/footer";
 
 // * home-page
@@ -86,5 +87,8 @@
 // * froze-page
 @import "./froze-page/froze-top";
 @import "./froze-page/stages";
-@import "./froze-page/questions";
+
+// * installation-page
+@import "./installation-page/installation-top";
+@import "./installation-page/connection";
 
