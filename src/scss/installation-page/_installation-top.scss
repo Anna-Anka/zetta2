@@ -1,9 +1,8 @@
 .installation-top {
+	@include mq('phone') {
+		padding-bottom: 60px;
+	}
 
-    @include mq('phone') {
-        padding-bottom: 60px;
-    }
-    
 	&__wrapper {
 		display: flex;
 		align-items: center;
@@ -20,18 +19,18 @@
 		margin-right: 30px;
 
 		@include mq('xxl') {
+			max-width: 740px;
+			margin-right: 0;
 			margin-bottom: 20px;
-            margin-right: 0;
-            max-width: 740px;
 		}
 	}
 
 	&__title {
 		margin-bottom: 30px;
 
-        @include mq('phone') {
-            margin-bottom: 15px;
-        }
+		@include mq('phone') {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__accent {
@@ -43,10 +42,10 @@
 		color: $dark-700;
 		font-size: 20px;
 
-        @include mq('phone') {
-            font-size: 18px;
-            margin-bottom: 15px;
-        }
+		@include mq('phone') {
+			margin-bottom: 15px;
+			font-size: 18px;
+		}
 	}
 
 	&__subtext,
@@ -65,8 +64,8 @@
 			margin: 0 auto;
 		}
 
-        @include mq('phone') {
-			height: 233px;   
+		@include mq('phone') {
+			height: 233px;
 		}
 	}
 
@@ -76,8 +75,8 @@
 		object-fit: cover;
 		border-radius: 10px 20px 20px 120px;
 
-        @include mq('phone') {
-            border-bottom-left-radius: 20px;
-        }
+		@include mq('phone') {
+			border-bottom-left-radius: 20px;
+		}
 	}
 }

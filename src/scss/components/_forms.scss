@@ -1,7 +1,12 @@
 .form {
-	@include mq('phone') {
-		padding-bottom: 20px;
-	}
+
+    &--design {
+        padding-bottom: 60px;
+        
+        @include mq('phone') {
+            padding-bottom: 20px;
+        }
+    }
 
 	&__wrapper {
 		position: relative;
@@ -61,6 +66,8 @@
 					bottom: -78px;
 					max-width: 160px;
 					height: 236px;
+                    border-radius: 72px 24px;
+                    right: -80px;
 				}
 			}
 		}

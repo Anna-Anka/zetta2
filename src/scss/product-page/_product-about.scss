@@ -7,6 +7,7 @@
 
 		@include mq('xxl') {
 			display: block;
+			max-width: 100%;
 		}
 
 		@include mq('phone') {
@@ -23,6 +24,7 @@
 
 		@include mq('xxl') {
 			flex-direction: column;
+			align-items: center;
 		}
 	}
 
@@ -69,8 +71,11 @@
 		width: 100%;
 		max-width: 490px;
 
+		@include mq('xxl') {
+			max-width: 740px;
+		}
+
 		@include mq('xl') {
-			width: 100%;
 			max-width: 100%;
 		}
 	}
@@ -80,8 +85,14 @@
 		max-width: 590px;
 		margin-bottom: 50px;
 
-		@include mq('xl') {
+		@include mq('xxl') {
 			display: none;
 		}
 	}
+
+    .interactive-box__line {
+        @include mq('xxl') {
+            display: none;
+        }
+    }
 }
