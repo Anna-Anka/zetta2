@@ -24,12 +24,26 @@
     @include('./company-page/_company-top.html')
 
     @include('./company-page/_guarantee.html')
+
+    @include('./company-page/_production.html')
+
+    @include('./components/_advantages.html', {
+    'img' : '1',
+    'title' : 'Ценности компании ',
+    'accent' : 'ZETTA'
+    })
+
+    @include('./components/_forms.html', {
+    'class' : 'design',
+    'title' : 'Закажите <span class="form__accent">бесплатную</span> разработку дизайн- проекта кухни',
+    'text' : 'Результат отправим Вам онлайн'
+    })
 </main>
 
 @include('./components/_forms.html', {
-'class' : 'design',
-'title' : 'Закажите <span class="form__accent">бесплатную</span> разработку дизайн- проекта кухни',
-'text' : 'Результат отправим Вам онлайн'
+'class' : 'checklist',
+'title' : 'Отправка на почту <span class="form__accent">чек-листа</span>',
+'text' : 'на что обратить вниманте, при выборе кухни'
 })
 
 @include('./components/_footer.html')

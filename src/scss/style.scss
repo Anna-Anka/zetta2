@@ -36,6 +36,7 @@
 @import "./components/cards/assembly-card";
 @import "./components/cards/stage-card";
 @import "./components/cards/question-card";
+@import "./components/cards/production-card";
 
 // * salons
 @import "./components/salons/salons";
@@ -95,3 +96,4 @@
 // * company-page
 @import "./company-page/company-top";
 @import "./company-page/guarantee";
+@import "./company-page/production";
