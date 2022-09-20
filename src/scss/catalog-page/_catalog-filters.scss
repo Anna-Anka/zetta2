@@ -53,6 +53,14 @@
 		line-height: 1.1;
 		cursor: pointer;
 
+		&--active {
+			.filters__visible {
+				&::before {
+					background-color: $orange-500;
+				}
+			}
+		}
+
 		&:not(:last-child) {
 			margin-right: 50px;
 
@@ -61,7 +69,7 @@
 			}
 		}
 
-		@include mq('xl') {
+		@include mq('xxl') {
 			margin-bottom: 18px;
 		}
 

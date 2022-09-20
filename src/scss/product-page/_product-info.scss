@@ -19,13 +19,13 @@
 	}
 
 	&__img {
-		//height: 100%;
-		object-fit: cover;
+        @include adaptiv-value("height", 690, 400, 1);
+        object-fit: cover;
 
-		@include mq('phone') {
-			//height: 220px;
-		}
-	}
+        @include mq("phone") {
+            height: 200px;
+        }
+    }
 
 	&__button {
 		background-color: $orange-500;

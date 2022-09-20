@@ -50,7 +50,7 @@
                 <div class="header__bottom">
                     <ul class="menu">
                         <li class="menu__item">
-                            <a class="menu__link menu__link--catalog" href="#"> Каталог</a>
+                            <button class="menu__link menu__link--catalog" type="button"> Каталог</button>
                         </li>
                         <li class="menu__item">
                             <a class="menu__link" href="#">Акции</a>
@@ -68,7 +68,75 @@
                             <a class="menu__link" href="#">Адрес салона</a>
                         </li>
                     </ul>
-
+                    <div class="catalog">
+                        <div class="container container--large">
+                            <div class="catalog__wrapper">
+                                <ul class="catalog-main">
+                                    <li class="catalog-main__item">
+                                        <a class="catalog-main__link catalog-main__link--active" href="#catalog-kitchen">Кухни</a>
+                                    </li>
+                                    <li class="catalog-main__item">
+                                        <a class="catalog-main__link" href="#catalog-furniture">Корпусная мебель</a>
+                                    </li>
+                                </ul>
+                                <ul class="catalog-detail catalog-detail--active" id="catalog-kitchen">
+                                    <li class="catalog-detail__item">
+                                        <a class="catalog-detail__link catalog-detail__link--active" href="#">
+                                            Современный стиль
+                                        </a>
+                                    </li>
+                                    <li class="catalog-detail__item">
+                                        <a class="catalog-detail__link" href="#">
+                                            Нео классика
+                                        </a>
+                                    </li>
+                                    <li class="catalog-detail__item">
+                                        <a class="catalog-detail__link" href="#">
+                                            Классический стиль
+                                        </a>
+                                    </li>
+                                    <li class="catalog-detail__item">
+                                        <a class="catalog-detail__link" href="#">
+                                            Все кухни
+                                        </a>
+                                    </li>
+                                    <li class="catalog-detail__item">
+                                        <a class="catalog-detail__link" href="#">
+                                            Распродажи образцов
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="catalog-detail" id="catalog-furniture">
+                                    <li class="catalog-detail__item">
+                                        <a class="catalog-detail__link catalog-detail__link--active" href="#">
+                                            Шкафы
+                                        </a>
+                                    </li>
+                                    <li class="catalog-detail__item">
+                                        <a class="catalog-detail__link" href="#">
+                                            Студио
+                                        </a>
+                                    </li>
+                                    <li class="catalog-detail__item">
+                                        <a class="catalog-detail__link" href="#">
+                                            Гардеробные
+                                        </a>
+                                    </li>
+                                    <li class="catalog-detail__item">
+                                        <a class="catalog-detail__link" href="#">
+                                            Прихожие
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="catalog-stock">
+                                    <a class="catalog-stock__link" href="#">
+                                        <img class="catalog-stock__banner" src="img/discounts/2.jpg" alt="Cкидки на технику Bosh" loading="lazy" width="573" height="232">
+                                    </a>
+                                    <a class="catalog-stock__more" href="#">Все акции</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <button class="btn header__btn" type="button">Запись на замер</button>
                 </div>
             </div>
@@ -148,3 +216,4 @@
         </nav>
     </div>
 </header>
+<div class="blackout"></div>

@@ -1,5 +1,3 @@
-//console.log($('.burger'))
-
 export const burgerFunction = () => {
 	if (document.querySelector('.burger')) {
 		const burgerMenu = document.querySelector('.burger-menu');

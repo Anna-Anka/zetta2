@@ -11,7 +11,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		@include bottom-line;
-		margin-right: -50px;
+		margin-right: -40px;
 		margin-bottom: -15px;
 
 		@include mq('phone') {
@@ -20,10 +20,13 @@
 	}
 
 	&__item {
-		margin-right: 50px;
-		margin-bottom: 50px;
+		width: 100%;
+		max-width: 224px;
+		margin-right: 40px;
+		margin-bottom: 40px;
 
 		@include mq('phone') {
+			width: 44%;
 			margin-right: 20px;
 			margin-bottom: 30px;
 		}

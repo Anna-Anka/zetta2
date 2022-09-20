@@ -20,12 +20,6 @@
             <section>
                 <h2 class="sr-only">Каталог товаров</h2>
                 @include('./catalog-page/_catalog-filters.html')
-                @include('./components/_sort.html', {
-                    '1' : 'По цене',
-                    '2' : 'По популярности',
-                    '3' : 'По умолчанию',
-                    '4' : 'По рейтингу',
-                })
                 @include('./catalog-page/_catalog-goods.html')
             </section>
         </div>
