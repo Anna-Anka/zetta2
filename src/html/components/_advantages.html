@@ -1,71 +1,86 @@
-<section class="advantages section">
+<section class="advantages section advantages--@class">
     <div class="container">
         <h2 class="advantages__title">
             @title <span class="advantages__accent">@accent</span>
         </h2>
         <div class="advantages__wrapper">
-            <div class="advantages__img" style="background-image: url('img/advantages/bg-@img.jpg')">
-                <ul class="advantages__benefits">
-                    <li class="advantages__item advantages__item--guarantee">
+
+            @if(context.class === "normal") {
+                <div class="advantages__img" style="background-image: url('img/advantages/bg-@img.jpg')">
+                    <ul class="advantages__benefits">
+                        <li class="advantages__item advantages__item--guarantee">
+                            <h3 class="advantages__subtitle">
+                                Гарантия <br /> 12 лет
+                            </h3>
+                        </li>
+                        <li class="advantages__item advantages__item--deadline">
+                            <h3 class="advantages__subtitle">
+                                Сроки доставки от 20 раб. дней
+                            </h3>
+                        </li>
+                        <li class="advantages__item advantages__item--class">
+                            <h3 class="advantages__subtitle">
+                                Класс экологичности Е1
+                                <span class="advantages__small">
+                                    (и сертификация ISO9001)
+                                </span>
+                            </h3>
+                        </li>
+                    </ul>
+                </div>
+            }
+
+            @if(context.class === "values") {
+                <div class="advantages__image">
+                    <div class="advantages__img" style="background-image: url('img/advantages/bg-@img.jpg')">
+                    </div>
+                    <div class="advantages__content">
                         <h3 class="advantages__subtitle">
-                            Гарантия <br /> 12 лет
+                            Наша миссия
                         </h3>
-                    </li>
-                    <li class="advantages__item advantages__item--deadline">
-                        <h3 class="advantages__subtitle">
-                            Сроки доставки от 20 раб. дней
-                        </h3>
-                    </li>
-                    <li class="advantages__item advantages__item--class">
-                        <h3 class="advantages__subtitle">
-                            Класс экологичности Е1
-                            <span class="advantages__small">
-                                (и сертификация ISO9001)
-                            </span>
-                        </h3>
-                    </li>
-                </ul>
-            </div>
+                        <p class="advantages__subtext">
+                            Повышать уровень жизни людей, делая качественные товары и услуги более доступными
+                        </p>
+                    </div>
+                    <a class="advantages__link" href="#">Подробнее</a>
+                </div>
+            }
 
             <div class="advantages__info">
                 <span class="advantages__headding">
-                    Приемущества фабрики <span class="advantages__accent">ZETTA</span>
+                    @title <span class="advantages__accent">@accent</span>
                 </span>
                 <ul class="advantages__items">
                     <li class="advantages__box">
                         <h3 class="advantages__subheadding">
-                            Поставки из Италии без задержек
+                            @headding-1
                         </h3>
                         <p class="advantages__text">
-                            Оплаты поставщикам и логистика стали сложнее, но это не влияет на сроки отгрузки
+                            @text-1
                         </p>
                     </li>
                     <li class="advantages__box">
                         <h3 class="advantages__subheadding">
-                            <span class="advantages__accent">
-                                Держим лучшие цены
-                            </span>на итальянские кухни
+                            @headding-2
                         </h3>
                         <p class="advantages__text">
-                            Уникальные логистические цепочки и прямые контракты позволяют купить кухню из Италии даже за 400 000 рублей
+                            @text-2
                         </p>
                     </li>
                     <li class="advantages__box">
                         <h3 class="advantages__subheadding">
-                            Сроки доставки не меняются
+                            @headding-3
                         </h3>
                         <p class="advantages__text">
-                            Все обязательства перед клиентами исполняются на 100% в срок
+                            @text-3
                         </p>
                     </li>
                     <li class="advantages__box">
                         <h3 class="advantages__subheadding">
-                            <span class="advantages__accent">
-                                Складские резервы
-                            </span>находятся в РФ
+                            @headding-4
                         </h3>
                         <p class="advantages__text">
-                            Запасы рассчитаны на 2 000 кухонь
+                            @text-4
                         </p>
                     </li>
                 </ul>

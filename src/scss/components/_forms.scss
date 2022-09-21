@@ -1,4 +1,6 @@
 .form {
+    position: relative;
+    z-index: -3;
 
     &--design {
         padding-bottom: 60px;

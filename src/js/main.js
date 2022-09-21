@@ -17,4 +17,7 @@ import './_product-page'
 // * froze-page
 import './_froze-page'
 
+// * company-page
+import './_company-page'
+
 

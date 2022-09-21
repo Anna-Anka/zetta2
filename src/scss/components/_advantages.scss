@@ -1,4 +1,80 @@
 .advantages {
+	&--normal {
+		.advantages__img {
+			position: relative;
+			max-width: 620px;
+			@include adaptiv-value('margin-right', 50, 0, 1);
+
+			@include mq('xl') {
+				max-width: 80%;
+				margin: 0 auto 60px;
+			}
+
+			@include mq('phone') {
+				max-width: 100%;
+				margin-bottom: 108px;
+			}
+		}
+	}
+
+	&--values {
+		.advantages__image {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			width: 100%;
+			max-width: 620px;
+			@include adaptiv-value('margin-right', 50, 0, 1);
+
+			@include mq('xl') {
+				max-width: 80%;
+				margin: 0 auto 60px;
+			}
+
+			@include mq('phone') {
+				max-width: 100%;
+				margin-bottom: 30px;
+			}
+		}
+
+		.advantages__content {
+			max-width: 400px;
+			margin-top: -100px;
+			margin-bottom: 20px;
+			padding: 40px;
+
+			@include mq('phone') {
+				max-width: 100%;
+				margin-top: -90px;
+				padding: 30px;
+				border-radius: 20px 70px;
+			}
+		}
+
+		.advantages__subtitle {
+			@include subtitle;
+			margin-bottom: 15px;
+			text-align: left;
+
+			@include mq('phone') {
+				margin-bottom: 7px;
+				font-size: 15px;
+			}
+		}
+
+		.advantages__subtext {
+			letter-spacing: 0.02em;
+
+			@include mq('phone') {
+				font-size: 12px;
+			}
+		}
+
+		.advantages__link {
+			@include more;
+		}
+	}
+
 	&__title {
 		font-size: 0;
 
@@ -29,27 +105,24 @@
 
 	&__img {
 		@include bg-img;
-		position: relative;
 		width: 100%;
-		max-width: 620px;
 		height: 390px;
-		margin-right: 50px;
 		background-size: cover;
 		border-radius: 150px 50px;
-		@include adaptiv-value('margin-right', 50, 0, 1);
-
-		@include mq('xl') {
-			max-width: 80%;
-			margin: 0 auto 60px;
-			margin-right: 0;
-		}
 
 		@include mq('phone') {
-			max-width: 100%;
 			height: 187px;
-			margin-bottom: 108px;
 			border-radius: 113px 18px;
 		}
+	}
+
+	&__benefits,
+	&__content {
+		width: 100%;
+		background-color: rgba($white, 0.9);
+		border-radius: 40px 80px;
+		box-shadow: 3px 5px 25px rgba($black, 0.1);
+		backdrop-filter: blur(37px);
 	}
 
 	&__benefits {
@@ -57,14 +130,9 @@
 		right: 0;
 		bottom: 0;
 		display: flex;
-		width: 100%;
 		max-width: 573px;
 		padding: 25px 25px 50px;
-		background-color: rgba($white, 0.9);
-		border-radius: 40px 80px;
-		box-shadow: 3px 5px 25px rgba($black, 0.1);
 		transform: translateY(50%);
-		backdrop-filter: blur(37px);
 
 		@include mq('xl') {
 			border-radius: 27px 55px;
