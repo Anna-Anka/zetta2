@@ -1,0 +1,31 @@
+@include('./components/links/_head.html',
+{ 'title' : 'ZETTA — Фабрика кухкни | О компании' }
+)
+
+@include('./components/_header.html')
+
+@include('./components/_breadcrumbs.html', {
+'count' : '2',
+'1' : 'Главная',
+'current' : 'Адреса салонов'
+})
+
+@include('./components/_mobile-menu.html')
+
+@include('./components/modals/_modal-call.html')
+
+@include('./components/modals/_modal-froze.html')
+
+<main class="main">
+    @include('./contacts-page/_contacts.html')
+</main>
+
+@include('./components/_forms.html', {
+'class' : 'checklist',
+'title' : 'Отправка на почту <span class="form__accent">чек-листа</span>',
+'text' : 'на что обратить вниманте, при выборе кухни'
+})
+
+@include('./components/_footer.html')
+
+@include('./components/links/_bottom.html')

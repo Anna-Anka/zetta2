@@ -1,0 +1,54 @@
+.contact-card {
+	width: 100%;
+	min-height: 309px;
+	padding: 30px;
+	color: $dark-700;
+	background-color: $white;
+	border-radius: 12px;
+	box-shadow: 0 0 20px rgba($black, 0.07);
+
+	@include mq('xl') {
+		min-height: auto;
+	}
+
+	@include mq('phone') {
+		padding: 25px;
+	}
+
+	&__place,
+	&__time {
+		display: inline-block;
+	}
+
+	&__subtitle {
+		display: block;
+		margin-bottom: 10px;
+		font-weight: $fw-700;
+		font-size: 20px;
+
+		@include mq('phone') {
+			font-size: 16px;
+		}
+	}
+
+	&__time {
+		margin-bottom: 20px;
+		color: $grey-400;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	&__color {
+		width: 12px;
+		height: 12px;
+		margin-right: 10px;
+		border-radius: 50%;
+	}
+}

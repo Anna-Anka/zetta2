@@ -38,6 +38,7 @@
 @import "./components/cards/stage-card";
 @import "./components/cards/question-card";
 @import "./components/cards/production-card";
+@import "./components/cards/contact-card";
 
 // * salons
 @import "./components/salons/salons";
@@ -100,3 +101,6 @@
 @import "./company-page/production";
 @import "./company-page/cooperation";
 @import "./company-page/work";
+
+// * contacts-page
+@import "./contacts-page/contacts";
