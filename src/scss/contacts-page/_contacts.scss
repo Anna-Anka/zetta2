@@ -11,7 +11,7 @@
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 40px;
-		overflow-x: scroll;
+		overflow-x: auto;
 
         @include mq('phone') {
 			margin-bottom: 30px;
@@ -34,7 +34,7 @@
 		&--active {
 			border-bottom-color: $orange-500;
 
-			.contacts__link {
+			.contacts-page__link {
 				opacity: 1;
 			}
 		}
@@ -65,6 +65,14 @@
 			font-size: 28px;
 		}
 	}
+
+    &__inner {
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
 
 	&__items {
 		display: grid;

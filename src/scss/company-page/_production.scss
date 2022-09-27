@@ -51,6 +51,7 @@
 
 		@include mq('phone') {
 			grid-template-columns: 1fr;
+            margin-bottom: 30px;
 		}
 	}
 
@@ -72,7 +73,7 @@
 		display: flex;
 		justify-content: center;
 
-		@include mq('xl') {
+		@include mq('phone') {
 			flex-direction: column;
             width: 100%;
 		}
@@ -82,13 +83,13 @@
 		&:not(:last-child) {
 			margin-right: 20px;
 
-			@include mq('xl') {
+			@include mq('phone') {
 				margin-right: 0;
                 margin-bottom: 20px;
 			}
 		}
 
-        @include mq('xl') {
+        @include mq('phone') {
             width: 100%;
 		}
 

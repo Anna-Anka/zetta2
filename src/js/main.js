@@ -20,4 +20,7 @@ import './_froze-page'
 // * company-page
 import './_company-page'
 
+// * contacts-page
+import './_contacts-page'
+
 

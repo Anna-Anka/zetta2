@@ -1,31 +1,21 @@
 .filters {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+	gap: 30px;
+	margin-bottom: 30px;
 	color: $dark-700;
+
+	@include mq('xl') {
+		grid-template-columns: 1fr;
+		gap: 25px;
+	}
 
 	&--price {
 		margin-bottom: 24px;
 	}
 
-	&__list {
-		margin-bottom: 30px;
-
-		&:not(:last-child) {
-			margin-right: 30px;
-
-			@include mq('phone') {
-				margin-right: 0;
-			}
-		}
-
-		@include mq('phone') {
-			margin-bottom: 25px;
-		}
-	}
-
 	&__title {
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 		font-weight: $fw-700;
 		font-size: 20px;
 		line-height: 1.5;
@@ -62,7 +52,7 @@
 		}
 
 		&:not(:last-child) {
-			margin-right: 50px;
+			margin-right: 40px;
 
 			@include mq('phone') {
 				margin-right: 20px;
@@ -83,6 +73,7 @@
 		display: inline-block;
 		order: -1;
 		width: 39px;
+		min-width: 39px;
 		height: 39px;
 		margin-right: 20px;
 		background-color: $grey-250;
@@ -90,6 +81,7 @@
 
 		@include mq('phone') {
 			width: 27px;
+			min-width: 27px;
 			height: 27px;
 			margin-right: 7px;
 			border-radius: 10px;

@@ -3,42 +3,219 @@
         <h1 class="contacts-page__title title">Адреса салонов</h1>
         <ul class="contacts-page__tabs">
             <li class="contacts-page__tab contacts-page__tab--active">
-                <a class="contacts-page__link" href="#">Москва</a>
+                <a class="contacts-page__link" href="#moscow">Москва</a>
             </li>
             <li class="contacts-page__tab">
-                <a class="contacts-page__link" href="#">Калуга</a>
+                <a class="contacts-page__link" href="#kaluga">Калуга</a>
             </li>
             <li class="contacts-page__tab">
-                <a class="contacts-page__link" href="#">Тамбов</a>
+                <a class="contacts-page__link" href="#tambov">Тамбов</a>
             </li>
             <li class="contacts-page__tab">
-                <a class="contacts-page__link" href="#">Владикавказ</a>
+                <a class="contacts-page__link" href="#vladikavkaz">Владикавказ</a>
             </li>
         </ul>
         <ul class="contacts-page__content">
-            <li class="contacts-page__box">
+            <li class="contacts-page__inner contacts-page__inner--active" id="moscow">
                 <h3 class="contacts-page__headding">
                     Москва
                 </h3>
                 <ul class="contacts-page__items">
                     <li class="contacts-page__box">
-                        @include('./../components/cards/_contact-card.html')
+                        @include('./../components/cards/_contact-card.html', {
+                            'subtitle' : 'Расторгуевский пер., д.1',
+                            'station-1' : 'Краснопресненская',
+                            'color-1' : '#a52a2a',
+                            'station-2' : 'Улица 1905 года',
+                            'color-2' : '#800080'
+                        })
                     </li>
                     <li class="contacts-page__box">
-                        @include('./../components/cards/_contact-card.html')
+                        @include('./../components/cards/_contact-card.html', {
+                            'subtitle' : 'Симоновский вал 12к2',
+                            'station-1' : 'Крестьянская застава',
+                            'color-1' : '#90ee90',
+                            'station-2' : 'Пролетарская',
+                            'color-2' : '#800080'
+                        })
                     </li>
                     <li class="contacts-page__box">
-                        @include('./../components/cards/_contact-card.html')
+                        @include('./../components/cards/_contact-card.html', {
+                            'subtitle' : 'Аминьевское ш. д.6',
+                            'station-1' : 'Крестьянская застава',
+                            'color-1' : '#44ffc7',
+                            'station-2' : 'Пролетарская',
+                            'color-2' : '#a52a2a'
+                        })
                     </li>
                     <li class="contacts-page__box">
-                        @include('./../components/cards/_contact-card.html')
+                        @include('./../components/cards/_contact-card.html', {
+                            'subtitle' : 'Симоновский вал 12к2',
+                            'station-1' : 'Крестьянская застава',
+                            'color-1' : '#90ee90',
+                            'station-2' : 'Пролетарская',
+                            'color-2' : '#a52a2a'
+                        })
                     </li>
                 </ul>
+                <div class="contacts-page__map">
+                    <div class="contacts-page__pin" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
+                            href="https://yandex.ru/maps/213/moscow/geo/nesvizhskiy_pereulok/10049863/?display-text=%D0%BD%D0%B5%D1%81%D0%B2%D0%B8%D0%B6%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA&ll=37.584272%2C55.730596&mode=search&sctx=ZAAAAAgAEAAaKAoSCU1qaAOwhT5AEWspIO1%2FOElAEhIJfEYiNIKNvz8RWW3%2BX3XkqD8iBgABAgMEBSgKOABA8ZsGSAFiK3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnVhnQHNzEw9oAEAqAEAvQGNAtWowgEHAAAAAAAAAOoBAPIBAPgBAIICJdC90LXRgdCy0LjQttGB0LrQuNC5INC%2F0LXRgNC10YPQu9C%2B0LqKAgCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=37.584272%2C55.730596&sspn=0.010819%2C0.003771&text=%D0%BD%D0%B5%D1%81%D0%B2%D0%B8%D0%B6%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA&utm_medium=mapframe&utm_source=maps&z=17.51"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Несвижский переулок — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUVEBQK-C" frameborder="1"
+                            allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+            </li>
+            <li class="contacts-page__inner" id="kaluga">
+                <h3 class="contacts-page__headding">
+                    Калуга
+                </h3>
+                <ul class="contacts-page__items">
+                    <li class="contacts-page__box">
+                        @include('./../components/cards/_contact-card.html', {
+                        'subtitle' : 'Расторгуевский пер., д.1',
+                        'station-1' : 'Краснопресненская',
+                        'color-1' : '#a52a2a',
+                        'station-2' : 'Улица 1905 года',
+                        'color-2' : '#800080'
+                        })
+                    </li>
+                    <li class="contacts-page__box">
+                        @include('./../components/cards/_contact-card.html', {
+                        'subtitle' : 'Симоновский вал 12к2',
+                        'station-1' : 'Крестьянская застава',
+                        'color-1' : '#90ee90',
+                        'station-2' : 'Пролетарская',
+                        'color-2' : '#800080'
+                        })
+                    </li>
+                    <li class="contacts-page__box">
+                        @include('./../components/cards/_contact-card.html', {
+                        'subtitle' : 'Аминьевское ш. д.6',
+                        'station-1' : 'Крестьянская застава',
+                        'color-1' : '#44ffc7',
+                        'station-2' : 'Пролетарская',
+                        'color-2' : '#a52a2a'
+                        })
+                    </li>
+                    <li class="contacts-page__box">
+                        @include('./../components/cards/_contact-card.html', {
+                        'subtitle' : 'Симоновский вал 12к2',
+                        'station-1' : 'Крестьянская застава',
+                        'color-1' : '#90ee90',
+                        'station-2' : 'Пролетарская',
+                        'color-2' : '#a52a2a'
+                        })
+                    </li>
+                </ul>
+                <div class="contacts-page__map">
+                    <div class="contacts-page__pin" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
+                            href="https://yandex.ru/maps/213/moscow/geo/nesvizhskiy_pereulok/10049863/?display-text=%D0%BD%D0%B5%D1%81%D0%B2%D0%B8%D0%B6%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA&ll=37.584272%2C55.730596&mode=search&sctx=ZAAAAAgAEAAaKAoSCU1qaAOwhT5AEWspIO1%2FOElAEhIJfEYiNIKNvz8RWW3%2BX3XkqD8iBgABAgMEBSgKOABA8ZsGSAFiK3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnVhnQHNzEw9oAEAqAEAvQGNAtWowgEHAAAAAAAAAOoBAPIBAPgBAIICJdC90LXRgdCy0LjQttGB0LrQuNC5INC%2F0LXRgNC10YPQu9C%2B0LqKAgCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=37.584272%2C55.730596&sspn=0.010819%2C0.003771&text=%D0%BD%D0%B5%D1%81%D0%B2%D0%B8%D0%B6%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA&utm_medium=mapframe&utm_source=maps&z=17.51"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Несвижский переулок — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUVEBQK-C" frameborder="1"
+                            allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+            </li>
+            <li class="contacts-page__inner" id="tambov">
+                <h3 class="contacts-page__headding">
+                    Тамбов
+                </h3>
+                <ul class="contacts-page__items">
+                    <li class="contacts-page__box">
+                        @include('./../components/cards/_contact-card.html', {
+                        'subtitle' : 'Расторгуевский пер., д.1',
+                        'station-1' : 'Краснопресненская',
+                        'color-1' : '#a52a2a',
+                        'station-2' : 'Улица 1905 года',
+                        'color-2' : '#800080'
+                        })
+                    </li>
+                    <li class="contacts-page__box">
+                        @include('./../components/cards/_contact-card.html', {
+                        'subtitle' : 'Симоновский вал 12к2',
+                        'station-1' : 'Крестьянская застава',
+                        'color-1' : '#90ee90',
+                        'station-2' : 'Пролетарская',
+                        'color-2' : '#800080'
+                        })
+                    </li>
+                    <li class="contacts-page__box">
+                        @include('./../components/cards/_contact-card.html', {
+                        'subtitle' : 'Аминьевское ш. д.6',
+                        'station-1' : 'Крестьянская застава',
+                        'color-1' : '#44ffc7',
+                        'station-2' : 'Пролетарская',
+                        'color-2' : '#a52a2a'
+                        })
+                    </li>
+                    <li class="contacts-page__box">
+                        @include('./../components/cards/_contact-card.html', {
+                        'subtitle' : 'Симоновский вал 12к2',
+                        'station-1' : 'Крестьянская застава',
+                        'color-1' : '#90ee90',
+                        'station-2' : 'Пролетарская',
+                        'color-2' : '#a52a2a'
+                        })
+                    </li>
+                </ul>
+                <div class="contacts-page__map">
+                    <div class="contacts-page__pin" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
+                            href="https://yandex.ru/maps/213/moscow/geo/nesvizhskiy_pereulok/10049863/?display-text=%D0%BD%D0%B5%D1%81%D0%B2%D0%B8%D0%B6%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA&ll=37.584272%2C55.730596&mode=search&sctx=ZAAAAAgAEAAaKAoSCU1qaAOwhT5AEWspIO1%2FOElAEhIJfEYiNIKNvz8RWW3%2BX3XkqD8iBgABAgMEBSgKOABA8ZsGSAFiK3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnVhnQHNzEw9oAEAqAEAvQGNAtWowgEHAAAAAAAAAOoBAPIBAPgBAIICJdC90LXRgdCy0LjQttGB0LrQuNC5INC%2F0LXRgNC10YPQu9C%2B0LqKAgCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=37.584272%2C55.730596&sspn=0.010819%2C0.003771&text=%D0%BD%D0%B5%D1%81%D0%B2%D0%B8%D0%B6%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA&utm_medium=mapframe&utm_source=maps&z=17.51"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Несвижский переулок — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUVEBQK-C" frameborder="1"
+                            allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+            </li>
+            <li class="contacts-page__inner" id="vladikavkaz">
+                <h3 class="contacts-page__headding">
+                    Владикавказ
+                </h3>
+                <ul class="contacts-page__items">
+                    <li class="contacts-page__box">
+                        @include('./../components/cards/_contact-card.html', {
+                        'subtitle' : 'Расторгуевский пер., д.1',
+                        'station-1' : 'Краснопресненская',
+                        'color-1' : '#a52a2a',
+                        'station-2' : 'Улица 1905 года',
+                        'color-2' : '#800080'
+                        })
+                    </li>
+                    <li class="contacts-page__box">
+                        @include('./../components/cards/_contact-card.html', {
+                        'subtitle' : 'Симоновский вал 12к2',
+                        'station-1' : 'Крестьянская застава',
+                        'color-1' : '#90ee90',
+                        'station-2' : 'Пролетарская',
+                        'color-2' : '#800080'
+                        })
+                    </li>
+                    <li class="contacts-page__box">
+                        @include('./../components/cards/_contact-card.html', {
+                        'subtitle' : 'Аминьевское ш. д.6',
+                        'station-1' : 'Крестьянская застава',
+                        'color-1' : '#44ffc7',
+                        'station-2' : 'Пролетарская',
+                        'color-2' : '#a52a2a'
+                        })
+                    </li>
+                    <li class="contacts-page__box">
+                        @include('./../components/cards/_contact-card.html', {
+                        'subtitle' : 'Симоновский вал 12к2',
+                        'station-1' : 'Крестьянская застава',
+                        'color-1' : '#90ee90',
+                        'station-2' : 'Пролетарская',
+                        'color-2' : '#a52a2a'
+                        })
+                    </li>
+                </ul>
+                <div class="contacts-page__map">
+                    <div class="contacts-page__pin" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
+                            href="https://yandex.ru/maps/213/moscow/geo/nesvizhskiy_pereulok/10049863/?display-text=%D0%BD%D0%B5%D1%81%D0%B2%D0%B8%D0%B6%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA&ll=37.584272%2C55.730596&mode=search&sctx=ZAAAAAgAEAAaKAoSCU1qaAOwhT5AEWspIO1%2FOElAEhIJfEYiNIKNvz8RWW3%2BX3XkqD8iBgABAgMEBSgKOABA8ZsGSAFiK3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnVhnQHNzEw9oAEAqAEAvQGNAtWowgEHAAAAAAAAAOoBAPIBAPgBAIICJdC90LXRgdCy0LjQttGB0LrQuNC5INC%2F0LXRgNC10YPQu9C%2B0LqKAgCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=37.584272%2C55.730596&sspn=0.010819%2C0.003771&text=%D0%BD%D0%B5%D1%81%D0%B2%D0%B8%D0%B6%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA&utm_medium=mapframe&utm_source=maps&z=17.51"
+                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Несвижский переулок — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUVEBQK-C" frameborder="1"
+                            allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
             </li>
         </ul>
-
-        <div class="contacts-page__map">
-            <div class="contacts-page__pin" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/geo/nesvizhskiy_pereulok/10049863/?display-text=%D0%BD%D0%B5%D1%81%D0%B2%D0%B8%D0%B6%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA&ll=37.584272%2C55.730596&mode=search&sctx=ZAAAAAgAEAAaKAoSCU1qaAOwhT5AEWspIO1%2FOElAEhIJfEYiNIKNvz8RWW3%2BX3XkqD8iBgABAgMEBSgKOABA8ZsGSAFiK3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnVhnQHNzEw9oAEAqAEAvQGNAtWowgEHAAAAAAAAAOoBAPIBAPgBAIICJdC90LXRgdCy0LjQttGB0LrQuNC5INC%2F0LXRgNC10YPQu9C%2B0LqKAgCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=37.584272%2C55.730596&sspn=0.010819%2C0.003771&text=%D0%BD%D0%B5%D1%81%D0%B2%D0%B8%D0%B6%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA&utm_medium=mapframe&utm_source=maps&z=17.51" style="color:#eee;font-size:12px;position:absolute;top:14px;">Несвижский переулок — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUVEBQK-C" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
-        </div>
     </div>
 </section>

@@ -1,11 +1,15 @@
 .connection {
 	@include mq('phone') {
-		display: none;
+		//display: none;
 	}
 
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
+
+		@include mq('phone') {
+			flex-direction: column-reverse;
+		}
 	}
 
 	&__picture {
@@ -15,6 +19,10 @@
 		width: 100%;
 		max-width: 700px;
 		margin-right: 30px;
+
+		@include mq('phone') {
+			margin-right: 0;
+		}
 	}
 
 	&__image {
@@ -33,25 +41,46 @@
 			height: 360px;
 			border: 1.5px dashed $grey-400;
 			border-top-right-radius: 124px;
+
+			@include mq('phone') {
+				height: 245px;
+				border-top-right-radius: 70px;
+			}
 		}
 
 		&--small1,
 		&--small2 {
 			height: 257px;
+
+            @include mq('phone') {
+                height: 140px;
+            }
 		}
 
 		&--small1 {
 			border-bottom-left-radius: 100px;
+
+			@include mq('phone') {
+				border-bottom-left-radius: 60px;
+			}
 		}
 
 		&--small2 {
 			border-bottom-right-radius: 100px;
+
+			@include mq('phone') {
+				border-bottom-right-radius: 60px;
+			}
 		}
 	}
 
 	&__content {
 		width: 100%;
 		max-width: 500px;
+
+		@include mq('phone') {
+			margin-bottom: 35px;
+		}
 	}
 
 	&__title {
