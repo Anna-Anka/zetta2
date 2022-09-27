@@ -39,6 +39,7 @@
 @import "./components/cards/question-card";
 @import "./components/cards/production-card";
 @import "./components/cards/contact-card";
+@import "./components/cards/guarantee-card";
 
 // * salons
 @import "./components/salons/salons";
@@ -107,4 +108,5 @@
 
 // * guarantee-page
 @import "./guarantee-page/guarantee-service";
+@import "./guarantee-page/guarantee-distribute";
 @import "./guarantee-page/guarantee-videos";
