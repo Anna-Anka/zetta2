@@ -1,0 +1,62 @@
+.about-card {
+	position: relative;
+	padding: 30px;
+	background-color: $white;
+	border-radius: 20px;
+
+	&::before {
+		position: absolute;
+		right: 30px;
+		bottom: 30px;
+		width: 60px;
+		height: 60px;
+		content: '';
+		@include bg-img;
+	}
+
+	&--staff {
+		&::before {
+			background-image: url('../img/icons/production-about/staff.svg');
+		}
+	}
+
+	&--project {
+		&::before {
+			background-image: url('../img/icons/production-about/project.svg');
+		}
+	}
+
+	&--city {
+		&::before {
+			background-image: url('../img/icons/production-about/city.svg');
+		}
+	}
+
+	&--clients {
+		&::before {
+			background-image: url('../img/icons/production-about/clients.svg');
+		}
+	}
+
+	&__content {
+		width: 100%;
+		max-width: 150px;
+	}
+
+	&__accent,
+	&__text {
+		display: block;
+	}
+
+	&__accent {
+		margin-bottom: 10px;
+		color: $orange-500;
+		font-weight: $fw-800;
+		font-size: 24px;
+		line-height: 1.2;
+	}
+
+	&__text {
+		color: $dark-700;
+	}
+}

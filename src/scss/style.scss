@@ -40,6 +40,7 @@
 @import "./components/cards/production-card";
 @import "./components/cards/contact-card";
 @import "./components/cards/guarantee-card";
+@import "./components/cards/about-card";
 
 // * salons
 @import "./components/salons/salons";
@@ -114,5 +115,6 @@
 
 // * production-page
 @import "./production-page/production-banner";
+@import "./production-page/production-about";
 @import "./production-page/production-zetta";
 
