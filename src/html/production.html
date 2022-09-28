@@ -4,6 +4,12 @@
 
 @include('./components/_header.html')
 
+@include('./components/_breadcrumbs.html', {
+'count' : '2',
+'1' : 'Главная',
+'current' : 'Производство'
+})
+
 @include('./components/_mobile-menu.html')
 
 @include('./components/modals/_modal-call.html')
@@ -11,7 +17,9 @@
 @include('./components/modals/_modal-froze.html')
 
 <main class="main">
-    
+    @include('./production-page/_production-banner.html')
+
+    @include('./production-page/_production-zetta.html')
 </main>
 
 @include('./production-page/_questions.html')

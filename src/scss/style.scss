@@ -60,6 +60,7 @@
 @import "./components/sort";
 @import "./components/delivery-section";
 @import "./components/questions";
+@import "./components/badge";
 @import "./components/footer";
 
 // * home-page
@@ -110,3 +111,8 @@
 @import "./guarantee-page/guarantee-service";
 @import "./guarantee-page/guarantee-distribute";
 @import "./guarantee-page/guarantee-videos";
+
+// * production-page
+@import "./production-page/production-banner";
+@import "./production-page/production-zetta";
+
