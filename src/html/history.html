@@ -1,5 +1,5 @@
 @include('./components/links/_head.html',
-{ 'title' : 'ZETTA — Фабрика кухкни | О компании' }
+{ 'title' : 'ZETTA — Фабрика кухкни | История компании' }
 )
 
 @include('./components/_header.html')
@@ -7,7 +7,7 @@
 @include('./components/_breadcrumbs.html', {
 'count' : '2',
 '1' : 'Главная',
-'current' : 'Компания'
+'current' : 'История компании'
 })
 
 @include('./components/_mobile-menu.html')
@@ -17,10 +17,12 @@
 @include('./components/modals/_modal-froze.html')
 
 <main class="main">
-     @include('./company-page/_company-top.html')
-</main>
 
-@include('./company-page/_guarantee.html')
+    @include('./history-page/_history-top.html')
+
+    @include('./history-page/_history.html')
+
+</main>
 
 @include('./company-page/_production.html')
 
@@ -40,20 +42,12 @@
 
 })
 
+@include('./company-page/_guarantee.html')
+
 @include('./components/_forms.html', {
 'class' : 'design',
 'title' : 'Закажите <span class="form__accent">бесплатную</span> разработку дизайн- проекта кухни',
 'text' : 'Результат отправим Вам онлайн'
-})
-
-@include('./company-page/_cooperation.html')
-
-@include('./company-page/_work.html')
-
-@include('./components/_forms.html', {
-'class' : 'checklist',
-'title' : 'Отправка на почту <span class="form__accent">чек-листа</span>',
-'text' : 'на что обратить вниманте, при выборе кухни'
 })
 
 @include('./components/_footer.html')

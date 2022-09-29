@@ -8,5 +8,5 @@ export const salonsFunction = () => {
 			$('.salons-tabs__item').removeClass('salons-tabs__item--active');
 			$($(this).attr('href')).addClass('salons-tabs__item--active');
 		});
-	}
-};;
+	};
+};

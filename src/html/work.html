@@ -1,5 +1,5 @@
 @include('./components/links/_head.html',
-{ 'title' : 'ZETTA — Фабрика кухкни | О компании' }
+{ 'title' : 'ZETTA — Фабрика кухкни | Работа в ZETTA' }
 )
 
 @include('./components/_header.html')
@@ -7,7 +7,7 @@
 @include('./components/_breadcrumbs.html', {
 'count' : '2',
 '1' : 'Главная',
-'current' : 'Компания'
+'current' : 'Работа в ZETTA'
 })
 
 @include('./components/_mobile-menu.html')
@@ -17,10 +17,22 @@
 @include('./components/modals/_modal-froze.html')
 
 <main class="main">
-     @include('./company-page/_company-top.html')
+
+    @include('./work-page/_work-top.html')
+
+    @include('./work-page/_ticker.html')
+
+    @include('./work-page/_why.html')
+
+    @include('./work-page/_vacancies.html')
+    
 </main>
 
-@include('./company-page/_guarantee.html')
+@include('./components/_forms.html', {
+'class' : 'design',
+'title' : 'Оставьте заявку на <span class="form__accent">вакансию</span>',
+'text' : 'Свяжемся с вами в ближайшее время!'
+})
 
 @include('./company-page/_production.html')
 
@@ -37,7 +49,6 @@
 'headding-2': 'Мы верим в возможности человека',
 'headding-3': 'Удовольствие от труда',
 'headding-4': 'Качество',
-
 })
 
 @include('./components/_forms.html', {
@@ -45,17 +56,6 @@
 'title' : 'Закажите <span class="form__accent">бесплатную</span> разработку дизайн- проекта кухни',
 'text' : 'Результат отправим Вам онлайн'
 })
-
-@include('./company-page/_cooperation.html')
-
-@include('./company-page/_work.html')
-
-@include('./components/_forms.html', {
-'class' : 'checklist',
-'title' : 'Отправка на почту <span class="form__accent">чек-листа</span>',
-'text' : 'на что обратить вниманте, при выборе кухни'
-})
-
 @include('./components/_footer.html')
 
 @include('./components/links/_bottom.html')
