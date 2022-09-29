@@ -41,6 +41,7 @@
 @import "./components/cards/contact-card";
 @import "./components/cards/guarantee-card";
 @import "./components/cards/about-card";
+@import "./components/cards/belief-card";
 
 // * salons
 @import "./components/salons/salons";
@@ -130,8 +131,11 @@
 @import "./work-page/vacancies";
 
 // * mission-page
-@import "./mission-page/partners";
-@import "./mission-page/staff";
+@import "./mission-page/beliefs";
 @import "./mission-page/values";
+@import "./mission-page/staff";
+@import "./mission-page/partners";
+
+
 
 

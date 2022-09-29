@@ -13,15 +13,15 @@
 		color: $orange-500;
 	}
 
-    &__subtitle {
-        font-size: 18px;
-        letter-spacing: 0.02em;
-    }
+	&__subtitle {
+		font-size: 18px;
+		letter-spacing: 0.02em;
+	}
 
 	&__items {
 		display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
 	}
 
 	&__item {
@@ -44,6 +44,6 @@
 		@include subtitle;
 		display: inline-block;
 		margin-bottom: 10px;
-        font-size: 21px;
+		font-size: 21px;
 	}
 }
