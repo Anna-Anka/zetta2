@@ -23,60 +23,60 @@
 		padding: 80px 0;
 	}
 
-    &__wrapper {
-        position: relative;
-        z-index: 2;
-    }
+	&__wrapper {
+		position: relative;
+		z-index: 2;
+	}
 
-    &__top {
-        width: 100%;
-        max-width: 700px;
-        margin-bottom: 45px;
-    }
+	&__top {
+		width: 100%;
+		max-width: 700px;
+		margin-bottom: 45px;
+	}
 
-    &__title,
-    &__text {
-        color: $white;
-    }
+	&__title,
+	&__text {
+		color: $white;
+	}
 
-    &__title {
-        margin-bottom: 20px;
-    }
+	&__title {
+		margin-bottom: 20px;
+	}
 
-    &__text,
-    &__subtext {
-        letter-spacing: 0.02em;
-    }
-    
-    &__text {
-        margin-bottom: 30px;
-        font-size: 18px;
-    }
+	&__text,
+	&__subtext {
+		letter-spacing: 0.02em;
+	}
 
-    &__link {
-        padding: 15px 40px;
-        border-radius: 16px;
-        max-width: 300px;
-    }
+	&__text {
+		margin-bottom: 30px;
+		font-size: 18px;
+	}
 
-    &__items {
-        display: flex;
-    }
+	&__link {
+		max-width: 300px;
+		padding: 15px 40px;
+		border-radius: 16px;
+	}
 
-    &__item {
-        padding: 30px;
-        background-color: $white;
-        border-radius: 20px;
-        width: 100%;
+	&__items {
+		display: flex;
+	}
 
-        &:not(:last-child) {
-           margin-right: 10px;
-        }
-    }
+	&__item {
+		width: 100%;
+		padding: 30px;
+		background-color: $white;
+		border-radius: 20px;
 
-    &__subtitle {
-        @include subtitle;
-        display: inline-block;
-        margin-bottom: 12px;
-    }
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
+
+	&__subtitle {
+		@include subtitle;
+		display: inline-block;
+		margin-bottom: 12px;
+	}
 }
