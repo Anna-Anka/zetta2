@@ -1,15 +1,14 @@
-.production-zetta {
-	&__wrapper {
-		display: flex;
-        margin-bottom: 40px;
-	}
+.why-zetta {
+	padding-top: 60px;
+	background-image: linear-gradient(180deg, $grey-200 72.24%, $white 100%);
+	backdrop-filter: blur(25px);
 
-	&__headding {
+	&__top {
 		display: flex;
 		flex-direction: column;
-		width: 100%;
-		max-width: 550px;
-		margin-right: 30px;
+		align-items: center;
+		max-width: 600px;
+		margin: 0 auto 40px;
 	}
 
 	&__title {
@@ -20,43 +19,33 @@
 		color: $orange-500;
 	}
 
-	&__subtitle {
-		display: inline-block;
-		margin-bottom: 15px;
+	&__text {
 		color: $dark-700;
 		font-size: 18px;
+		letter-spacing: 0.02em;
+		text-align: center;
 	}
 
-	&__link {
-		@include more;
-		align-self: flex-start;
-		text-align: left;
+	&__items {
+		display: flex;
+		margin-bottom: 10px;
+	}
 
-		&::before {
-			top: 50%;
-			transform: translateY(-50%);
+	&__item {
+		width: 100%;
+
+		&:not(:last-child) {
+			margin-right: 10px;
 		}
 	}
 
-	&__text {
-		width: 100%;
-		max-width: 720px;
-		font-size: 18px;
-		letter-spacing: 0.02em;
-	}
-
-    &__items {
+    &__list {
         display: flex;
     }
 
-    &__item,
-    &__img {
-        border-radius: 20px;
-    }
-
-    &__item {
+    &__gallery {
         width: 100%;
-        max-width: 480px;
+        max-width: 510px;
         height: 260px;
         filter: drop-shadow(0 0 25px rgba($black, 0.12));
 
@@ -65,7 +54,7 @@
         }
 
         &:last-child {
-            max-width: 340px;
+            max-width: 248px;
         }
     }
 
