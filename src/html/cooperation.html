@@ -1,5 +1,5 @@
 @include('./components/links/_head.html',
-{ 'title' : 'ZETTA — Фабрика кухкни | Работа в ZETTA' }
+{ 'title' : 'ZETTA — Фабрика кухкни | Сотрудничество с ZETTA' }
 )
 
 @include('./components/_header.html')
@@ -7,7 +7,7 @@
 @include('./components/_breadcrumbs.html', {
 'count' : '2',
 '1' : 'Главная',
-'current' : 'Работа в ZETTA'
+'current' : 'Сотрудничество'
 })
 
 @include('./components/_mobile-menu.html')
@@ -17,6 +17,7 @@
 @include('./components/modals/_modal-froze.html')
 
 <main class="main">
+    <h1 class="sr-only">Сотрудничество с ZETTA</h1>
 
     @include('./cooperation-page/_cooperation-top.html')
 
@@ -27,7 +28,7 @@
     @include('./cooperation-page/_main-advantages.html')
 
     @include('./cooperation-page/_privilege.html')
-    
+
 </main>
 
 @include('./components/_forms.html', {
@@ -51,7 +52,6 @@
 'headding-4': 'Качество',
 })
 
-
 @include('./components/_forms.html', {
 'class' : 'design',
 'title' : 'Закажите <span class="form__accent">бесплатную</span> разработку дизайн- проекта кухни',
@@ -59,3 +59,5 @@
 })
 
 @include('./components/_footer.html')
+
+@include('./components/links/_bottom.html')
