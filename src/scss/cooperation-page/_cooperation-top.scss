@@ -85,8 +85,21 @@
 
 	&__bg {
 		@include bg-img;
+		position: relative;
 		width: 100%;
 		max-width: 620px;
 		height: 450px;
+	}
+
+	.badge {
+		right: 0;
+		bottom: 0;
+		transform: translateX(0);
+
+		&::after {
+			background-color: $grey-200;
+			filter: drop-shadow(0 4px 30px rgba($white, 0.1));
+			backdrop-filter: blur(7px);
+		}
 	}
 }

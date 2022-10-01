@@ -1,7 +1,12 @@
 .production-zetta {
 	&__wrapper {
 		display: flex;
-        margin-bottom: 40px;
+		margin-bottom: 40px;
+
+		@include mq('xl') {
+			flex-direction: column;
+			margin-bottom: 30px;
+		}
 	}
 
 	&__headding {
@@ -10,6 +15,12 @@
 		width: 100%;
 		max-width: 550px;
 		margin-right: 30px;
+
+		@include mq('xl') {
+			max-width: 100%;
+			margin-right: 0;
+			margin-bottom: 25px;
+		}
 	}
 
 	&__title {
@@ -43,44 +54,63 @@
 		max-width: 720px;
 		font-size: 18px;
 		letter-spacing: 0.02em;
+
+		@include mq('xl') {
+			max-width: 100%;
+		}
 	}
 
-    &__items {
-        display: flex;
-    }
+	&__items {
+		display: flex;
+		margin-right: -10px;
+		margin-bottom: -10px;
 
-    &__item,
-    &__img {
-        border-radius: 20px;
-    }
+		@include mq('phone') {
+			flex-wrap: wrap;
+		}
+	}
 
-    &__item {
-        width: 100%;
-        max-width: 480px;
-        height: 260px;
-        filter: drop-shadow(0 0 25px rgba($black, 0.12));
+	&__item,
+	&__img {
+		border-radius: 20px;
+	}
 
-        &:not(:last-child) {
-            margin-right: 10px;
-        }
+	&__item {
+		width: 100%;
+		max-width: 480px;
+		height: 260px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		filter: drop-shadow(0 0 25px rgba($black, 0.12));
 
-        &:last-child {
-            max-width: 340px;
-        }
-    }
+		@include mq('phone') {
+			width: 47%;
+			height: 170px;
+		}
 
-    &__picture,
-    &__img {
-        width: 100%;
-        height: 100%;
-    }
+		&:last-child {
+			width: 100%;
+			max-width: 340px;
+			max-width: 100%;
+			
+            @include mq('phone') {
+                height: 120px;
+            }
+		}
+	}
 
-    &__picture {
-        display: inline-block;
-    }
+	&__picture,
+	&__img {
+		width: 100%;
+		height: 100%;
+	}
 
-    &__img {
-        object-fit: cover;
-        border-radius: 20px;
-    }
+	&__picture {
+		display: inline-block;
+	}
+
+	&__img {
+		object-fit: cover;
+		border-radius: 20px;
+	}
 }

@@ -1,6 +1,10 @@
 .production-technology {
 	&__title {
 		margin-bottom: 50px;
+
+		@include mq('phone') {
+			margin-bottom: 40px;
+		}
 	}
 
 	&__accent {
@@ -18,6 +22,10 @@
 		justify-content: space-between;
 		margin-bottom: 40px;
 		overflow-x: auto;
+
+		@include mq('phone') {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__tab {
@@ -27,21 +35,38 @@
 		font-size: 18px;
 		transition: color 0.4s;
 
+		@include mq('phone') {
+			padding-bottom: 15px;
+		}
+
+		&:not(:last-child) {
+			margin-right: 15px;
+		}
+
 		&::before {
 			transition: background-color 0.4s;
 		}
 
 		&--active {
 			color: $dark-700;
+
 			&::before {
 				height: 3px;
 				background-color: $dark-700;
 			}
 		}
 	}
-    
+
+	&__link {
+		white-space: nowrap;
+	}
+
 	&__item {
 		display: none;
+
+		@include mq('phone') {
+			flex-direction: column;
+		}
 
 		&--active {
 			display: flex;
@@ -52,12 +77,27 @@
 		width: 100%;
 		max-width: 600px;
 		margin-right: 40px;
+
+		@include mq('xl') {
+			max-width: 470px;
+			margin-right: 25px;
+		}
+
+		@include mq('phone') {
+			max-width: 100%;
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
 	}
 
 	&__top {
 		display: flex;
 		justify-content: space-between;
 		margin-bottom: 30px;
+
+		@include mq('phone') {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__subtitle {
@@ -66,6 +106,12 @@
 		color: $dark-700;
 		font-weight: $fw-800;
 		font-size: 28px;
+
+		@include mq('phone') {
+			max-width: 100%;
+			margin-right: 0;
+			font-size: 20px;
+		}
 	}
 
 	&__number {
@@ -73,16 +119,28 @@
 		font-weight: $fw-700;
 		font-size: 48px;
 		line-height: 1;
+
+		@include mq('phone') {
+			display: none;
+		}
 	}
 
 	&__text {
 		font-size: 18px;
 		letter-spacing: 0.02em;
+
+		@include mq('phone') {
+			font-size: 12px;
+		}
 	}
 
 	&__img {
 		height: 360px;
 		object-fit: cover;
 		border-radius: 20px;
+
+		@include mq('phone') {
+			height: 200px;
+		}
 	}
 }
