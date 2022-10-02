@@ -1,16 +1,21 @@
 .about-card {
 	position: relative;
-    height: 100%;
+	height: 100%;
 	padding: 30px;
+	padding-right: 75px;
 	background-color: $white;
 	border-radius: 20px;
 
+	@include mq('phone') {
+		padding: 20px 75px 20px 30px;
+	}
+
 	&::before {
 		position: absolute;
-		right: 30px;
-		bottom: 30px;
-		width: 60px;
-		height: 60px;
+		right: 20px;
+		bottom: 20px;
+		width: 55px;
+		height: 55px;
 		content: '';
 		@include bg-img;
 	}
@@ -39,6 +44,27 @@
 		}
 	}
 
+	&--plug {
+		display: none;
+
+		@include mq('xl') {
+			display: flex;
+		}
+
+		@include mq('phone') {
+			padding: 20px;
+		}
+
+		.about-card__content {
+			margin: auto;
+		}
+
+		.about-card__logo {
+			height: 80px;
+			object-fit: contain;
+		}
+	}
+
 	&__content {
 		width: 100%;
 		max-width: 150px;
@@ -59,5 +85,9 @@
 
 	&__text {
 		color: $dark-700;
+
+		@include mq('phone') {
+			font-size: 12px;
+		}
 	}
 }

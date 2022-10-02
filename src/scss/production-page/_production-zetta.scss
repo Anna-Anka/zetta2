@@ -90,7 +90,6 @@
 
 		&:last-child {
 			width: 100%;
-			max-width: 340px;
 			max-width: 100%;
 			
             @include mq('phone') {

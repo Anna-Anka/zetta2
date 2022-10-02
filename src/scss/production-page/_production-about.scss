@@ -45,6 +45,7 @@
 		height: 500px;
 		margin-right: 30px;
 		background-size: cover;
+        opacity: 0.5;
 
 		@include mq('xl') {
 			display: none;
