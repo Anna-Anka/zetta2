@@ -12,6 +12,10 @@
 		max-width: 700px;
 		margin: 0 auto 45px;
 		text-align: center;
+
+		@include mq('phone') {
+			max-width: 100%;
+		}
 	}
 
 	&__title {
@@ -22,14 +26,25 @@
 		color: $orange-500;
 	}
 
-	&__items {
-		display: flex;
+	&__subtitle {
+		@include mq('phone') {
+			font-size: 12px;
+		}
 	}
 
-	&__item {
-		width: 100%;
-		&:not(:last-child) {
-			margin-right: 10px;
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 10px;
+
+		@include mq('xl') {
+			grid-template-columns: repeat(4, 320px);
+			overflow-x: auto;
+		}
+
+		@include mq('phone') {
+			grid-template-columns: repeat(4, 280px);
+			overflow-x: auto;
 		}
 	}
 }
