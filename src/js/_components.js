@@ -1,3 +1,4 @@
+import { cooperationScroll } from "./components/scroll/_cooperation-scroll";
 import { productNavigationScroll } from "./components/scroll/_product-navigation-scroll";
 import { workScroll } from "./components/scroll/_work-scroll";
 import { articlesFunction } from "./components/_articles";
@@ -18,5 +19,6 @@ questionFunction();
 handleMarquee();
 
 // * scroll
-productNavigationScroll()
-workScroll()
+productNavigationScroll();
+workScroll();
+cooperationScroll();

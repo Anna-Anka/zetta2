@@ -1,21 +1,46 @@
 .cooperation-top {
 	&__wrapper {
 		display: flex;
+
+		@include mq('xl') {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		@include mq('phone') {
+			align-items: unset;
+		}
 	}
 
 	&__content {
 		width: 100%;
 		max-width: 750px;
+
+		@include mq('xl') {
+			max-width: 100%;
+		}
 	}
 
 	&__box {
 		width: 100%;
 		max-width: 600px;
 		margin-bottom: 45px;
+
+		@include mq('xl') {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			max-width: 100%;
+			text-align: center;
+		}
 	}
 
 	&__title {
 		margin-bottom: 30px;
+
+		@include mq('phone') {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__accent {
@@ -26,22 +51,50 @@
 		@include subtitle;
 		display: inline-block;
 		margin-bottom: 20px;
+
+		@include mq('phone') {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__text {
 		margin-bottom: 30px;
 		font-size: 18px;
 		letter-spacing: 0.02em;
+
+		@include mq('phone') {
+			font-size: 12px;
+		}
 	}
 
 	&__link {
-		max-width: 326px;
-		padding: 15px 40px;
+		width: fit-content;
+		padding: 15px 80px;
 		border-radius: 16px;
+
+		@include mq('phone') {
+			max-width: 100%;
+		}
 	}
 
 	&__items {
 		display: flex;
+
+		@include mq('xl') {
+			display: none;
+		}
+
+		&--mobile {
+			display: none;
+
+			@include mq('xl') {
+				display: flex;
+			}
+
+			@include mq('phone') {
+				flex-direction: column;
+			}
+		}
 	}
 
 	&__item {
@@ -50,19 +103,42 @@
 		flex-direction: column;
 		padding: 10px 0;
 
+		&::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 1px;
+			height: 100%;
+			background-color: $grey-350;
+			content: '';
+
+			@include mq('phone') {
+				top: unset;
+				width: 100%;
+				height: 1px;
+			}
+		}
+
+		@include mq('phone') {
+			padding: 0;
+			padding-bottom: 15px;
+		}
+
 		&:not(:last-child) {
 			margin-right: 40px;
 			padding-right: 40px;
 
+			@include mq('phone') {
+				margin-right: 0;
+				margin-bottom: 15px;
+				padding-right: 0;
+			}
+		}
+
+		&:last-child {
 			&::before {
-				position: absolute;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				width: 1px;
-				height: 100%;
-				background-color: $grey-350;
-				content: '';
+				display: none;
 			}
 		}
 	}
@@ -74,7 +150,7 @@
 		text-align: left;
 
 		&::before {
-			top: 8px;
+			top: 7px;
 		}
 	}
 
@@ -86,15 +162,34 @@
 	&__bg {
 		@include bg-img;
 		position: relative;
+		z-index: -1;
 		width: 100%;
 		max-width: 620px;
 		height: 450px;
+
+		@include mq('xl') {
+			height: 400px;
+			margin-top: -120px;
+		}
+
+		@include mq('phone') {
+			height: 300px;
+		}
 	}
 
 	.badge {
 		right: 0;
 		bottom: 0;
 		transform: translateX(0);
+
+		@include mq('xl') {
+			bottom: 50px;
+			left: 0;
+		}
+
+		@include mq('phone') {
+			display: none;
+		}
 
 		&::after {
 			background-color: $grey-200;

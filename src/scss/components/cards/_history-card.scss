@@ -31,7 +31,10 @@
 				@include mq('xl') {
 					top: 50%;
 					left: -50px;
-					height: 60px;
+				}
+
+				@include mq('phone') {
+					left: -20px;
 				}
 			}
 		}
@@ -113,8 +116,8 @@
 		}
 
 		@include mq('phone') {
-			margin-right: 25px;
 			height: 180px;
+			margin-right: 25px;
 		}
 
 		&::before {
@@ -142,16 +145,16 @@
 		border-radius: 50%;
 
 		@include mq('xl') {
-			order: 2;
-			margin-right: 40px;
 			flex-basis: 120px;
+			order: 2;
 			height: 120px;
+			margin-right: 40px;
 		}
 
 		@include mq('phone') {
-			margin-right: 20px;
 			flex-basis: 100px;
 			height: 100px;
+			margin-right: 20px;
 		}
 
 		&::before {
@@ -171,8 +174,8 @@
 			}
 
 			@include mq('phone') {
-				height: 25px;
 				left: -20px;
+				height: 25px;
 			}
 		}
 	}

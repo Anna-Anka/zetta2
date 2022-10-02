@@ -1,4 +1,10 @@
 .privilege {
+	padding-top: 140px;
+
+	@include mq('phone') {
+		padding-top: 80px;
+	}
+
 	&__wrapper {
 		max-width: 800px;
 		width: 100%;
