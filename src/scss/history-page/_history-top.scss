@@ -29,8 +29,8 @@
 		text-transform: uppercase;
 
         @include mq('phone') {
-            font-size: 50px;
             margin-bottom: 25px;
+            font-size: 50px;
         }
 	}
 
