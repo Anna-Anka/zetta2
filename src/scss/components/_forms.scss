@@ -1,14 +1,22 @@
 .form {
-    position: relative;
-    z-index: -3;
+	position: relative;
 
-    &--design {
-        padding-bottom: 60px;
-        
-        @include mq('phone') {
-            padding-bottom: 20px;
-        }
-    }
+	&--design,
+	&--vacancy {
+		padding-bottom: 60px;
+
+		@include mq('phone') {
+			padding-bottom: 20px;
+		}
+	}
+
+	&--vacancy {
+		padding-top: 140px;
+
+		@include mq('phone') {
+			padding-top: 80px;
+		}
+	}
 
 	&__wrapper {
 		position: relative;
@@ -55,7 +63,8 @@
 			}
 		}
 
-		&--design {
+		&--design,
+		&--vacancy {
 			&::after {
 				top: -78px;
 				right: -115px;
@@ -65,11 +74,11 @@
 
 				@include mq('phone') {
 					top: unset;
+					right: -80px;
 					bottom: -78px;
 					max-width: 160px;
 					height: 236px;
-                    border-radius: 72px 24px;
-                    right: -80px;
+					border-radius: 72px 24px;
 				}
 			}
 		}
@@ -220,7 +229,8 @@
 		width: 100%;
 		@include bg-img;
 
-		&--design {
+		&--design,
+		&--vacancy {
 			right: -20px;
 			right: -300px;
 			bottom: 0;

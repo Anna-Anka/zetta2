@@ -1,4 +1,4 @@
-<section class="form form--@class">
+<section class="form form--@class" id="form-@class">
     <div class="container">
         <div class="form__wrapper">
             <form class="form__form form__form--@class" action="#">
@@ -10,7 +10,7 @@
                         <input class="form__field" id="name" name="name" type="text" placeholder="Ваше имя*" required>
                     </div>
 
-                    @if(context.class === "design") {
+                    @if(context.class === "design" || context.class === "vacancy") {
                         <div class="form__item">
                             <label class="sr-only" for="form-design-tel">
                                 Введите ваш телефон

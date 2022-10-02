@@ -78,7 +78,7 @@
 		z-index: 1;
 		width: 100%;
 		max-width: 450px;
-		height: 550px;
+		height: 525px;
 
 		@include mq('xl') {
 			height: 450px;
@@ -109,6 +109,50 @@
 			bottom: 50px;
 			max-width: 350px;
 			height: 220px;
+		}
+	}
+}
+
+.marquee {
+	position: relative;
+	z-index: 5;
+	width: 102%;
+	padding: 20px 0;
+	background-color: $white;
+	box-shadow: 0 0 30px rgba($black, 0.1);
+	transform: rotate(-5deg) translateX(-1%);
+
+	&__wrapper {
+		position: relative;
+		display: flex;
+		width: 100%;
+	}
+
+	&__items {
+		display: flex;
+	}
+
+	&__item {
+		flex-shrink: 0;
+		padding: 0 80px;
+		color: $dark-700;
+		font-weight: $fw-800;
+		font-size: 30px;
+		white-space: nowrap;
+		text-transform: uppercase;
+
+		@include mq('xl') {
+			padding: 0 70px;
+			font-size: 22px;
+		}
+
+		@include mq('phone') {
+			padding: 0 40px;
+			font-size: 14px;
+		}
+
+		&:nth-child(odd) {
+			color: $orange-500;
 		}
 	}
 }
