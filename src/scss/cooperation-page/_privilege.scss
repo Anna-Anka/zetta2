@@ -6,8 +6,16 @@
 	}
 
 	&__wrapper {
-		max-width: 800px;
+		position: relative;
+	}
+
+	&__content {
 		width: 100%;
+		max-width: 800px;
+
+		@include mq('xl') {
+			max-width: 100%;
+		}
 	}
 
 	&__top {
@@ -26,30 +34,52 @@
 
 	&__subtext {
 		font-size: 18px;
+	}
+
+	&__subtext,
+	&__text {
 		letter-spacing: 0.02em;
+
+		@include mq('phone') {
+			font-size: 12px;
+		}
 	}
 
 	&__items {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 30px;
-		// max-width: 800px;
-		// width: 100%;
+
+		@include mq('phone') {
+			grid-template-columns: 250px 250px;
+			gap: 20px;
+			overflow-x: auto;
+		}
 	}
 
 	&__item {
 		position: relative;
 		padding-left: 30px;
 
+		@include mq('phone') {
+			padding-left: 20px;
+		}
+
 		&::before {
 			position: absolute;
-			content: '';
-			background-color: $orange-500;
-			border-radius: 50%;
+			top: 5px;
+			left: 0;
 			width: 16px;
 			height: 16px;
-			left: 0;
-			top: 5px;
+			background-color: $orange-500;
+			border-radius: 50%;
+			content: '';
+
+			@include mq('phone') {
+				top: 6px;
+				width: 12px;
+				height: 12px;
+			}
 		}
 	}
 
@@ -57,9 +87,41 @@
 		@include subtitle;
 		display: inline-block;
 		margin-bottom: 10px;
+
+		@include mq('phone') {
+			font-size: 16px;
+		}
 	}
 
-	&__text {
-		letter-spacing: 0.02em;
+	&__bg {
+		@include bg-img;
+		position: absolute;
+		right: -355px;
+		bottom: 100px;
+		width: 100%;
+		max-width: 1100px;
+		height: 400px;
+		background-size: cover;
+		opacity: 0.2;
+
+		@include mq('xl') {
+			display: none;
+		}
+
+		&::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(
+				98deg,
+				$white 24.65%,
+				rgba($black, 0) 56.24%
+			);
+			content: '';
+		}
 	}
 }

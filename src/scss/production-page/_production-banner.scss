@@ -21,6 +21,7 @@
 		padding: 130px 60px 120px 50px;
 		background-color: rgba($white, 0.9);
 		border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
 		backdrop-filter: blur(14px);
 
 		@include mq('xl') {
