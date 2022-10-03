@@ -17,7 +17,9 @@
 @include('./components/modals/_modal-froze.html')
 
 <main class="main">
-    @include('./production-page/_production-banner.html')
+    @include('./components/_top-banner.html', {
+        'page' : 'production'
+    })
 
     @include('./production-page/_production-about.html')
 

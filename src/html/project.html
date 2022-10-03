@@ -1,5 +1,5 @@
 @include('./components/links/_head.html',
-{ 'title' : 'ZETTA — Фабрика кухкни | Сотрудничество с ZETTA' }
+{ 'title' : 'ZETTA — Фабрика кухкни | 3D-дизайн кухни' }
 )
 
 @include('./components/_header.html')
@@ -7,7 +7,7 @@
 @include('./components/_breadcrumbs.html', {
 'count' : '2',
 '1' : 'Главная',
-'current' : 'Сотрудничество'
+'current' : '3D проект'
 })
 
 @include('./components/_mobile-menu.html')
@@ -17,9 +17,10 @@
 @include('./components/modals/_modal-froze.html')
 
 <main class="main">
-    <h1 class="sr-only">Сотрудничество с ZETTA</h1>
 
-    <!-- @include('./production-page/_banner.html') -->
+    @include('./components/_top-banner.html', {
+    'page' : 'project'
+    })
 
     <!-- @include('./project-page/_project-form.html')
 
