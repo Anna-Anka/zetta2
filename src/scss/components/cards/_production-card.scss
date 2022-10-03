@@ -32,5 +32,9 @@
 	&__text {
 		color: $dark-700;
 		font-size: 15px;
+
+        @include mq('phone') {
+			font-size: 12px;
+		}
 	}
 }

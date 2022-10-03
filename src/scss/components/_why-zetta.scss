@@ -114,6 +114,9 @@
 			@include mq('xl') {
 				width: 100%;
 				max-width: 100%;
+			}
+
+            @include mq('phone') {
 				height: 120px;
 			}
 		}

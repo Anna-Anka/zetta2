@@ -1,5 +1,6 @@
 import { cooperationScroll } from "./components/scroll/_cooperation-scroll";
 import { productNavigationScroll } from "./components/scroll/_product-navigation-scroll";
+import { projectScroll } from "./components/scroll/_project-scroll";
 import { workScroll } from "./components/scroll/_work-scroll";
 import { articlesFunction } from "./components/_articles";
 import { interactiveBoxFunction, interactiveFunction } from "./components/_interactive";
@@ -22,3 +23,4 @@ handleMarquee();
 productNavigationScroll();
 workScroll();
 cooperationScroll();
+projectScroll();

@@ -155,16 +155,12 @@
 
 	&__button {
 		width: 100%;
-		max-width: 326px;
-		padding: 19px;
+		width: fit-content;
+		padding: 19px 80px;
 		border-radius: 16px;
 
-		@include mq('xl') {
-			max-width: 380px;
-		}
-
 		@include mq('phone') {
-			max-width: 100%;
+			width: 100%;
 		}
 	}
 
