@@ -3,6 +3,10 @@
 	padding-bottom: 80px;
 	background-image: linear-gradient(178deg, $white -0.73%, $grey-200 30.05%);
 
+    &--transparent {
+        background-image: none;
+    }
+
 	@include mq('phone') {
 		margin-bottom: 50px;
 		padding-bottom: 50px;
