@@ -8,6 +8,11 @@
         }
     }
 
+    picture {
+        position: relative;
+        z-index: -1;
+    }
+
     &__image,
     &__img {
         object-fit: cover;

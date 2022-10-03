@@ -2,6 +2,8 @@
 	padding-top: 30px;
 
 	&__wrapper {
+		position: relative;
+		z-index: 2;
 		display: flex;
 		justify-content: space-between;
 
@@ -15,7 +17,7 @@
 		width: 100%;
 		max-width: 625px;
 
-        @include mq('phone') {
+		@include mq('phone') {
 			max-width: 100%;
 		}
 	}
@@ -27,9 +29,9 @@
 			margin-right: 30px;
 		}
 
-        @include mq('phone') {
+		@include mq('phone') {
 			margin-right: 0;
-            margin-bottom: 20px;
+			margin-bottom: 20px;
 		}
 	}
 
@@ -57,6 +59,134 @@
 			@include mq('phone') {
 				margin-bottom: 10px;
 				padding-bottom: 15px;
+			}
+		}
+	}
+
+	&__picture {
+		position: relative;
+		height: 1290px;
+		margin-top: -200px;
+		margin-bottom: 0;
+		padding: 0;
+		background-color: transparent;
+
+		@include mq('phone') {
+			height: 256px;
+			margin-top: -20px;
+		}
+
+		&::before {
+			top: 0;
+			height: 600px;
+			background-image: linear-gradient(
+				180deg,
+				$white 54.53%,
+				rgba($white, 0) 100%
+			);
+		}
+
+		&::after {
+			bottom: 20px;
+			height: 200px;
+			background-image: linear-gradient(0, $white 54.53%, rgba($white, 0) 100%);
+
+			@include mq('phone') {
+				bottom: 0;
+				transform: translateY(100%);
+			}
+		}
+
+		&::before,
+		&::after {
+			position: absolute;
+			right: 0;
+			left: 0;
+			width: 100%;
+			content: '';
+
+			@include mq('phone') {
+				height: 80px;
+			}
+		}
+	}
+
+	&__image {
+		height: 100%;
+	}
+
+	&__img {
+		object-fit: cover;
+        width: 100%;
+
+		@include mq('phone') {
+			height: 100%;
+		}
+	}
+
+	.interactive {
+		&__btn {
+			z-index: 4;
+			width: 100px;
+			height: 100px;
+			background-color: $white;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			box-shadow: 0 0 25px rgba($black, 0.12);
+
+			&::before {
+				display: none;
+			}
+
+			@include mq('phone') {
+				width: 50px;
+				height: 50px;
+			}
+		}
+
+		&__preview {
+			@include bg-img;
+			width: 70px;
+			height: 70px;
+
+			@include mq('phone') {
+				width: 35px;
+				height: 35px;
+			}
+		}
+
+		&__content {
+			max-width: 330px;
+			padding: 20px;
+			background-color: rgba($white, 0.6);
+			border-radius: 25px;
+			box-shadow: 0 5px 10px rgba($black, 0.1);
+			backdrop-filter: blur(18px);
+		}
+
+		&__img {
+			width: 100%;
+			height: 90px;
+			margin-bottom: 15px;
+			object-fit: cover;
+			border-radius: 15px;
+		}
+
+		&__title,
+		&__text {
+			letter-spacing: 0.02em;
+		}
+
+		&__title {
+			font-size: 18px;
+		}
+
+		&__text {
+			font-size: 14px;
+
+			@include mq('phone') {
+				font-size: 12px;
 			}
 		}
 	}
