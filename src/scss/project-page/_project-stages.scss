@@ -1,0 +1,34 @@
+.project-stages {
+	&__items {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 10px;
+
+		@include mq('phone') {
+			grid-template-columns: 1fr;
+			gap: 0;
+		}
+	}
+
+	&__item {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			top: 22px;
+			left: 42px;
+			width: 98%;
+			height: 1px;
+			background-color: $orange-500;
+			content: '';
+
+			@include mq('phone') {
+				top: 0;
+				right: unset;
+				left: 15px;
+				width: 1px;
+				height: 100%;
+			}
+		}
+	}
+}

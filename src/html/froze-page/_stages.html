@@ -4,18 +4,21 @@
         <ul class="stages__items">
             <li class="stages__item">
                 @include('./../components/cards/_stage-card.html', {
-                    'number' : '1',
-                    'title' : 'Получаем заявку и согласуем удобное время'
+                'type' : 'normal',
+                'number' : '1',
+                'title' : 'Получаем заявку и согласуем удобное время'
                 })
             </li>
             <li class="stages__item">
                 @include('./../components/cards/_stage-card.html', {
+                'type' : 'normal',
                 'number' : '2',
                 'title' : 'Производим замер вашего помещения'
                 })
             </li>
             <li class="stages__item">
                 @include('./../components/cards/_stage-card.html', {
+                'type' : 'normal',
                 'number' : '3',
                 'title' : 'Вносим корректировки в дизайн-проект кухни'
                 })

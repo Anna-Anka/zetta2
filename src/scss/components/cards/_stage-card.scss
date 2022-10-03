@@ -1,6 +1,70 @@
 .stage-card {
 	width: 100%;
 
+	&--detail {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+
+		@include mq('phone') {
+			flex-direction: row;
+		}
+
+		.stage-card__subtitle {
+			display: inline-block;
+			margin-bottom: 20px;
+
+			@include mq('xl') {
+				margin-bottom: 15px;
+				font-size: 20px;
+			}
+
+			@include mq('phone') {
+				margin-bottom: 10px;
+				font-size: 18px;
+			}
+		}
+
+		.stage-card__text {
+			margin-bottom: 30px;
+			letter-spacing: 0.02em;
+
+			@include mq('xl') {
+				margin-bottom: 15px;
+				font-size: 14px;
+			}
+
+			@include mq('phone') {
+				margin-bottom: 0;
+				font-size: 12px;
+			}
+		}
+
+		.stage-card__content {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100%;
+		}
+
+		.stage-card__bg {
+			max-width: 420px;
+			height: 290px;
+			margin-top: auto;
+			margin-bottom: 0;
+
+			@include mq('xl') {
+				height: 215px;
+			}
+
+			@include mq('phone') {
+				order: -1;
+				height: 190px;
+				margin-bottom: 15px;
+			}
+		}
+	}
+
 	@include mq('phone') {
 		display: flex;
 		padding-bottom: 30px;
