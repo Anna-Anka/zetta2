@@ -1,0 +1,53 @@
+.released {
+	&__title {
+		margin-bottom: 60px;
+
+		@include mq('phone') {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__accent {
+		color: $orange-500;
+	}
+
+	&__wrapper {
+		position: relative;
+		margin-bottom: 50px;
+
+		@include mq('phone') {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__button {
+		background-color: $orange-500;
+		transform: translateY(-50%);
+
+		&--prev {
+			left: 15px;
+		}
+
+		&--next {
+			right: 15px;
+		}
+
+		@include mq('tablet') {
+			display: none;
+		}
+	}
+
+	.swiper-button-disabled {
+		opacity: 0.6;
+	}
+
+	&__swiper {
+		position: relative;
+		overflow: visible;
+	}
+
+	&__item {
+		border-radius: 20px;
+		box-shadow: 0 0 20px rgba($black, 0.05), 20px 4px 40px rgba($black, 0.04);
+	}
+}

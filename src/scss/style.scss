@@ -43,7 +43,7 @@
 @import "./components/cards/about-card";
 @import "./components/cards/belief-card";
 @import "./components/cards/history-card";
-@import "./components/top-banner";
+@import "./components/cards/released-card";
 
 // * salons
 @import "./components/salons/salons";
@@ -54,6 +54,7 @@
 @import "./components/articles/articles";
 @import "./components/articles/sorting";
 
+@import "./components/top-banner";
 @import "./components/modal";
 @import "./components/socials";
 @import "./components/advantages";
@@ -83,6 +84,7 @@
 @import "./product-page/product-info";
 @import "./product-page/product-navigation";
 @import "./product-page/product-about";
+@import "./product-page/product-released";
 @import "./product-page/product-colors";
 @import "./product-page/product-price";
 @import "./product-page/product-characteristics";
