@@ -22,7 +22,9 @@
     'page' : 'project'
     })
 
-    @include('./project-page/_project-form.html')
+    @include('./project-page/_project-form.html', {
+        'id' : 'project-form'
+    })
 
     @include('./project-page/_project-stages.html')
 
@@ -36,10 +38,8 @@
 
 @include('./components/_guarantee.html')
 
-@include('./components/_forms.html', {
-'class' : 'design',
-'title' : 'Закажите <span class="form__accent">бесплатную</span> разработку дизайн- проекта кухни',
-'text' : 'Результат отправим Вам онлайн'
+@include('./project-page/_project-form.html', {
+    'id' : ''
 })
 
 @include('./components/_footer.html')

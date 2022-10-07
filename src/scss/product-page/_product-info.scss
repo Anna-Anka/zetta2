@@ -1,6 +1,7 @@
 .product-info {
 	padding-bottom: 67px;
 
+
 	@include mq('phone') {
 		padding-bottom: 40px;
 	}
