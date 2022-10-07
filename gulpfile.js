@@ -14,12 +14,9 @@ const svgmin = require('gulp-svgmin');
 const cheerio = require('gulp-cheerio');
 const replace = require('gulp-replace');
 const fileInclude = require('gulp-file-include');
-
-//Следующие три сомнительные
 const rev = require('gulp-rev');
 const revRewrite = require('gulp-rev-rewrite');
 const revDel = require('gulp-rev-delete-original');
-
 const htmlmin = require('gulp-htmlmin');
 const gulpif = require('gulp-if');
 const notify = require('gulp-notify');
@@ -222,11 +219,11 @@ const images = () => {
   return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg}`])
     .pipe(gulpif(isProd, image([
       image.mozjpeg({
-        quality: 80,
-        progressive: true
+        quality: 90,
+        progressive: false
       }),
       image.optipng({
-        optimizationLevel: 2
+        optimizationLevel: 5
       }),
     ])))
     .pipe(dest(paths.buildImgFolder))
@@ -300,14 +297,6 @@ const rewrite = () => {
     }))
     .pipe(dest(buildFolder));
 }
-
-// const htmlMinify = () => {
-//   return src(`${buildFolder}/**/*.html`)
-//     .pipe(htmlmin({
-//       collapseWhitespace: true
-//     }))
-//     .pipe(dest(buildFolder));
-// }
 
 const zipFiles = (done) => {
   del.sync([`${buildFolder}/*.zip`]);

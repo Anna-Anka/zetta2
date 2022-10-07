@@ -11,7 +11,7 @@
 		background-color: $white;
 		visibility: hidden;
 		opacity: 0;
-		transition: opacity 0.4s, top 0.4s;
+		//transition: opacity 0.4s, top 0.4s;
 
 		&--active {
 			top: 125px;
@@ -61,8 +61,7 @@
 					width: 16px;
 					height: 20px;
 					background-image: url('../img/icons/more.svg');
-					filter: invert(31%) sepia(92%) saturate(7488%) hue-rotate(6deg)
-						brightness(104%) contrast(108%);
+					filter: invert(31%) sepia(92%) saturate(7488%) hue-rotate(6deg) brightness(104%) contrast(108%);
 					content: '';
 					@include bg-img;
 				}

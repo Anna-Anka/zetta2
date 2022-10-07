@@ -6,6 +6,10 @@
 		padding-bottom: 60px;
 	}
 
+    &__title {
+        margin-bottom: 25px;
+    }
+
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(2, minmax(437px, 812px));
