@@ -83,7 +83,7 @@
 		&--catalog {
 			position: relative;
 			display: inline-block;
-			padding: 11px 18px 11px 52px;
+			padding: 11px 14px 11px 55px;
 			padding-left: 32px;
 			color: $white;
 			background-color: $orange-500;
@@ -100,6 +100,12 @@
 				filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(285deg) brightness(104%) contrast(101%);
 				content: '';
 				@include bg-img;
+
+                @include mq('xl') {
+                    left: 15px;
+                    width: 14px;
+                    height: 14px;
+                }
 			}
 		}
 	}

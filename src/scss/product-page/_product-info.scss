@@ -125,7 +125,7 @@
 
 			.product-info__hidden {
 				@include mq('phone') {
-					bottom: 115px;
+					bottom: 0;
 				}
 			}
 		}
