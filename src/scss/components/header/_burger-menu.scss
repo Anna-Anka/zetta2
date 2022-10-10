@@ -60,6 +60,8 @@
 			margin-bottom: 50px;
 			padding-top: 93px;
 			padding-bottom: 0;
+			max-width: 248px;
+			width: 100%;
 		}
 	}
 
@@ -83,29 +85,46 @@
 		&--catalog {
 			position: relative;
 			display: inline-block;
-			padding: 11px 14px 11px 55px;
+			padding: 11px 14px 11px 45px;
 			padding-left: 32px;
 			color: $white;
 			background-color: $orange-500;
 			border-radius: 12px;
+			display: flex;
+			margin: 0 auto;
+			// width: 100%;
+			// text-align: left;
 
 			&::before {
 				position: absolute;
 				top: 50%;
-				left: 19px;
+				left: 20px;
 				width: 16px;
 				height: 16px;
 				background-image: url('../img/icons/burger.svg');
 				transform: translateY(-50%);
-				filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(285deg) brightness(104%) contrast(101%);
+				filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(285deg)
+					brightness(104%) contrast(101%);
 				content: '';
 				@include bg-img;
 
-                @include mq('xl') {
-                    left: 15px;
-                    width: 14px;
-                    height: 14px;
-                }
+				@include mq('xl') {
+					left: 15px;
+					width: 14px;
+					height: 14px;
+				}
+			}
+		}
+
+		&--catalog-active {
+			&::before {
+				@include mq('phone') {
+					background-image: url('../img/icons/close-white.svg');
+					filter: none;
+					width: 18px;
+					height: 18px;
+					left: 12px;
+				}
 			}
 		}
 	}

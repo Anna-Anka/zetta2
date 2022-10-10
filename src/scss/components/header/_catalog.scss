@@ -13,14 +13,25 @@
 		opacity: 0;
 		//transition: opacity 0.4s, top 0.4s;
 
+		@include mq('xl') {
+			padding-top: 0;
+			background-color: rgba($white, 0.95);
+		}
+
 		&--active {
 			top: 125px;
 			z-index: 100;
 			display: flex;
 			visibility: visible;
 			opacity: 1;
+            height: auto;
+            overflow-y: scroll;
 
 			@include mq('xl') {
+				top: 294px;
+			}
+
+			@include mq('phone') {
 				display: none;
 			}
 		}
@@ -49,7 +60,7 @@
 			padding-right: 30px;
 			font-weight: $fw-800;
 			font-size: 24px;
-            transition: color $orange-500;
+			transition: color $orange-500;
 
 			&--active {
 				color: $orange-500;
@@ -61,7 +72,8 @@
 					width: 16px;
 					height: 20px;
 					background-image: url('../img/icons/more.svg');
-					filter: invert(31%) sepia(92%) saturate(7488%) hue-rotate(6deg) brightness(104%) contrast(108%);
+					filter: invert(31%) sepia(92%) saturate(7488%) hue-rotate(6deg)
+						brightness(104%) contrast(108%);
 					content: '';
 					@include bg-img;
 				}
@@ -99,16 +111,20 @@
 		&__link {
 			font-weight: $fw-600;
 			font-size: 18px;
-            transition: font-weight 0.4s;
+			transition: font-weight 0.4s;
 
-            &:hover {
-                font-weight: $fw-800;
+			&:hover {
+				font-weight: $fw-800;
 				text-decoration: underline;
-            }
+			}
 		}
 	}
 
 	.catalog-stock {
+		@include mq('xl') {
+			display: none;
+		}
+
 		&__link {
 			display: inline-block;
 			width: 100%;
@@ -133,6 +149,67 @@
 			&::before {
 				top: 5px;
 			}
+		}
+	}
+}
+
+.catalog-mobile {
+	display: none;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	font-size: 14px;
+	text-align: center;
+	@include bottom-line;
+
+	&--active {
+		@include mq('phone') {
+			display: block;
+		}
+	}
+
+	&__button {
+		@include more;
+		margin-bottom: 12px;
+		color: $dark-700;
+		font-size: 16px;
+		transition: color 0.4s;
+
+		&::before {
+			width: 10px;
+			height: 10px;
+			transform: rotate(90deg);
+			filter: invert(82%) sepia(8%) saturate(842%) hue-rotate(184deg)
+				brightness(89%) contrast(94%);
+			transition: transform 0.4s;
+		}
+
+		&--active {
+			color: $orange-500;
+
+			&::before {
+				transform: rotate(-90deg);
+				filter: none;
+				filter: invert(70%) sepia(53%) saturate(4615%) hue-rotate(3deg)
+					brightness(103%) contrast(104%);
+			}
+		}
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 12px;
+		}
+
+		&:last-child {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__list {
+		display: none;
+
+		&--active {
+			display: block;
 		}
 	}
 }

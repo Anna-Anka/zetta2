@@ -154,6 +154,17 @@
 			font-size: 12px;
 		}
 	}
+
+	.file-selectdialog-switcher {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 165px;
+		background-color: $grey-200;
+		border: 2px dashed $grey-300;
+		border-radius: 10px;
+	}
 }
 
 .jq-file.project-form__field.project-form__fied--file {
@@ -175,9 +186,9 @@
 	border: 2px dashed $grey-300;
 	box-shadow: none;
 
-    @include mq('phone') {
-        height: 80px;
-    }
+	@include mq('phone') {
+		height: 80px;
+	}
 
 	input {
 		height: 100%;
