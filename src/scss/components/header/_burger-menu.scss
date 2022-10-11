@@ -82,7 +82,7 @@
 		font-weight: $fw-600;
 		line-height: 1.1;
 
-		&--catalog {
+		&--dop {
 			position: relative;
 			display: inline-block;
 			padding: 11px 14px 11px 45px;
@@ -116,7 +116,7 @@
 			}
 		}
 
-		&--catalog-active {
+		&--dop-active {
 			&::before {
 				@include mq('phone') {
 					background-image: url('../img/icons/close-white.svg');

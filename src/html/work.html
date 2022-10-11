@@ -23,10 +23,12 @@
     @include('./components/_why-zetta.html', {
         'class' : 'normal'
     })
-
-    @include('./work-page/_vacancies.html')
     
 </main>
+
+@include('./components/_vacancies.html', {
+    'class' : ''
+})
 
 @include('./components/_forms.html', {
 'class' : 'vacancy',

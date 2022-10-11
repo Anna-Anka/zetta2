@@ -5,10 +5,6 @@
 	margin-right: 15px;
 	font-size: 16px;
 
-	@include mq('xl') {
-		display: none;
-	}
-
 	&__item {
 		&:not(:last-child) {
 			@include adaptiv-value('margin-right', 40, 0, 1);
@@ -16,11 +12,16 @@
 	}
 
 	&__link {
+
+        @include mq('xl') {
+			display: none;
+		}
+
 		&--active {
 			color: $orange-500;
 		}
 
-		&--catalog {
+		&--dop {
 			position: relative;
 			padding: 6px 15px 6px 35px;
 			background-color: transparent;
@@ -40,12 +41,13 @@
 			}
 		}
 
-		&--catalog-active {
+		&--dop-active {
 			color: $white;
 			background-color: $orange-500;
 
 			&::before {
-				filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(116deg) brightness(103%) contrast(101%);
+				filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(116deg)
+					brightness(103%) contrast(101%);
 			}
 		}
 	}

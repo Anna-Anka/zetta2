@@ -48,7 +48,9 @@
 
 @include('./company-page/_cooperation.html')
 
-@include('./company-page/_work.html')
+@include('./components/_vacancies.html', {
+    'class' : 'vacancies--company'
+})
 
 @include('./components/_forms.html', {
 'class' : 'checklist',

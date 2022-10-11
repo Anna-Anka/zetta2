@@ -22,10 +22,10 @@
 			top: 125px;
 			z-index: 100;
 			display: flex;
+			height: auto;
+			overflow-y: auto;
 			visibility: visible;
 			opacity: 1;
-            height: auto;
-            overflow-y: scroll;
 
 			@include mq('xl') {
 				top: 294px;
@@ -151,65 +151,69 @@
 			}
 		}
 	}
-}
 
-.catalog-mobile {
-	display: none;
-	margin-top: 20px;
-	padding-bottom: 10px;
-	font-size: 14px;
-	text-align: center;
-	@include bottom-line;
-
-	&--active {
-		@include mq('phone') {
-			display: block;
-		}
-	}
-
-	&__button {
-		@include more;
-		margin-bottom: 12px;
-		color: $dark-700;
-		font-size: 16px;
-		transition: color 0.4s;
-
-		&::before {
-			width: 10px;
-			height: 10px;
-			transform: rotate(90deg);
-			filter: invert(82%) sepia(8%) saturate(842%) hue-rotate(184deg)
-				brightness(89%) contrast(94%);
-			transition: transform 0.4s;
-		}
+	.catalog-mobile {
+		display: none;
+		margin-top: 20px;
+		padding-bottom: 10px;
+		font-size: 14px;
+		text-align: center;
+		@include bottom-line;
 
 		&--active {
-			color: $orange-500;
-
-			&::before {
-				transform: rotate(-90deg);
-				filter: none;
-				filter: invert(70%) sepia(53%) saturate(4615%) hue-rotate(3deg)
-					brightness(103%) contrast(104%);
+			@include mq('phone') {
+				display: block;
 			}
 		}
-	}
 
-	&__item {
-		&:not(:last-child) {
+		&__button {
+			@include more;
 			margin-bottom: 12px;
+			color: $dark-700;
+			font-size: 16px;
+			transition: color 0.4s;
+
+			&::before {
+				width: 10px;
+				height: 10px;
+				transform: rotate(90deg);
+				filter: invert(82%) sepia(8%) saturate(842%) hue-rotate(184deg)
+					brightness(89%) contrast(94%);
+				transition: transform 0.4s;
+			}
+
+			&--active {
+				//color: $orange-500;
+
+				&::before {
+					@include mq('phone') {
+						transform: rotate(-90deg);
+						filter: none;
+						filter: invert(70%) sepia(53%) saturate(4615%) hue-rotate(3deg)
+							brightness(103%) contrast(104%);
+					}
+				}
+			}
 		}
 
-		&:last-child {
-			margin-bottom: 20px;
+		&__item {
+			&:not(:last-child) {
+				margin-bottom: 12px;
+			}
+
+			&:last-child {
+				margin-bottom: 20px;
+			}
 		}
-	}
 
-	&__list {
-		display: none;
+		&__list {
+			display: none;
 
-		&--active {
-			display: block;
+			&--active {
+				@include mq('phone') {
+					display: block;
+				}
+			}
 		}
 	}
 }

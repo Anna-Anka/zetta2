@@ -1,39 +1,22 @@
 export const catalogHeaderFunction = () => {
     if (document.querySelector('.header .catalog')) {
-        const buttonCatalog = document.querySelector('.menu__link--catalog');
-        const burgerCatalog = document.querySelector('.burger-menu__link--catalog');
-        const menuCatalog = document.querySelector('.header .catalog');
-        const wrapper = document.querySelector('.wrapper');
-        const blackout = document.querySelector('.blackout');
 
-        const menuCatalogFunction = function () {
-            menuCatalog.classList.toggle('catalog--active');
-            buttonCatalog.classList.toggle('menu__link--catalog-active');
-            burgerCatalog.classList.toggle('burger-menu__link--catalog-active');
-            blackout.classList.toggle('blackout--active')
-            wrapper.classList.toggle('wrapper--active')
-        }
+        $('.menu__link--dop').on('click', function (e) {
+            e.preventDefault();
+            $('.menu__link--dop').removeClass('menu__link--dop-active');
+            $(this).toggleClass('menu__link--dop-active');
 
-        buttonCatalog.addEventListener('click', function (e) {
-            e.stopPropagation();
-            menuCatalogFunction();
+            $('.catalog').removeClass('catalog--active');
+            $($(this).attr('href')).toggleClass('catalog--active');
         });
 
-        burgerCatalog.addEventListener('click', function (e) {
-            e.stopPropagation();
-            menuCatalogFunction();
-            document.querySelector('.catalog-mobile').classList.toggle('catalog-mobile--active')
-        });
+        $('.burger-menu__link--dop').on('click', function (e) {
+            e.preventDefault();
+            $('.burger-menu__link--dop').removeClass('burger-menu__link--dop-active');
+            $(this).addClass('burger-menu__link--dop-active');
 
-        document.addEventListener('click', function (e) {
-            const target = e.target;
-            const its_menu = target == menuCatalog || menuCatalog.contains(target);
-            const its_btnMenu = target == buttonCatalog;
-            const menu_is_active = menuCatalog.classList.contains('catalog--active');
-
-            if (!its_menu && !its_btnMenu && menu_is_active) {
-                menuCatalogFunction();
-            }
+            $('.catalog').removeClass('catalog--active');
+            $($(this).attr('href')).addClass('catalog--active');
         });
 
         $('.catalog-main__link').on('click', function (e) {
@@ -46,10 +29,17 @@ export const catalogHeaderFunction = () => {
         });
 
         if (document.querySelector('.catalog-mobile')) {
-            $('.catalog-mobile__button').click(function () {
+            $('.burger-menu__link--dop').click(function () {
                 $(this).next().toggleClass('catalog-mobile__list--active')
                 $(this).toggleClass('catalog-mobile__button--active')
             })
         }
-    }
+
+        $(document).mouseup(function (e) {
+            var div = $(".catalog--active");  //класс элемента вне которого клик
+            if (!div.is(e.target) && div.has(e.target).length === 0) {
+                div.removeClass('catalog--active');
+            }
+        });
+    };
 }
