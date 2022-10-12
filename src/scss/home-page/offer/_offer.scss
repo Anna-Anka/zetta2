@@ -2,8 +2,7 @@
 	position: relative;
 	z-index: 0;
 	margin-bottom: 140px;
-	padding-top: 28px;
-	background-color: $grey-200;
+	//background-color: $grey-200;
 
 	@include mq('xxl') {
 		margin-bottom: 117px;
@@ -49,33 +48,28 @@
 		}
 	}
 
-	&__swiper {
-		@include adaptiv-value('max-width', 465, 260, 1);
+	&__info {
 		position: relative;
 		display: inline-block;
 		width: 100%;
-		margin-left: 0;
-		border-radius: 120px 30px 0 0;
-		box-shadow: 20px 4px 40px rgba($black, 0.04);
-
-		@include mq('xxl') {
-			@include adaptiv-value('max-width', 1400, 600, 1);
-			max-width: 100%;
-			margin-right: 0;
-		}
-	}
-
-	&__info {
 		min-height: 650px;
+		margin-left: 0;
 		padding-top: 67px;
 		padding-bottom: 67px;
 		background-color: $white;
+		border-radius: 120px 30px 0 0;
+		box-shadow: 20px 4px 40px rgba($black, 0.04);
 		@include adaptiv-value('padding-left', 50, 0, 1);
 		@include adaptiv-value('padding-right', 50, 0, 1);
 
+		@include adaptiv-value('max-width', 465, 260, 1);
+
 		@include mq('xxl') {
+			max-width: 100%;
 			min-height: auto;
+			margin-right: 0;
 			padding: 63px 50px 44px 67px;
+			@include adaptiv-value('max-width', 1400, 600, 1);
 		}
 	}
 
@@ -225,34 +219,98 @@
 		object-fit: cover;
 	}
 
-	&__button {
-		top: unset;
-		bottom: -45px;
+	&__slide {
+		box-sizing: border-box;
+		overflow: hidden;
 
-		&::after {
-			filter: invert(64%) sepia(87%) saturate(4093%) hue-rotate(359deg)
-				brightness(100%) contrast(107%);
-		}
+		&--offer,
+		&--discount {
+			background-color: $grey-200;
 
-		&--prev {
-			right: 68px;
-			left: unset;
-
-			@include mq('xxl') {
-				right: 70px;
+			@include mq('phone') {
+				background-color: transparent;
 			}
 		}
 
-		&--next {
-			right: 0;
+		&--discount,
+		&--showrooms {
+			position: relative;
+			z-index: 1;
+
+			&::before {
+				position: absolute;
+				z-index: -1;
+				width: 100%;
+				height: 100%;
+			}
 		}
 
-		@include mq('xxl') {
-			bottom: -140px;
+		&--discount {
+			@include mq('phone') {
+				background-color: $grey-200;
+			}
+
+			&::before {
+				top: 50%;
+				left: 50%;
+				color: rgba($white, 0.4);
+				font-weight: $fw-800;
+				font-size: 1500px;
+				line-height: 1.2;
+				transform: translate(-50%, -80%);
+				content: '%';
+			}
 		}
+
+		&--showrooms {
+			@include bg-img;
+			background-size: cover;
+
+			@include mq('phone') {
+				background-color: $grey-200;
+				background-size: 0;
+			}
+
+			&::before {
+				left: 50%;
+				z-index: 1;
+				max-width: 770px;
+				background-image: url('../img/offer/showrooms/decor.svg');
+				background-size: cover;
+				transform: translateX(-50%);
+				opacity: 0.5;
+				content: '';
+				@include bg-img;
+			}
+		}
+	}
+
+	&__buttons {
+		position: absolute;
+		right: 40px;
+		bottom: 60px;
+		display: flex;
 
 		@include mq('phone') {
-			display: none;
+			right: 20px;
+			bottom: 15px;
+		}
+	}
+
+	&__button {
+		position: relative;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: $orange-500;
+
+		&:not(:last-child) {
+			margin-right: 15px;
+
+			@include mq('phone') {
+				margin-right: 10px;
+			}
 		}
 	}
 }

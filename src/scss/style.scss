@@ -44,6 +44,7 @@
 @import "./components/cards/belief-card";
 @import "./components/cards/history-card";
 @import "./components/cards/released-card";
+@import "./components/cards/offer/discount-card";
 
 // * salons
 @import "./components/salons/salons";
@@ -76,6 +77,8 @@
 // * offer
 @import "./home-page/offer/offer";
 @import "./home-page/offer/offer-mobile";
+@import "./home-page/offer/offer-discount";
+@import "./home-page/offer/offer-showrooms";
 
 // * catalog-page
 @import "./catalog-page/catalog-goods";
