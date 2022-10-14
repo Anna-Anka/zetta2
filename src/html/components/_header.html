@@ -49,8 +49,8 @@
                 </div>
                 <div class="header__bottom">
                     <ul class="menu">
-                        <li class="menu__item">
-                            <a class="menu__link menu__link--catalog menu__link--dop" href="#dop-catalog"> Каталог</a>
+                        <li class="menu__item menu__item--catalog">
+                            <a class="menu__link menu__link--dop" href="#dop-catalog"> Каталог</a>
                             <div class="catalog" id="dop-catalog">
                                 <div class="container container--large">
                                     <div class="catalog__wrapper">
@@ -137,7 +137,19 @@
                                                 <a class="catalog-main__link" href="#buyers-company">О компании</a>
                                             </li>
                                         </ul>
-                                        <ul class="catalog-detail catalog-detail--active" id="buyers-company">
+                                        <ul class="catalog-detail catalog-detail--active" id="buyers-service">
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Гардеробные
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Прихожие
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="catalog-detail" id="buyers-company">
                                             <li class="catalog-detail__item">
                                                 <a class="catalog-detail__link catalog-detail__link--active" href="#">
                                                     Гарантия 12 лет
@@ -159,18 +171,6 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <ul class="catalog-detail" id="catalog-furniture">
-                                            <li class="catalog-detail__item">
-                                                <a class="catalog-detail__link" href="#">
-                                                    Гардеробные
-                                                </a>
-                                            </li>
-                                            <li class="catalog-detail__item">
-                                                <a class="catalog-detail__link" href="#">
-                                                    Прихожие
-                                                </a>
-                                            </li>
-                                        </ul>
                                         <div class="catalog-stock">
                                             <a class="catalog-stock__link" href="#">
                                                 <img class="catalog-stock__banner" src="img/discounts/2.jpg" alt="Cкидки на технику Bosh" loading="lazy" width="573" height="232">
@@ -182,27 +182,24 @@
                             </div>
                         </li>
                         <li class="menu__item">
-                            <a class="menu__link" href="#">Заказать проект</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link">О компании</a>
-                            <div class="catalog" id="dop-catalog">
+                            <a class="menu__link menu__link--dop" href="#dop-company">Компания</a>
+                            <div class="catalog" id="dop-company">
                                 <div class="container container--large">
                                     <div class="catalog__wrapper">
                                         <ul class="catalog-main">
                                             <li class="catalog-main__item">
-                                                <a class="catalog-main__link catalog-main__link--active" href="#catalog-kitchen">Фабрика Zetta</a>
+                                                <a class="catalog-main__link catalog-main__link--active" href="#company-factory">Сервис Zetta</a>
                                             </li>
                                             <li class="catalog-main__item">
-                                                <a class="catalog-main__link" href="#catalog-furniture">Партнерам</a>
+                                                <a class="catalog-main__link" href="#company-partners">Партнерам</a>
                                             </li>
                                             <li class="catalog-main__item">
-                                                <a class="catalog-main__link" href="#catalog-furniture">Сервис Zetta</a>
+                                                <a class="catalog-main__link" href="#company-service">Сервис Zetta</a>
                                             </li>
                                         </ul>
-                                        <ul class="catalog-detail catalog-detail--active" id="catalog-kitchen">
+                                        <ul class="catalog-detail catalog-detail--active" id="company-factory">
                                             <li class="catalog-detail__item">
-                                                <a class="catalog-detail__link catalog-detail__link--active" href="#">
+                                                <a class="catalog-detail__link" href="#">
                                                     Производство
                                                 </a>
                                             </li>
@@ -216,6 +213,20 @@
                                                     История компании
                                                 </a>
                                             </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Миссия и ценности
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="catalog-detail" id="company-partners">
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link catalog-detail__link--active" href="#">
+                                                    Гарантия 12 лет
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="catalog-detail" id="company-service">
                                             <li class="catalog-detail__item">
                                                 <a class="catalog-detail__link" href="#">
                                                     Миссия и ценности
@@ -273,8 +284,8 @@
                 </div>
                 <button class="burger-menu__call call" type="button">Обратный звонок</button>
                 <ul class="burger-menu__bottom">
-                    <li class="burger-menu__item">
-                        <a class="burger-menu__link burger-menu__link--dop" href="#dop-catalog">
+                    <li class="burger-menu__item burger-menu__item--catalog">
+                        <a class="burger-menu__link burger-menu__link--catalog burger-menu__link--dop" href="#dop-catalog">
                             Каталог
                         </a>
                         <ul class="catalog-mobile">
@@ -282,7 +293,7 @@
                                 <button class="catalog-mobile__button" type="button">
                                     Коропусная мебель
                                 </button>
-                                <ul class="catalog-mobile__list">
+                                <ul class="catalog-mobile__menu">
                                     <li class="catalog-mobile__item">
                                         <a class="catalog-mobile__link" href="#">
                                             Современный стиль
@@ -314,7 +325,7 @@
                                 <button class="catalog-mobile__button" type="button">
                                     Кухни
                                 </button>
-                                <ul class="catalog-mobile__list">
+                                <ul class="catalog-mobile__menu">
                                     <li class="catalog-mobile__item">
                                         <a class="catalog-mobile__link" href="#">
                                             Современный стиль
@@ -350,33 +361,132 @@
                         </a>
                     </li>
                     <li class="burger-menu__item">
+                        <a class="burger-menu__link burger-menu__link--dop" href="#dop-buyers">
+                            Покупателям
+                        </a>
+                        <ul class="catalog-mobile">
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    Сервис Zetta
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Гарантия 12 лет
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Замер помещения
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Доставка
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Монтаж мебели
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    О компании
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Доставка
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Монтаж мебели
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link burger-menu__link--dop" href="#dop-company">
+                            Компания
+                        </a>
+                        <ul class="catalog-mobile">
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    Фабрика Zetta
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Производство
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Качество и Гарантия 12 лет
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            История компании
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Миссия и ценности
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    Партнерам
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Качество и Гарантия 12 лет
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Производство
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    Сервис Zetta
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Миссия и ценности
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            История компании
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger-menu__item">
                         <a class="burger-menu__link" href="#">
-                            Услуги
+                            Адреса салонов
                         </a>
                     </li>
                     <li class="burger-menu__item">
                         <a class="burger-menu__link" href="#">
-                            Заказать проект
-                        </a>
-                    </li>
-                    <li class="burger-menu__item">
-                        <a class="burger-menu__link" href="#">
-                            Сотрудничество
-                        </a>
-                    </li>
-                    <li class="burger-menu__item">
-                        <a class="burger-menu__link" href="#">
-                            Запись в салон
-                        </a>
-                    </li>
-                    <li class="burger-menu__item">
-                        <a class="burger-menu__link" href="#">
-                            О компании
-                        </a>
-                    </li>
-                    <li class="burger-menu__item">
-                        <a class="burger-menu__link" href="#">
-                            Адрес салона
+                            Блог
                         </a>
                     </li>
                 </ul>

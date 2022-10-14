@@ -9,6 +9,38 @@
 		&:not(:last-child) {
 			@include adaptiv-value('margin-right', 40, -20, 1);
 		}
+
+		&--catalog {
+			.menu__link--dop {
+				position: relative;
+				padding: 6px 15px 6px 35px;
+				background-color: transparent;
+				border-radius: 12px;
+				transition: background-color 0.4s;
+
+				&::before {
+					position: absolute;
+					top: 50%;
+					left: 10px;
+					width: 16px;
+					height: 16px;
+					background-image: url('../img/icons/burger.svg');
+					transform: translateY(-50%);
+					content: '';
+					@include bg-img;
+				}
+			}
+
+			.menu__link--dop-active {
+				color: $white;
+				background-color: $orange-500;
+
+				&::before {
+					filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(116deg)
+						brightness(103%) contrast(101%);
+				}
+			}
+		}
 	}
 
 	&__link {
@@ -19,36 +51,6 @@
 		&--active,
 		&--dop-active {
 			color: $orange-500;
-		}
-
-		&--catalog {
-			position: relative;
-			padding: 6px 15px 6px 35px;
-			background-color: transparent;
-			border-radius: 12px;
-			transition: background-color 0.4s;
-
-			&::before {
-				position: absolute;
-				top: 50%;
-				left: 10px;
-				width: 16px;
-				height: 16px;
-				background-image: url('../img/icons/burger.svg');
-				transform: translateY(-50%);
-				content: '';
-				@include bg-img;
-			}
-		}
-
-		&--catalog-active {
-			color: $white;
-			background-color: $orange-500;
-
-			&::before {
-				filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(116deg)
-					brightness(103%) contrast(101%);
-			}
 		}
 	}
 }

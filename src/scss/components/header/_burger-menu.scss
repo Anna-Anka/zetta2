@@ -28,7 +28,7 @@
 		display: flex;
 		align-items: center;
 
-		@include mq('xl') {
+		@include mq('phone') {
 			flex-direction: column;
 		}
 	}
@@ -57,15 +57,19 @@
 		overflow-x: auto;
 
 		@include mq('phone') {
+			width: 100%;
+			max-width: 248px;
 			margin-bottom: 50px;
 			padding-top: 93px;
 			padding-bottom: 0;
-			max-width: 248px;
-			width: 100%;
+			overflow: hidden;
 		}
 	}
 
 	&__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		min-width: max-content;
 
 		&:not(:last-child) {
@@ -76,55 +80,80 @@
 				margin-bottom: 20px;
 			}
 		}
+
+		&--catalog {
+			.burger-menu__link--dop {
+				position: relative;
+				padding: 6px 15px 6px 35px;
+				background-color: transparent;
+				border-radius: 12px;
+				transition: background-color 0.4s;
+
+				&::before {
+					position: absolute;
+					top: 50%;
+					left: 10px;
+					width: 16px;
+					height: 16px;
+					background-image: url('../img/icons/burger.svg');
+					transform: translateY(-50%);
+					content: '';
+					@include bg-img;
+				}
+			}
+
+			.burger-menu__link--dop-active {
+				@include mq('xl') {
+					color: $white;
+					background-color: $orange-500;
+
+					&::before {
+						filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(116deg)
+							brightness(103%) contrast(101%);
+					}
+				}
+
+				@include mq('phone') {
+					color: inherit;
+					background-color: transparent;
+
+					&::before {
+						filter: none;
+					}
+				}
+			}
+		}
+
+		&--active {
+			.burger-menu__link {
+				@include mq('phone') {
+					color: $orange-500;
+				}
+
+				&--catalog {
+					@include mq('phone') {
+						color: $white;
+						background-color: $orange-500;
+
+						&::before {
+							filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(116deg)
+								brightness(103%) contrast(101%);
+						}
+					}
+				}
+			}
+		}
 	}
 
 	&__link {
 		font-weight: $fw-600;
 		line-height: 1.1;
 
-		&--dop {
-			position: relative;
-			display: inline-block;
-			padding: 11px 14px 11px 45px;
-			padding-left: 32px;
-			color: $white;
-			background-color: $orange-500;
-			border-radius: 12px;
-			display: flex;
-			margin: 0 auto;
-			// width: 100%;
-			// text-align: left;
-
-			&::before {
-				position: absolute;
-				top: 50%;
-				left: 20px;
-				width: 16px;
-				height: 16px;
-				background-image: url('../img/icons/burger.svg');
-				transform: translateY(-50%);
-				filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(285deg)
-					brightness(104%) contrast(101%);
-				content: '';
-				@include bg-img;
-
-				@include mq('xl') {
-					left: 15px;
-					width: 14px;
-					height: 14px;
-				}
-			}
-		}
-
 		&--dop-active {
-			&::before {
-				@include mq('phone') {
-					background-image: url('../img/icons/close-white.svg');
-					filter: none;
-					width: 18px;
-					height: 18px;
-					left: 12px;
-				}
+			color: $orange-500;
+
+			@include mq('phone') {
+				color: unset;
 			}
 		}
 	}

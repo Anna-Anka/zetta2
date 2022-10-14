@@ -37,11 +37,11 @@
 	}
 
 	&--active {
-		bottom: -22px;
+		bottom: -83px;
 		visibility: visible;
 		opacity: 1;
 
-		@include mq('tablet') {
+		@include mq('phone') {
 			display: none;
 		}
 	}

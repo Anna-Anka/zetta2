@@ -11,7 +11,6 @@
 		background-color: $white;
 		visibility: hidden;
 		opacity: 0;
-		//transition: opacity 0.4s, top 0.4s;
 
 		@include mq('xl') {
 			padding-top: 0;
@@ -22,13 +21,32 @@
 			top: 125px;
 			z-index: 100;
 			display: flex;
-			height: auto;
-			overflow-y: auto;
 			visibility: visible;
 			opacity: 1;
 
+			.catalog-main__link--active {
+				color: $orange-500;
+
+				&::before {
+					position: absolute;
+					top: 8px;
+					right: 0;
+					width: 16px;
+					height: 20px;
+					background-image: url('../img/icons/more.svg');
+					filter: invert(31%) sepia(92%) saturate(7488%) hue-rotate(6deg)
+						brightness(104%) contrast(108%);
+					content: '';
+					@include bg-img;
+				}
+			}
+
+			.catalog-detail--active {
+				display: block;
+			}
+
 			@include mq('xl') {
-				top: 294px;
+				top: 284px;
 			}
 
 			@include mq('phone') {
@@ -61,23 +79,6 @@
 			font-weight: $fw-800;
 			font-size: 24px;
 			transition: color $orange-500;
-
-			&--active {
-				color: $orange-500;
-
-				&::before {
-					position: absolute;
-					top: 8px;
-					right: 0;
-					width: 16px;
-					height: 20px;
-					background-image: url('../img/icons/more.svg');
-					filter: invert(31%) sepia(92%) saturate(7488%) hue-rotate(6deg)
-						brightness(104%) contrast(108%);
-					content: '';
-					@include bg-img;
-				}
-			}
 		}
 	}
 
@@ -88,10 +89,6 @@
 		margin-right: 30px;
 		padding-left: 40px;
 		@include adaptiv-value('max-width', 380, 150, 1);
-
-		&--active {
-			display: block;
-		}
 
 		&::before {
 			position: absolute;
@@ -136,6 +133,7 @@
 				drop-shadow(0 0 16px rgba($black, 0.05))
 				drop-shadow(16px 3px 32px rgba($black, 0.04));
 		}
+        
 		&__banner {
 			width: 100%;
 			height: 100%;
@@ -183,7 +181,7 @@
 			}
 
 			&--active {
-				//color: $orange-500;
+				color: $orange-500;
 
 				&::before {
 					@include mq('phone') {
@@ -206,7 +204,7 @@
 			}
 		}
 
-		&__list {
+		&__menu {
 			display: none;
 
 			&--active {
