@@ -17,4 +17,15 @@ export const interactiveFunction = () => {
     };
 };
 
-export const interactiveBoxFunction = () => {};
+export const interactiveBoxFunction = () => {
+    if (document.querySelector('.interactive-box')) {
+        $('.interactive__btn').on('click', function (e) {
+            e.preventDefault();
+            $('.interactive__btn').removeClass('interactive__btn--active');
+            $(this).addClass('interactive__btn--active');
+
+            $('.interactive-box__item').removeClass('interactive-box__item--active');
+            $($(this).attr('href')).addClass('interactive-box__item--active');
+        });
+    };
+};

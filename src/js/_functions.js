@@ -1,12 +1,6 @@
 // Данный файл - лишь собрание подключений готовых компонентов.
 // Рекомендуется создавать отдельный файл в папке components и подключать все там
 
-// * Подключение inputmask
-import Inputmask from "inputmask";
-let inputs = document.querySelectorAll('input[type="tel"]')
-let im = new Inputmask('+7 (999) 999-99-99')
-im.mask(inputs)
-
 // Определение операционной системы на мобильных
 // import { mobileCheck } from "./functions/mobile-check";
 // console.log(mobileCheck())
@@ -78,3 +72,9 @@ im.mask(inputs)
 //   console.log(e.detail);
 //   console.log(e.detail.dir);
 // });
+
+// * Подключение inputmask
+import Inputmask from "inputmask";
+let inputs = document.querySelectorAll('input[type="tel"]')
+let im = new Inputmask('+7 (999) 999-99-99')
+im.mask(inputs)

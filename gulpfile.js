@@ -219,7 +219,7 @@ const images = () => {
   return src([`${paths.srcImgFolder}/**/**.{jpg,jpeg,png,svg}`])
     .pipe(gulpif(isProd, image([
       image.mozjpeg({
-        quality: 90,
+        quality: 95,
         progressive: false
       }),
       image.optipng({

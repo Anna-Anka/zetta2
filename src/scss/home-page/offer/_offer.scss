@@ -2,225 +2,20 @@
 	position: relative;
 	z-index: 0;
 	margin-bottom: 140px;
-	//background-color: $grey-200;
+	background-color: $grey-200;
 
 	@include mq('xxl') {
-		margin-bottom: 117px;
+		margin-bottom: 100px;
 		padding-top: 0;
 	}
 
 	@include mq('phone') {
-		margin-bottom: 18px;
-		padding-bottom: 23px;
-		background-color: transparent;
-	}
-
-	&__wrapper {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		min-height: 650px;
-		padding-top: 50px;
-
-		@include mq('xxl') {
-			display: flex;
-			flex-direction: column-reverse;
-			min-height: auto;
-		}
-
-		@include mq('xl') {
-			padding-top: 0;
-		}
-	}
-
-	&__box {
-		position: relative;
-		display: inherit;
-		margin-top: auto;
-		@include adaptiv-value('margin-right', 70, -60, 1);
-
-		@include mq('xxl') {
-			margin-right: 0;
-		}
-
-		@include mq('phone') {
-			display: none;
-		}
-	}
-
-	&__info {
-		position: relative;
-		display: inline-block;
-		width: 100%;
-		min-height: 650px;
-		margin-left: 0;
-		padding-top: 67px;
-		padding-bottom: 67px;
-		background-color: $white;
-		border-radius: 120px 30px 0 0;
-		box-shadow: 20px 4px 40px rgba($black, 0.04);
-		@include adaptiv-value('padding-left', 50, 0, 1);
-		@include adaptiv-value('padding-right', 50, 0, 1);
-
-		@include adaptiv-value('max-width', 465, 260, 1);
-
-		@include mq('xxl') {
-			max-width: 100%;
-			min-height: auto;
-			margin-right: 0;
-			padding: 63px 50px 44px 67px;
-			@include adaptiv-value('max-width', 1400, 600, 1);
-		}
-	}
-
-	&__items {
-		box-sizing: border-box;
-	}
-
-	&__title {
-		margin-bottom: 35px;
-		color: $orange-500;
-		font-weight: $fw-800;
-		font-size: 34px;
-		line-height: 1.2;
-
-		@include mq('xxl') {
-			max-width: 700px;
-			margin-bottom: 28px;
-		}
-	}
-
-	&__small {
-		color: $dark-700;
-		font-size: 25px;
-		line-height: 1.4;
-
-		@include mq('xxl') {
-			font-size: 27px;
-		}
-	}
-
-	&__title,
-	&__small {
-		display: inline-block;
-	}
-
-	&__inner {
-		@include mq('xxl') {
-			display: flex;
-			align-items: flex-end;
-			justify-content: space-between;
-		}
-	}
-
-	&__example {
-		margin-bottom: 51px;
-		font-size: 18px;
-		line-height: 1.5;
-		letter-spacing: 0.02em;
-
-		@include mq('xxl') {
-			margin-bottom: 0;
-		}
-	}
-
-	&__headding {
-		display: inline-block;
-		margin-bottom: 13px;
-		color: $dark-700;
-		font-weight: $fw-700;
-	}
-
-	&__list {
-		max-width: 400px;
-		padding-left: 20px;
-		list-style: outside;
-
-		@include mq('xxl') {
-			max-width: 80%;
-		}
-	}
-
-	&__text {
-		&:not(:last-child) {
-			margin-bottom: 11px;
-		}
-	}
-
-	&__accent {
-		display: block;
-		margin-top: 5px;
-		color: $orange-500;
-	}
-
-	&__more {
-		position: relative;
-		max-width: fit-content;
-		padding: 14px 71px 14px 61px;
-		font-size: 19px;
-		border-radius: 16px;
-
-		&::before {
-			position: absolute;
-			top: 50%;
-			right: 41px;
-			width: 16px;
-			height: 20px;
-			background-image: url('../img/icons/more.svg');
-			transform: translateY(-50%);
-			content: '';
-			@include bg-img;
-		}
-	}
-
-	&__decor {
-		position: absolute;
-		right: -100px;
-		bottom: 30px;
-		z-index: 10;
-		width: 160px;
-		height: 160px;
-		transform: translateY(-50%);
-		animation: 5s linear infinite rotate;
-
-		@include mq('xxl') {
-			display: none;
-		}
-	}
-
-	&__decor-text {
-		font: inherit;
-		font-weight: $fw-800;
-		font-size: 20px;
-		letter-spacing: 0.05em;
-		text-transform: uppercase;
-		fill: $orange-500;
-	}
-
-	&__picture {
-		position: relative;
-		display: inline-block;
-		width: 100%;
-		max-width: 740px;
-		height: 500px;
-
-		@include mq('xxl') {
-			margin: 0 auto 16px;
-		}
-
-		@include mq('phone') {
-			height: 233px;
-		}
-	}
-
-	&__img {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
+		margin-bottom: 40px;
 	}
 
 	&__slide {
 		box-sizing: border-box;
+        margin: auto 0;
 		overflow: hidden;
 
 		&--offer,
@@ -288,7 +83,7 @@
 	&__buttons {
 		position: absolute;
 		right: 40px;
-		bottom: 60px;
+		bottom: 40px;
 		display: flex;
 
 		@include mq('phone') {

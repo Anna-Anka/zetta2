@@ -7,21 +7,21 @@
 
 	&__item {
 		&:not(:last-child) {
-			@include adaptiv-value('margin-right', 40, 0, 1);
+			@include adaptiv-value('margin-right', 40, -20, 1);
 		}
 	}
 
 	&__link {
-
-        @include mq('xl') {
+		@include mq('xl') {
 			display: none;
 		}
 
-		&--active {
+		&--active,
+		&--dop-active {
 			color: $orange-500;
 		}
 
-		&--dop {
+		&--catalog {
 			position: relative;
 			padding: 6px 15px 6px 35px;
 			background-color: transparent;
@@ -41,7 +41,7 @@
 			}
 		}
 
-		&--dop-active {
+		&--catalog-active {
 			color: $white;
 			background-color: $orange-500;
 

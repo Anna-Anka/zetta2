@@ -7,7 +7,7 @@
                     <span class="sr-only">Закрыть окно</span>
                 </button>
             </div>
-            <form class="modal__form" action="#">
+            <form class="modal__form" action="#" data-validate>
                 <div class="modal__wrapper">
                     <div class="modal__inner">
                         <input class="modal__hidden" type="radio" name="froze" id="froze-design" checked>
@@ -21,7 +21,6 @@
                             Вызов замерщика
                         </label>
                     </div>
-
                 </div>
                 <div class="modal__items">
                     <div class="modal__item">
@@ -34,7 +33,7 @@
                         <label class="sr-only" for="froze-tel">
                             Ваш номер телефона
                         </label>
-                        <input class="modal__field" id="froze-tel" name="tel" type="tel" placeholder="Ваш номер телефона" required>
+                        <input class="modal__field" id="froze-tel" name="tel" type="tel" placeholder="Ваш номер телефона" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
                     </div>
                     <div class="modal__item">
                         <label class="sr-only" for="froze-address">

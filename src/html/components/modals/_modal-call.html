@@ -7,7 +7,7 @@
                     <span class="sr-only">Закрыть окно</span>
                 </button>
             </div>
-            <form class="modal__form" action="#">
+            <form class="modal__form test" action="#">
                 <div class="modal__items">
                     <div class="modal__item">
                         <label class="sr-only" for="call-name">
@@ -19,7 +19,7 @@
                         <label class="sr-only" for="call-tel">
                             Ваш номер телефона
                         </label>
-                        <input class="modal__field" id="call-tel" name="tel" type="tel" placeholder="Ваш номер телефона" required>
+                        <input class="modal__field" id="call-tel" name="tel" type="tel" placeholder="Ваш номер телефона" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
                     </div>
                 </div>
                 <button class="modal__button btn" type="submit">Заказать обратный звонок</button>
