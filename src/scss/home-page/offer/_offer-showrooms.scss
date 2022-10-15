@@ -3,7 +3,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 60px 0;
+	width: 100%;
+	padding: 40px 0;
 	overflow: hidden;
 	background-color: rgba($grey-200, 0.96);
 	background-size: cover;
@@ -68,7 +69,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 20px;
-		margin-bottom: 60px;
+		margin-bottom: 40px;
 		text-align: center;
 
 		@include mq('phone') {
@@ -99,11 +100,13 @@
 	}
 
 	&__bg {
-		flex: 0 0 680px;
+		@include bg-img;
+		flex: 0 0 500px;
 		box-sizing: content-box;
 		width: 100%;
-		max-width: 680px;
-		height: 680px;
+		max-width: 500px;
+		height: 500px;
+		background-size: contain;
 		border: 20px solid $white;
 		border-radius: 100%;
 
@@ -146,8 +149,12 @@
 	}
 
 	&__mobile {
-		display: flex;
-		align-items: center;
-		width: 100%;
+		display: none;
+
+		@include mq('phone') {
+			display: flex;
+			align-items: center;
+			width: 100%;
+		}
 	}
 }

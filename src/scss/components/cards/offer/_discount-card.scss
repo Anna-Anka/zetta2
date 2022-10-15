@@ -1,11 +1,11 @@
 .discount-card {
 	position: relative;
 	width: 100%;
-	height: 670px;
+	height: 600px;
 	border-radius: 40px;
 
 	@include mq('xl') {
-		height: 520px;
+		height: 500px;
 	}
 
 	@include mq('phone') {

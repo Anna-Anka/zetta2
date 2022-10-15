@@ -14,11 +14,14 @@
 	}
 
 	&__slide {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		box-sizing: border-box;
-        margin: auto 0;
+		margin: auto;
 		overflow: hidden;
+		background-color: $grey-200;
 
-		&--offer,
 		&--discount {
 			background-color: $grey-200;
 
@@ -31,29 +34,11 @@
 		&--showrooms {
 			position: relative;
 			z-index: 1;
-
-			&::before {
-				position: absolute;
-				z-index: -1;
-				width: 100%;
-				height: 100%;
-			}
 		}
 
 		&--discount {
 			@include mq('phone') {
 				background-color: $grey-200;
-			}
-
-			&::before {
-				top: 50%;
-				left: 50%;
-				color: rgba($white, 0.4);
-				font-weight: $fw-800;
-				font-size: 1500px;
-				line-height: 1.2;
-				transform: translate(-50%, -80%);
-				content: '%';
 			}
 		}
 
@@ -64,18 +49,6 @@
 			@include mq('phone') {
 				background-color: $grey-200;
 				background-size: 0;
-			}
-
-			&::before {
-				left: 50%;
-				z-index: 1;
-				max-width: 770px;
-				background-image: url('../img/offer/showrooms/decor.svg');
-				background-size: cover;
-				transform: translateX(-50%);
-				opacity: 0.5;
-				content: '';
-				@include bg-img;
 			}
 		}
 	}
