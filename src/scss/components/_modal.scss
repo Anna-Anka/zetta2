@@ -3,6 +3,12 @@
 	visibility: hidden;
 	opacity: 0;
 
+    &--thank {
+        .modal__title {
+            text-align: center;
+        }
+    }
+
 	&--active {
 		position: fixed;
 		top: 0;
@@ -60,6 +66,7 @@
 		color: $dark-700;
 		font-weight: $fw-800;
 		font-size: 24px;
+        display: block;
 
 		@include mq('phone') {
 			margin-right: 0;

@@ -25,14 +25,14 @@
 		transform: translateY(-50%);
 
 		&--prev {
-			left: 15px;
+			left: 0;
 		}
 
 		&--next {
-			right: 15px;
+			right: 0;
 		}
 
-		@include mq('tablet') {
+		@include mq('xl') {
 			display: none;
 		}
 	}
@@ -43,7 +43,6 @@
 
 	&__swiper {
 		position: relative;
-		overflow: visible;
 	}
 
 	&__item {

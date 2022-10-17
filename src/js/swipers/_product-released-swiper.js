@@ -13,7 +13,7 @@ export const releasedSwiper = () => {
             },
 
             breakpoints: {
-                1200: {
+                1024: {
                     slidesPerView: 2,
                     slidesPerGroup: 2,
                     spaceBetween: 30,

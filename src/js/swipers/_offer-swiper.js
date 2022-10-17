@@ -3,7 +3,13 @@ export const offerSwiper = () => {
 		const swiperOffer = new Swiper('.offer__swiper', {
 			slidesPerView: 1,
 			slidesPerGroup: 1,
-            //autoHeight: true,
+            loop: true,
+            speed: 800,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                stopOnlastSlide: false,
+            },
             
 			navigation: {
 				nextEl: '.offer__button--next',

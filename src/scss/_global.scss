@@ -14,7 +14,7 @@ body {
 	overflow: hidden;
 
 	&--lock,
-    &--active {
+	&--active {
 		height: 100vh;
 	}
 }
@@ -55,14 +55,14 @@ body {
 		border: 2px solid $orange-500;
 	}
 
-    &--more {
-        position: relative;
+	&--more {
+		position: relative;
 		width: fit-content;
 		padding: 14px 71px 14px 41px;
 		border-radius: 16px;
-        
-        &::before {
-            position: absolute;
+
+		&::before {
+			position: absolute;
 			top: 50%;
 			right: 41px;
 			width: 16px;
@@ -71,8 +71,8 @@ body {
 			transform: translateY(-50%);
 			content: '';
 			@include bg-img;
-        }
-    }
+		}
+	}
 }
 
 .container {
@@ -130,9 +130,9 @@ body {
 		font-size: 32px;
 	}
 
-    &--page {
-        margin-bottom: 25px;
-    }
+	&--page {
+		margin-bottom: 25px;
+	}
 }
 
 .swiper-button-next,
@@ -232,39 +232,49 @@ body {
 }
 
 .blackout {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -100;
-    width: 100%;
-    height: 100%;
-    background-color: rgba($black, 0.8);
-    opacity: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -100;
+	width: 100%;
+	height: 100%;
+	background-color: rgba($black, 0.8);
+	opacity: 0;
 
-    &--active {
-        z-index: 5;
-        opacity: 1;
-    }
+	&--active {
+		z-index: 5;
+		opacity: 1;
+	}
 }
 
 .swiper-scrollbar.swiper-scrollbar-horizontal {
-		position: relative;
-		bottom: unset;
-		left: unset;
-		z-index: 50;
-		width: 100%;
-		height: 2px;
-	}
+	position: relative;
+	bottom: unset;
+	left: unset;
+	z-index: 50;
+	width: 100%;
+	height: 2px;
+}
 
-	.swiper-scrollbar-drag {
-		bottom: 0;
-		height: 3px;
-		background: $grey-400;
-		border-radius: 0;
-	}
+.swiper-scrollbar-drag {
+	bottom: 0;
+	height: 3px;
+	background: $grey-400;
+	border-radius: 0;
+}
 
-	.swiper-scrollbar {
-		height: 2px;
-		background: $grey-250;
-		border-radius: 0;
-	}
+.swiper-scrollbar {
+	height: 2px;
+	background: $grey-250;
+	border-radius: 0;
+}
+
+.disable-scroll {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	overscroll-behavior: none;
+}
