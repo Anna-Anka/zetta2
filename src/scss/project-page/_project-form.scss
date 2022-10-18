@@ -179,7 +179,6 @@
 
 	.file-selectdialog .file-extended .file-selector {
 		position: relative;
-		margin: 0;
 		padding: 5px;
 		color: inherit;
 		font: inherit;
@@ -195,22 +194,12 @@
 	}
 
 	.file-selectdialog .file-extended .file-selector {
-		padding: 0;
+		padding: 5px;
 		border: none;
 	}
 
 	.file-selectdialog .file-extended .file-selector:hover {
-		padding: 0;
+		padding: 5px;
 		border: none;
-	}
-
-	.file-selector {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		align-items: center;
-		justify-content: center;
-		height: 100%;
-		margin: auto;
 	}
 }
