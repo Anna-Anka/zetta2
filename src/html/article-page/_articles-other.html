@@ -1,0 +1,42 @@
+<section class="articles-other section">
+   <div class="container">
+       <h2 class="articles-other__title title">
+           Другие полезные статьи
+       </h2>
+    <div class="articles-other__wrapper swiper">
+        <ul class="articles-other__items swiper-wrapper">
+            <li class="articles-other__item swiper-slide">
+                @include('./../components/cards/_article-card.html', {
+                'img' : '1',
+                'alt' : 'Описание статьи',
+                'title' : 'Описание статьи'
+                })
+            </li>
+            <li class="articles-other__item swiper-slide">
+                @include('./../components/cards/_article-card.html', {
+                'img' : '1',
+                'alt' : 'Описание статьи',
+                'title' : 'Описание статьи'
+                })
+            </li>
+            <li class="articles-other__item swiper-slide">
+                @include('./../components/cards/_article-card.html', {
+                'img' : '1',
+                'alt' : 'Описание статьи',
+                'title' : 'Описание статьи'
+                })
+            </li>
+            <li class="articles-other__item swiper-slide">
+                @include('./../components/cards/_article-card.html', {
+                'img' : '1',
+                'alt' : 'Описание статьи',
+                'title' : 'Описание статьи'
+                })
+            </li>
+        </ul>
+        <button class="articles-other__button articles-other__button--prev swiper-button-prev" type="button"></button>
+        <button class="articles-other__button articles-other__button--next swiper-button-next" type="button"></button>
+    </div>
+    <div class="articles-other__scrollbar swiper-scrollbar"></div>
+   </div>
+</section>

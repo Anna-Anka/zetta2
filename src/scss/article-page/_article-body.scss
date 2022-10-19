@@ -1,5 +1,18 @@
 .article-body {
-	margin-bottom: 100px;
+	margin-bottom: 12px;
+	padding-bottom: 80px;
+	@include bottom-line;
+
+    &::before {
+        @include mq('xl') {
+            display: none;
+        }
+    }
+
+    @include mq('xl') {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
 
 	&__content {
 		max-width: 1200px;
@@ -21,9 +34,13 @@
 		}
 	}
 
-    picture {
-        margin: 60px 0;
-    }
+	picture {
+		margin: 60px 0;
+
+        @include mq('phone') {
+            margin: 20px 0;
+        }
+	}
 
 	img {
 		width: 100%;
@@ -49,5 +66,16 @@
 		@include mq('phone') {
 			font-size: 12px;
 		}
+	}
+}
+
+.article-bottom {
+	color: $dark-700;
+	font-weight: $fw-600;
+	font-size: 22px;
+	line-height: 1.1;
+
+	@include mq('xl') {
+		display: none;
 	}
 }

@@ -1,0 +1,47 @@
+.articles-other {
+	&__title {
+		margin-bottom: 60px;
+
+		@include mq('phone') {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__button {
+		top: 170px;
+		background-color: $orange-500;
+		transform: translateY(0);
+
+		&--prev {
+			left: 20px;
+		}
+
+		&--next {
+			right: 20px;
+		}
+
+		@include mq('xl') {
+			display: none;
+		}
+	}
+
+	.swiper-button-disabled {
+		opacity: 0.6;
+	}
+
+	&__wrapper {
+		margin-bottom: 60px;
+
+        @include mq('xl') {
+            margin-bottom: 40px;
+        }
+	}
+
+	.article-card {
+		padding-bottom: 0;
+
+		&::before {
+			display: none;
+		}
+	}
+}

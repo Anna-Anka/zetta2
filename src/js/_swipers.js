@@ -1,3 +1,4 @@
+import { articlesOtherSwiper } from "./swipers/_articles-other-swiper";
 import { assemblySwiper } from "./swipers/_assembly-swiper";
 import { newModelsSwiper } from "./swipers/_new-models-swiper";
 import { offerSwiper } from "./swipers/_offer-swiper";
@@ -15,3 +16,4 @@ stockSwiper();
 assemblySwiper();
 styleSwiper();
 releasedSwiper();
+articlesOtherSwiper();
