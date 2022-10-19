@@ -1,0 +1,58 @@
+.discount-distributed {
+	&__accent {
+		color: $dark-700;
+	}
+
+	ul,
+	p {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+
+	ul {
+		padding-left: 20px;
+
+		@include mq('phone') {
+			padding-left: 10px;
+		}
+	}
+
+	li {
+		position: relative;
+		padding-left: 22px;
+
+		@include mq('phone') {
+			padding-left: 17px;
+		}
+
+		&::before {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 7px;
+			height: 7px;
+			background-color: $orange-500;
+			border-radius: 50%;
+			transform: translateY(-50%);
+			content: '';
+
+			@include mq('phone') {
+				width: 4px;
+				height: 4px;
+			}
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
+
+	a {
+		transition: color 0.3s;
+
+		&:hover {
+			color: $orange-500;
+		}
+	}
+}
