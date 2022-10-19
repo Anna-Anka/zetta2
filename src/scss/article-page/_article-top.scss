@@ -1,5 +1,4 @@
 .article-top {
-	margin-bottom: 60px;
 	@include bottom-line;
 	padding-bottom: 12px;
 
@@ -119,6 +118,8 @@
 		}
 
 		&--mobile {
+            display: none;
+            
 			@include mq('phone') {
 				display: flex;
                 max-width: 90px;
