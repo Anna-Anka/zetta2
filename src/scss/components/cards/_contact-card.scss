@@ -1,15 +1,11 @@
 .contact-card {
 	width: 100%;
-	min-height: 309px;
+	height: 100%;
 	padding: 30px;
 	color: $dark-700;
 	background-color: $white;
 	border-radius: 12px;
 	box-shadow: 0 0 20px rgba($black, 0.07);
-
-	@include mq('xl') {
-		min-height: auto;
-	}
 
 	@include mq('phone') {
 		padding: 25px;

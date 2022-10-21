@@ -36,7 +36,7 @@
 		margin-bottom: 40px;
 
 		@include mq('phone') {
-			margin-bottom: 10px;
+			margin-bottom: 20px;
 		}
 	}
 
@@ -45,7 +45,7 @@
         justify-content: space-between;
 
         @include mq('phone') {
-			align-items: flex-end;
+			align-items: center;
 		}
     }
 
@@ -125,9 +125,15 @@
                 max-width: 90px;
 			}
 		}
+
+        &--active {
+            .article-top__copy {
+                display: block;
+            }
+        }
 	}
 
-	&__link {
+	&__button {
 		position: relative;
 		margin-bottom: 15px;
 		margin-bottom: 5px;
@@ -165,6 +171,7 @@
 	}
 
 	&__copy {
+        display: none;
 		font-weight: $fw-800;
 		line-height: 1.1;
 

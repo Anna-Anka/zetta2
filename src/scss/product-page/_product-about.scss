@@ -89,10 +89,4 @@
 			display: none;
 		}
 	}
-
-    .interactive-box__line {
-        @include mq('xxl') {
-            display: none;
-        }
-    }
 }

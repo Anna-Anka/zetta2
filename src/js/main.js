@@ -26,4 +26,5 @@ import './_contacts-page'
 // * production-page
 import './_production-page'
 
-
+// * article-page
+import './_article-page'
