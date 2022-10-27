@@ -1,12 +1,13 @@
 import './_libs';
+
+// * swipers
+import './_swipers';
+
 import './_functions';
 import './_components';
 
 // * header
 import './_header';
-
-// * swipers
-import './_swipers';
 
 // * text-hidden
 import './_text-hidden';

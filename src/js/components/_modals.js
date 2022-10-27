@@ -18,7 +18,7 @@ export const modalsFunction = () => {
         const modalThankClose = document.querySelector('.modal--thank .modal__button')
 
 		const wrapper = document.querySelector('.wrapper');
-		const frozeBtn = document.querySelector('.header__btn');
+        const frozeBtns = document.querySelectorAll('.froze-btn');
 		const modals = document.querySelectorAll('.modal');
 
 		buttonsCall.forEach((item) => {
@@ -28,10 +28,12 @@ export const modalsFunction = () => {
 			});
 		});
 
-		frozeBtn.onclick = function () {
-			modalFroze.classList.add('modal--active');
-			wrapper.classList.add('wrapper--lock');
-		};
+        frozeBtns.forEach(frozeBtn => {
+            frozeBtn.onclick = function () {
+                modalFroze.classList.add('modal--active');
+                wrapper.classList.add('wrapper--lock');
+            }; 
+        });
 
 		buttonsModalClose.forEach((item) => {
 			item.addEventListener('click', () => {
@@ -63,7 +65,7 @@ export const modalsFunction = () => {
 
                 form.addEventListener('submit', (e) => {
                     e.preventDefault()
-                    e.target.reset()
+                    //e.target.reset()
 
                     modalThankClose.addEventListener('click', () => {
                         modalThank.classList.remove('modal--active');

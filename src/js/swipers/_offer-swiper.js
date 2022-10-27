@@ -5,6 +5,8 @@ export const offerSwiper = () => {
 			slidesPerGroup: 1,
             loop: true,
             speed: 800,
+            allowTouchMove: false,
+            
             autoplay: {
                 delay: 6000,
                 disableOnInteraction: false,
@@ -15,17 +17,6 @@ export const offerSwiper = () => {
 				nextEl: '.offer__button--next',
 				prevEl: '.offer__button--prev',
 			},
-
-            breakpoints: {
-
-                1000: {
-                    allowTouchMove: true,
-                },
-
-                320: {
-                    allowTouchMove: false,
-                },
-            },
 		});
 	};
 };

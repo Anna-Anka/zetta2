@@ -24,10 +24,6 @@
 @import "./components/interactive/interactive";
 @import "./components/interactive/interactive-box";
 
-// * mobile
-@import "./components/mobile/mobile-menu";
-@import "./components/mobile/mobile-chat";
-
 // * cards
 @import "./components/cards/product-card";
 @import "./components/cards/article-card";
@@ -70,6 +66,7 @@
 @import "./components/why-zetta";
 @import "./components/production";
 @import "./components/vacancies";
+@import "./components/mobile-menu";
 @import "./components/footer";
 
 // * home-page

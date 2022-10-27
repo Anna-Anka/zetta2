@@ -1,9 +1,15 @@
+.article {
+    @include mq('phone') {
+        padding-bottom: 50px;
+    }
+}
+
 .article-top {
 	@include bottom-line;
 	padding-bottom: 12px;
 
 	@include mq('phone') {
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 	}
 
 	&__back {
@@ -28,7 +34,7 @@
 
 		@include mq('phone') {
 			margin-right: 0;
-			margin-bottom: 20px;
+			margin-bottom: 0;
 		}
 	}
 
