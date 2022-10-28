@@ -25,6 +25,14 @@
 		}
 	}
 
+    .video-js {
+        margin-bottom: 26px;
+
+        @include mq('phone') {
+			margin-bottom: 16px;
+		}
+    }
+
 	&__title {
 		display: inline-block;
 		@include subtitle;
