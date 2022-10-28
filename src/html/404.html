@@ -1,0 +1,19 @@
+@include('./components/links/_head.html',
+{ 'title' : 'ZETTA — Фабрика кухкни | Главная страница' }
+)
+
+@include('./components/_header.html')
+
+@include('./components/_mobile-menu.html')
+
+@include('./components/modals/_modal-call.html')
+
+@include('./components/modals/_modal-froze.html')
+
+@include('./components/modals/_modal-thank.html')
+
+<main class="main">
+    @include('./404-page/error.html')
+</main>
+
+@include('./components/links/_bottom.html')
