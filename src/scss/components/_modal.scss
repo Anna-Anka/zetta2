@@ -3,11 +3,11 @@
 	visibility: hidden;
 	opacity: 0;
 
-    &--thank {
-        .modal__title {
-            text-align: center;
-        }
-    }
+	&--thank {
+		.modal__title {
+			text-align: center;
+		}
+	}
 
 	&--active {
 		position: fixed;
@@ -62,11 +62,11 @@
 	}
 
 	&__title {
+		display: block;
 		margin-right: 10px;
 		color: $dark-700;
 		font-weight: $fw-800;
 		font-size: 24px;
-        display: block;
 
 		@include mq('phone') {
 			margin-right: 0;
@@ -90,6 +90,10 @@
 	&__wrapper {
 		display: flex;
 		margin-bottom: 30px;
+
+		@include mq('phone') {
+			flex-direction: column;
+		}
 	}
 
 	&__inner {
@@ -97,6 +101,11 @@
 
 		&:not(:last-child) {
 			margin-right: 14px;
+
+			@include mq('phone') {
+				margin-right: 0;
+				margin-bottom: 16px;
+			}
 		}
 	}
 
@@ -112,6 +121,13 @@
 		border-radius: 15px;
 		cursor: pointer;
 		transition: border-color 0.4s, color 0.4s;
+
+		@include mq('phone') {
+			display: block;
+			max-width: 100%;
+			padding: 15px;
+			font-size: 14px;
+		}
 	}
 
 	&__hidden {
@@ -160,6 +176,10 @@
 		&:focus {
 			border-bottom-color: $orange-500;
 		}
+
+		@include mq('phone') {
+			font-size: 14px;
+		}
 	}
 
 	&__button {
@@ -177,5 +197,9 @@
 		margin: 0 auto;
 		color: $dark-700;
 		text-align: center;
+
+		@include mq('phone') {
+			font-size: 12px;
+		}
 	}
 }
