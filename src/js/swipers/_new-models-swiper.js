@@ -20,12 +20,21 @@ export const newModelsSwiper = () => {
 					slidesPerView: 2,
 					slidesPerGroup: 2,
 					spaceBetween: 23,
+
+                    scrollbar: {
+                        hide: false,
+                    },
 				},
 
 				320: {
-					autoplay: false,
-					slidesPerView: 0,
-					slidesPerGroup: 0,
+					slidesPerView: 1,
+					slidesPerGroup: 1,
+                    spaceBetween: 15,
+
+                    scrollbar: {
+                        el: ".new-models__scrollbar",
+                        draggable: true
+                    },
 				},
 			},
 		});

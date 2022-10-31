@@ -48,6 +48,12 @@ export const modalsFunction = () => {
 			}
 		});
 
+        document.addEventListener('mousedown', (e) => {
+            if (!modalFrozeContent.contains(e.target) && !modalCallContent.contains(e.target) && !modalThankContent.contains(e.target)) {
+                modalThank.closest('.modal').classList.remove('modal--active');
+            }
+        });
+
         if (document.querySelector('[data-thank]')) {
             const forms = document.querySelectorAll('[data-thank]')
 
@@ -55,6 +61,10 @@ export const modalsFunction = () => {
 
                 form.addEventListener('submit', (e) => {
                     e.preventDefault()
+                    
+                    modalCall.classList.remove('modal--active')
+                    modalFroze.classList.remove('modal--active')
+                    modalThank.classList.add('modal--active');
 
                     modalThankClose.addEventListener('click', () => {
                         modalThank.classList.remove('modal--active');

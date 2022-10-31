@@ -13,30 +13,12 @@
 
 	&__wrapper {
 		position: relative;
-
-		@include mq('phone') {
-			margin-bottom: 39px;
-		}
-	}
-
-	&__items {
-		@include mq('phone') {
-			display: block;
-			transform: translate3d(0, 0, 0) !important;
-			transition-duration: none !important;
-		}
 	}
 
 	&__item {
 		position: relative;
 		box-sizing: border-box;
 		max-width: 100%;
-
-		&:not(:last-child) {
-			@include mq('phone') {
-				margin-bottom: 39px;
-			}
-		}
 	}
 
 	&__swiper {
@@ -62,23 +44,27 @@
 		}
 	}
 
-	&__more {
+    &__scrollbar {
 		display: none;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		max-width: 326px;
-		margin: 0 auto;
-		padding: 7px;
-		color: $orange-500;
-		font-weight: $fw-700;
-		font-size: 12px;
-		line-height: 1.1;
-		border: 2px solid $orange-500;
-		border-radius: 9px;
 
 		@include mq('phone') {
-			display: flex;
+			display: block;
 		}
 	}
+
+	.swiper-scrollbar.swiper-scrollbar-horizontal {
+		display: none;
+
+		@include mq('phone') {
+			display: block;
+		}
+	}
+    
+    .product-card {
+        &::before {
+            @include mq('phone') {
+                opacity: 0;
+            }
+        }
+    }
 }
