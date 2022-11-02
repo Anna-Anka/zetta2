@@ -1,20 +1,19 @@
 .interactive {
+	&--installation {
+		.interactive__content {
+			padding: 20px;
+		}
 
-    &--installation {
-        .interactive__content {
-            padding: 20px;
-        }
-
-        .interactive__text {
-            margin-bottom: 0;
-            background-repeat: no-repeat;
-            background-size: 42px;
-            background-position: 0 0;
-            padding-top: 50px;
-            color: $dark-700;
-            font-weight: $fw-700;
-        }
-    }
+		.interactive__text {
+			margin-bottom: 0;
+			padding-top: 50px;
+			color: $dark-700;
+			font-weight: $fw-700;
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			background-size: 42px;
+		}
+	}
 
 	&__item,
 	&__btn {
@@ -29,7 +28,7 @@
 
 	&__item {
 		position: absolute;
-		z-index: 15;
+		z-index: 3;
 	}
 
 	&__btn {

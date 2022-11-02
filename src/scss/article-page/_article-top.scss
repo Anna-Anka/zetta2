@@ -12,13 +12,6 @@
 		margin-bottom: 20px;
 	}
 
-	&__back {
-		max-width: fit-content;
-		margin-bottom: 20px;
-		padding: 10px 23px;
-		border-radius: 10px;
-	}
-
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
@@ -67,8 +60,8 @@
 	&__item {
 		@include subtitle;
 		position: relative;
-		padding-left: 46px;
-		font-size: 22px;
+		padding-left: 36px;
+		font-size: 20px;
 
 		@include mq('phone') {
 			padding-left: 28px;
@@ -79,8 +72,8 @@
 			position: absolute;
 			top: 50%;
 			left: 0;
-			width: 34px;
-			height: 34px;
+			width: 28px;
+			height: 28px;
 			transform: translateY(-50%);
 			content: '';
 			@include bg-img;

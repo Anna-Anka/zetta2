@@ -15,10 +15,36 @@
 		position: relative;
 	}
 
+	&__items {
+		@include mq('phone') {
+			display: block;
+			transform: translate3d(0, 0, 0) !important;
+			transition-duration: none !important;
+		}
+	}
+
 	&__item {
 		position: relative;
 		box-sizing: border-box;
 		max-width: 100%;
+
+		@include mq('phone') {
+			display: none;
+		}
+
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(3) {
+			@include mq('phone') {
+				display: block;
+			}
+		}
+
+        &:not(:last-child) {
+			@include mq('phone') {
+				margin-bottom: 30px;
+			}
+		}
 	}
 
 	&__swiper {
@@ -43,28 +69,4 @@
 			display: none;
 		}
 	}
-
-    &__scrollbar {
-		display: none;
-
-		@include mq('phone') {
-			display: block;
-		}
-	}
-
-	.swiper-scrollbar.swiper-scrollbar-horizontal {
-		display: none;
-
-		@include mq('phone') {
-			display: block;
-		}
-	}
-    
-    .product-card {
-        &::before {
-            @include mq('phone') {
-                opacity: 0;
-            }
-        }
-    }
 }

@@ -26,16 +26,11 @@ export const newModelsSwiper = () => {
                     },
 				},
 
-				320: {
-					slidesPerView: 1,
-					slidesPerGroup: 1,
-                    spaceBetween: 15,
-
-                    scrollbar: {
-                        el: ".new-models__scrollbar",
-                        draggable: true
-                    },
-				},
+                320: {
+                    autoplay: false,
+                    slidesPerView: 0,
+                    slidesPerGroup: 0,
+                },
 			},
 		});
 	};

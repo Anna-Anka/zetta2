@@ -61,10 +61,6 @@ export const modalsFunction = () => {
 
                 form.addEventListener('submit', (e) => {
                     e.preventDefault()
-                    
-                    modalCall.classList.remove('modal--active')
-                    modalFroze.classList.remove('modal--active')
-                    modalThank.classList.add('modal--active');
 
                     modalThankClose.addEventListener('click', () => {
                         modalThank.classList.remove('modal--active');
