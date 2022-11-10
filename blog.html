@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script defer src="js/main.js"></script>
+
+  <title>ZETTA — Фабрика кухкни | Блог</title>
+</head>
+
+<body class="body">
+  <div class="wrapper">
+
+<header class="header">
+    <div class="container container--large">
+        <nav class="header__wrapper">
+            <a class="header__logo logo" href="#">
+                <picture>
+                    <source srcset="img/logo.avif" type="image/avif">
+                    <source srcset="img/logo.webp" type="image/webp">
+                    <img class="logo__img" src="img/logo.png" alt="Логотип" width="165" height="105" loading="lazy">
+                </picture>
+            </a>
+            <div class="header__box">
+                <div class="header__top">
+                    <div class="header__inner">
+                        <ul class="header__left">
+                            <li class="header__left-item">
+                                <a class="header__left-link" href="#">Компания</a>
+                            </li>
+                            <li class="header__left-item">
+                                <a class="header__left-link" href="#">Запись в салон</a>
+                            </li>
+                            <li class="header__left-item">
+                                <a class="header__left-link" href="#">Сотрудничество</a>
+                            </li>
+                        </ul>
+                        <div class="header__right">
+                            <button class="header__search" type="button">Поиск</button>
+                            <form class="search search--header" action="#">
+                                <label class="sr-only" for="search-field">Поиск</label>
+                                <input class="search__field" type="search" name="search" id="search-field" placeholder="Поиск..." required>
+                                <button class="search__button" type="submit">
+                                    <span class="sr-only">Найти</span>
+                                </button>
+                            </form>
+                            <ul class="contacts contacts--header">
+                                <li class="contacts__item">
+                                    <a class="contacts__link contacts__link--email" href="mailto:operator2@zetta.ru">
+                                        operator2@zetta.ru
+                                    </a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a class="contacts__link contacts__link--phone" href="tel:+74951896592">
+                                        + 7 (495) 189-65-92
+                                    </a>
+                                </li>
+                            </ul>
+                            <button class="header__call call" type="button">Запись в салон</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <ul class="menu">
+                        <li class="menu__item menu__item--catalog">
+                            <a class="menu__link menu__link--dop" href="#dop-catalog"> Каталог</a>
+                            <div class="catalog" id="dop-catalog">
+                                <div class="container container--large">
+                                    <div class="catalog__wrapper">
+                                        <ul class="catalog-main">
+                                            <li class="catalog-main__item">
+                                                <a class="catalog-main__link catalog-main__link--active" href="#catalog-kitchen">Кухни</a>
+                                            </li>
+                                            <li class="catalog-main__item">
+                                                <a class="catalog-main__link" href="#catalog-furniture">Корпусная мебель</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="catalog-detail catalog-detail--active" id="catalog-kitchen">
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link catalog-detail__link--active" href="#">
+                                                    Современный стиль
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Нео классика
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Классический стиль
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Все кухни
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Распродажи образцов
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="catalog-detail" id="catalog-furniture">
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link catalog-detail__link--active" href="#">
+                                                    Шкафы
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Студио
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Гардеробные
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Прихожие
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="catalog-stock">
+                                            <a class="catalog-stock__link" href="#">
+                                                <img class="catalog-stock__banner" src="img/discounts/2.jpg" alt="Cкидки на технику Bosh" loading="lazy" width="573" height="232">
+                                            </a>
+                                            <a class="catalog-stock__more" href="#">Все акции</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Акции</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--dop" href="#dop-buyers">Покупателям</a>
+                            <div class="catalog" id="dop-buyers">
+                                <div class="container container--large">
+                                    <div class="catalog__wrapper">
+                                        <ul class="catalog-main">
+                                            <li class="catalog-main__item">
+                                                <a class="catalog-main__link catalog-main__link--active" href="#buyers-service">Сервис Zetta</a>
+                                            </li>
+                                            <li class="catalog-main__item">
+                                                <a href="#">О компании</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="catalog-detail catalog-detail--active" id="buyers-service">
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Гардеробные
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Прихожие
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="catalog-stock">
+                                            <a class="catalog-stock__link" href="#">
+                                                <img class="catalog-stock__banner" src="img/discounts/2.jpg" alt="Cкидки на технику Bosh" loading="lazy" width="573" height="232">
+                                            </a>
+                                            <a class="catalog-stock__more" href="#">Все акции</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--dop" href="#dop-company">Компания</a>
+                            <div class="catalog" id="dop-company">
+                                <div class="container container--large">
+                                    <div class="catalog__wrapper">
+                                        <ul class="catalog-main">
+                                            <li class="catalog-main__item">
+                                                <a class="catalog-main__link catalog-main__link--active" href="#company-factory">Сервис Zetta</a>
+                                            </li>
+                                            <li class="catalog-main__item">
+                                                <a class="catalog-main__link" href="#company-partners">Партнерам</a>
+                                            </li>
+                                            <li class="catalog-main__item">
+                                                <a class="catalog-main__link" href="#company-service">Сервис Zetta</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="catalog-detail catalog-detail--active" id="company-factory">
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Производство
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Качество и Гарантия 12 лет
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    История компании
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Миссия и ценности
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="catalog-detail" id="company-partners">
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link catalog-detail__link--active" href="#">
+                                                    Гарантия 12 лет
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="catalog-detail" id="company-service">
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Миссия и ценности
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="catalog-stock">
+                                            <a class="catalog-stock__link" href="#">
+                                                <img class="catalog-stock__banner" src="img/discounts/2.jpg" alt="Cкидки на технику Bosh" loading="lazy" width="573" height="232">
+                                            </a>
+                                            <a class="catalog-stock__more" href="#">Все акции</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Адрес салона</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Блог</a>
+                        </li>
+                    </ul>
+                    <button class="btn header__btn froze-btn" type="button">Заказать проект</button>
+                </div>
+            </div>
+            <button class="burger" type="button">
+                <span class="burger__text">Меню</span>
+                <span class="burger__line"></span>
+            </button>
+            <a class="header__tel" href="tel:+74951896592">
+                <span class="sr-only">Позвонить</span>
+            </a>
+            <div class="burger-menu">
+                <div class="burger-menu__top">
+                    <form class="search" action="#">
+                        <label class="sr-only" for="search-field-burger">Поиск</label>
+                        <input class="search__field" type="search" name="search" id="search-field-burger" placeholder="Поиск" required>
+                        <button class="search__button" type="submit">
+                            <span class="sr-only">Найти</span>
+                        </button>
+                    </form>
+                    <ul class="contacts contacts--burger">
+                        <li class="contacts__item">
+                            <a class="contacts__link contacts__link--email" href="mailto:operator2@zetta.ru">
+                                operator2@zetta.ru
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link contacts__link--phone" href="tel:+74951896592">
+                                + 7 (495) 189-65-92
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="burger-menu__call call" type="button">Запись в салон</button>
+                <ul class="burger-menu__bottom">
+                    <li class="burger-menu__item burger-menu__item--catalog">
+                        <a class="burger-menu__link burger-menu__link--catalog burger-menu__link--dop" href="#dop-catalog">
+                            Каталог
+                        </a>
+                        <ul class="catalog-mobile">
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    Коропусная мебель
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Современный стиль
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Классический стиль
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Все кухни
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Нео классика
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Распродажа
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    Кухни
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Современный стиль
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Классический стиль
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Все кухни
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Нео классика
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Распродажа
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#">
+                            Акции
+                        </a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link burger-menu__link--dop" href="#dop-buyers">
+                            Покупателям
+                        </a>
+                        <ul class="catalog-mobile">
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    Сервис Zetta
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Гарантия 12 лет
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Замер помещения
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Доставка
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Монтаж мебели
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    О компании
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Доставка
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Монтаж мебели
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link burger-menu__link--dop" href="#dop-company">
+                            Компания
+                        </a>
+                        <ul class="catalog-mobile">
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    Фабрика Zetta
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Производство
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Качество и Гарантия 12 лет
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            История компании
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Миссия и ценности
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    Партнерам
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Качество и Гарантия 12 лет
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Производство
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    Сервис Zetta
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Миссия и ценности
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            История компании
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#">
+                            Адреса салонов
+                        </a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#">
+                            Блог
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="blackout"></div>
+
+<div class="breadcrumbs">
+    <div class="container container--large">
+
+        <ul class="breadcrumbs__items">
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Главная -</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--current">Блог</a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+<div class="mobile-menu">
+    <div class="container">
+        <ul class="mobile-menu__items">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__link--catalog" href="#">
+                    Каталог
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__link--stock" href="#">
+                    Акции
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__link--address" href="#">
+                    Адреса
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__link--3d" href="#">
+                    Заказать 3D проект
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<section class="modal modal--call">
+    <div class="modal__body">
+        <div class="modal__content">
+            <div class="modal__top">
+                <h2 class="modal__title">Запись в салон</h2>
+                <button class="modal__close" type="button">
+                    <span class="sr-only">Закрыть окно</span>
+                </button>
+            </div>
+            <form class="modal__form" action="#" data-thank="true">
+                <div class="modal__items">
+                    <div class="modal__item">
+                        <label class="sr-only" for="call-name">
+                            Ваше имя
+                        </label>
+                        <input class="modal__field" id="call-name" name="name" type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="modal__item">
+                        <label class="sr-only" for="call-tel">
+                            Ваш номер телефона
+                        </label>
+                        <input class="modal__field" id="call-tel" name="tel" type="tel" placeholder="Ваш номер телефона" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+                    </div>
+                </div>
+                <button class="modal__button btn" type="submit">Отправить</button>
+                <div class="modal__agreement">
+                    <label>
+                        <input class="modal__check" type="checkbox" name="agree" checked required>
+                        Я согласен (а) на
+                        <span class="modal__visible"></span>
+                    </label>
+                    <a class="modal__link" href="#">обработку персональных данных</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="modal modal--froze">
+    <div class="modal__body">
+        <div class="modal__content">
+            <div class="modal__top">
+                <h2 class="modal__title">Заявка</h2>
+                <button class="modal__close" type="button">
+                    <span class="sr-only">Закрыть окно</span>
+                </button>
+            </div>
+            <form class="modal__form" action="#" data-validate data-thank="true">
+                <div class="modal__wrapper">
+                    <div class="modal__inner">
+                        <input class="modal__hidden" type="radio" name="froze" id="froze-design" checked>
+                        <label class="modal__box" for="froze-design">
+                            Бесплатный 3D дизайн-проект
+                        </label>
+                    </div>
+                    <div class="modal__inner">
+                        <input class="modal__hidden" type="radio" name="froze" id="froze-call">
+                        <label class="modal__box" for="froze-call">
+                            Бесплатный вызов дизайнера-замерщика
+                        </label>
+                    </div>
+                </div>
+                <div class="modal__items">
+                    <div class="modal__item">
+                        <label class="sr-only" for="froze-name">
+                            Имя и фамилия
+                        </label>
+                        <input class="modal__field" id="froze-name" name="name" type="text" placeholder="Имя и фамилия" required>
+                    </div>
+                    <div class="modal__item">
+                        <label class="sr-only" for="froze-tel">
+                            Номер телефона
+                        </label>
+                        <input class="modal__field" id="froze-tel" name="tel" type="tel" placeholder="Номер телефона" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+                    </div>
+                    <div class="modal__item">
+                        <label class="sr-only" for="froze-address">
+                            Адрес электронной почты
+                        </label>
+                        <input class="modal__field" id="froze-address" name="address" type="email" placeholder="Адрес электронной почты" required>
+                    </div>
+                </div>
+                <button class="modal__button btn" type="submit">Отправить заявку</button>
+                <div class="modal__agreement">
+                    <label>
+                        <input class="modal__check" type="checkbox" name="agree" checked>
+                        Я согласен (а) на
+                        <span class="modal__visible"></span>
+                    </label>
+                    <a class="modal__link" href="#">обработку персональных данных</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<div class="modal modal--thank">
+    <div class="modal__body">
+        <div class="modal__content">
+            <div class="modal__top">
+                <span class="modal__title">
+                    Ваша заявка принята. Мы свяжемся с вами в ближайшее время
+                </span>
+            </div>
+            <button class="modal__button btn" type="button">Отлично!</button>
+        </div>
+    </div>
+</div>
+
+<main class="main">
+    <h1 class="sr-only">ZETTA — блог</h1>
+    <section class="articles section">
+    <div class="container container--large">
+        <h2 class="articles__title title">Статьи</h2>
+        <ul class="sorting">
+            <li class="sorting__item" data-filter=".category-kitchen">
+                <button class="sorting__button" type="button">
+                    Красивые проекты
+                </button>
+            </li>
+            <li class="sorting__item" data-filter=".category-kitchen-one">
+                <button class="sorting__button" type="button">
+                    Красивые проекты
+                </button>
+            </li>
+            <li class="sorting__item" data-filter=".category-kitchen-two">
+                <button class="sorting__button" type="button">
+                    Красивые проекты
+                </button>
+            </li>
+            <li class="sorting__item" data-filter=".category-kitchen-three">
+                <button class="sorting__button" type="button">
+                    Красивые проекты
+                </button>
+            </li>
+            <li class="sorting__item" data-filter=".category-kitchen-fore">
+                <button class="sorting__button" type="button">
+                    Красивые проекты
+                </button>
+            </li>
+            <li class="sorting__item" data-filter=".category-kitchen-five">
+                <button class="sorting__button" type="button">
+                    Красивые проекты
+                </button>
+            </li>
+        </ul>
+
+        <ul class="articles__items">
+            <li class="articles__item mix category-kitchen">
+                <article class="article-card">
+    <a class="article-card__image" href="#">
+        <picture>
+          <source srcset="img/articles/1.avif" type="image/avif">
+          <source srcset="img/articles/1.webp" type="image/webp">
+          <img class="article-card__img" src="img/articles/1.jpg" alt="Описание статьи" width="375" height="375" loading="lazy">
+        </picture>
+    </a>
+    <h3 class="article-card__title">
+        <a class="article-card__link" href="#">
+            Описание статьи
+        </a>
+    </h3>
+</article>
+            </li>
+            <li class="articles__item mix category-kitchen">
+                <article class="article-card">
+    <a class="article-card__image" href="#">
+        <picture>
+          <source srcset="img/articles/1.avif" type="image/avif">
+          <source srcset="img/articles/1.webp" type="image/webp">
+          <img class="article-card__img" src="img/articles/1.jpg" alt="Описание статьи" width="375" height="375" loading="lazy">
+        </picture>
+    </a>
+    <h3 class="article-card__title">
+        <a class="article-card__link" href="#">
+            Описание статьи
+        </a>
+    </h3>
+</article>
+            </li>
+            <li class="articles__item mix category-kitchen">
+                <article class="article-card">
+    <a class="article-card__image" href="#">
+        <picture>
+          <source srcset="img/articles/1.avif" type="image/avif">
+          <source srcset="img/articles/1.webp" type="image/webp">
+          <img class="article-card__img" src="img/articles/1.jpg" alt="Очень большое описание большой статьи" width="375" height="375" loading="lazy">
+        </picture>
+    </a>
+    <h3 class="article-card__title">
+        <a class="article-card__link" href="#">
+            Очень большое описание большой статьи
+        </a>
+    </h3>
+</article>
+            </li>
+            <li class="articles__item mix category-kitchen-one">
+                <article class="article-card">
+    <a class="article-card__image" href="#">
+        <picture>
+          <source srcset="img/articles/2.avif" type="image/avif">
+          <source srcset="img/articles/2.webp" type="image/webp">
+          <img class="article-card__img" src="img/articles/2.jpg" alt="Описание статьи" width="375" height="375" loading="lazy">
+        </picture>
+    </a>
+    <h3 class="article-card__title">
+        <a class="article-card__link" href="#">
+            Описание статьи
+        </a>
+    </h3>
+</article>
+            </li>
+            <li class="articles__item mix category-kitchen-two">
+                <article class="article-card">
+    <a class="article-card__image" href="#">
+        <picture>
+          <source srcset="img/articles/3.avif" type="image/avif">
+          <source srcset="img/articles/3.webp" type="image/webp">
+          <img class="article-card__img" src="img/articles/3.jpg" alt="Большое описание статьи" width="375" height="375" loading="lazy">
+        </picture>
+    </a>
+    <h3 class="article-card__title">
+        <a class="article-card__link" href="#">
+            Большое описание статьи
+        </a>
+    </h3>
+</article>
+            </li>
+            <li class="articles__item mix category-kitchen-three">
+                <article class="article-card">
+    <a class="article-card__image" href="#">
+        <picture>
+          <source srcset="img/articles/3.avif" type="image/avif">
+          <source srcset="img/articles/3.webp" type="image/webp">
+          <img class="article-card__img" src="img/articles/3.jpg" alt="Очень большое описание большой статьи" width="375" height="375" loading="lazy">
+        </picture>
+    </a>
+    <h3 class="article-card__title">
+        <a class="article-card__link" href="#">
+            Очень большое описание большой статьи
+        </a>
+    </h3>
+</article>
+            </li>
+            <li class="articles__item mix category-kitchen-fore">
+                <article class="article-card">
+    <a class="article-card__image" href="#">
+        <picture>
+          <source srcset="img/articles/3.avif" type="image/avif">
+          <source srcset="img/articles/3.webp" type="image/webp">
+          <img class="article-card__img" src="img/articles/3.jpg" alt="Очень большое описание большой статьи" width="375" height="375" loading="lazy">
+        </picture>
+    </a>
+    <h3 class="article-card__title">
+        <a class="article-card__link" href="#">
+            Очень большое описание большой статьи
+        </a>
+    </h3>
+</article>
+            </li>
+            <li class="articles__item mix category-kitchen-five">
+                <article class="article-card">
+    <a class="article-card__image" href="#">
+        <picture>
+          <source srcset="img/articles/3.avif" type="image/avif">
+          <source srcset="img/articles/3.webp" type="image/webp">
+          <img class="article-card__img" src="img/articles/3.jpg" alt="Очень большое описание большой статьи" width="375" height="375" loading="lazy">
+        </picture>
+    </a>
+    <h3 class="article-card__title">
+        <a class="article-card__link" href="#">
+            Очень большое описание большой статьи
+        </a>
+    </h3>
+</article>
+            </li>
+        </ul>
+
+        <span class="loading" style="background-image: url('img/icons/loading.svg')"></span>
+
+    </div>
+</section>
+
+</main>
+
+<section class="salons">
+    <div class="container">
+        <div class="salons__wrapper">
+            <div class="salons__content">
+                <h2 class="salons__title title">
+                    <span class="salons__accent">Флагманские </span>
+                    1000 m² салоны
+                </h2>
+                <div class="salons__text">
+                    <p>
+                        Выбирайте кухню в больших салонах Zetta в удобных локациях. Экспозиция более 70 моделей в каждом салоне
+                    </p>
+                </div>
+                <ul class="salons__items">
+                    <li class="salons__item">
+                        <a class="salons__link salons__link--active" href="#moskow">
+                            Москва
+                        </a>
+                    </li>
+                    <li class="salons__item">
+                        <a class="salons__link" href="#kaluga">
+                            Калуга
+                        </a>
+                    </li>
+                    <li class="salons__item">
+                        <a class="salons__link" href="#tambov">
+                            Тамбов
+                        </a>
+                    </li>
+                    <li class="salons__item">
+                        <a class="salons__link" href="#vladikavkaz">
+                            Владикавказ
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="salons-tabs">
+                    <li class="salons-tabs__item salons-tabs__item--active" id="moskow">
+                        <ul class="salons-tabs__inner">
+                            <li class="salons-tabs__content">
+                                <div class="salons-tabs__place">
+                                    <h3 class="salons-tabs__subtitle">Расторгуевский пер., д. 1</h3>
+                                    <span class="salons-tabs__work">Ежедневно, с 10:30 до 21:30</span>
+                                </div>
+                                <div class="salons-tabs__metro">
+                                    <span class="salons-tabs__subtitle">Станции метро:</span>
+                                    <ul class="salons-tabs__list">
+                                        <li class="salons-tabs__station">
+                                            Краснопресненская
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="salons-tabs__content">
+                                <div class="salons-tabs__place">
+                                    <h3 class="salons-tabs__subtitle">Расторгуевский пер., д. 1</h3>
+                                    <span class="salons-tabs__work">Ежедневно, с 10:30 до 21:30</span>
+                                </div>
+                                <div class="salons-tabs__metro">
+                                    <span class="salons-tabs__subtitle">Станции метро:</span>
+                                    <ul class="salons-tabs__list">
+                                        <li class="salons-tabs__station">
+                                            Краснопресненская
+                                        </li>
+                                        <li class="salons-tabs__station">
+                                            Улица 1905 года
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="salons-tabs__content">
+                                <div class="salons-tabs__place">
+                                    <h3 class="salons-tabs__subtitle">Расторгуевский пер., д. 1</h3>
+                                    <span class="salons-tabs__work">Ежедневно, с 10:30 до 21:30</span>
+                                </div>
+                                <div class="salons-tabs__metro">
+                                    <span class="salons-tabs__subtitle">Станции метро:</span>
+                                    <ul class="salons-tabs__list">
+                                        <li class="salons-tabs__station">
+                                            Краснопресненская
+                                        </li>
+                                        <li class="salons-tabs__station">
+                                            Улица 1905 года
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="salons-tabs__item" id="kaluga">
+                        <ul class="salons-tabs__inner">
+                            <li class="salons-tabs__content">
+                                <div class="salons-tabs__place">
+                                    <h3 class="salons-tabs__subtitle">Расторгуевский пер., д. 1</h3>
+                                    <span class="salons-tabs__work">Ежедневно, с 10:30 до 21:30</span>
+                                </div>
+                                <div class="salons-tabs__metro">
+                                    <span class="salons-tabs__subtitle">Станции метро:</span>
+                                    <ul class="salons-tabs__list">
+                                        <li class="salons-tabs__station">
+                                            Краснопресненская
+                                        </li>
+                                        <li class="salons-tabs__station">
+                                            Улица 1905 года
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="salons-tabs__content">
+                                <div class="salons-tabs__place">
+                                    <h3 class="salons-tabs__subtitle">Расторгуевский пер., д. 1</h3>
+                                    <span class="salons-tabs__work">Ежедневно, с 10:30 до 21:30</span>
+                                </div>
+                                <div class="salons-tabs__metro">
+                                    <span class="salons-tabs__subtitle">Станции метро:</span>
+                                    <ul class="salons-tabs__list">
+                                        <li class="salons-tabs__station">
+                                            Краснопресненская
+                                        </li>
+                                        <li class="salons-tabs__station">
+                                            Улица 1905 года
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="salons-tabs__item" id="tambov">
+                        <ul class="salons-tabs__inner">
+                            <li class="salons-tabs__content">
+                                <div class="salons-tabs__place">
+                                    <h3 class="salons-tabs__subtitle">Расторгуевский пер., д. 1</h3>
+                                    <span class="salons-tabs__work">Ежедневно, с 10:30 до 21:30</span>
+                                </div>
+                                <div class="salons-tabs__metro">
+                                    <span class="salons-tabs__subtitle">Станции метро:</span>
+                                    <ul class="salons-tabs__list">
+                                        <li class="salons-tabs__station">
+                                            Краснопресненская
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="salons-tabs__content">
+                                <div class="salons-tabs__place">
+                                    <h3 class="salons-tabs__subtitle">Расторгуевский пер., д. 1</h3>
+                                    <span class="salons-tabs__work">Ежедневно, с 10:30 до 21:30</span>
+                                </div>
+                                <div class="salons-tabs__metro">
+                                    <span class="salons-tabs__subtitle">Станции метро:</span>
+                                    <ul class="salons-tabs__list">
+                                        <li class="salons-tabs__station">
+                                            Краснопресненская
+                                        </li>
+                                        <li class="salons-tabs__station">
+                                            Улица 1905 года
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="salons-tabs__content">
+                                <div class="salons-tabs__place">
+                                    <h3 class="salons-tabs__subtitle">Расторгуевский пер., д. 1</h3>
+                                    <span class="salons-tabs__work">Ежедневно, с 10:30 до 21:30</span>
+                                </div>
+                                <div class="salons-tabs__metro">
+                                    <span class="salons-tabs__subtitle">Станции метро:</span>
+                                    <ul class="salons-tabs__list">
+                                        <li class="salons-tabs__station">
+                                            Краснопресненская
+                                        </li>
+                                        <li class="salons-tabs__station">
+                                            Улица 1905 года
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="salons-tabs__item" id="vladikavkaz">
+                        <ul class="salons-tabs__inner">
+                            <li class="salons-tabs__content">
+                                <div class="salons-tabs__place">
+                                    <h3 class="salons-tabs__subtitle">Расторгуевский пер., д. 1</h3>
+                                    <span class="salons-tabs__work">Ежедневно, с 10:30 до 21:30</span>
+                                </div>
+                                <div class="salons-tabs__metro">
+                                    <span class="salons-tabs__subtitle">Станции метро:</span>
+                                    <ul class="salons-tabs__list">
+                                        <li class="salons-tabs__station">
+                                            Краснопресненская
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="salons__picture">
+                <div class="salons__img" style="background-image: url('img/salons/img.jpg')"></div>
+
+                <div class="salons__map">
+                    <div class="salons__pin" style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/geo/nesvizhskiy_pereulok/10049863/?display-text=%D0%BD%D0%B5%D1%81%D0%B2%D0%B8%D0%B6%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA&ll=37.584272%2C55.730596&mode=search&sctx=ZAAAAAgAEAAaKAoSCU1qaAOwhT5AEWspIO1%2FOElAEhIJfEYiNIKNvz8RWW3%2BX3XkqD8iBgABAgMEBSgKOABA8ZsGSAFiK3JlYXJyPXNjaGVtZV9Mb2NhbC9HZW8vRW5hYmxlQmVhdXR5RmlsdGVyPTFqAnVhnQHNzEw9oAEAqAEAvQGNAtWowgEHAAAAAAAAAOoBAPIBAPgBAIICJdC90LXRgdCy0LjQttGB0LrQuNC5INC%2F0LXRgNC10YPQu9C%2B0LqKAgCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=37.584272%2C55.730596&sspn=0.010819%2C0.003771&text=%D0%BD%D0%B5%D1%81%D0%B2%D0%B8%D0%B6%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D1%83%D0%BB%D0%BE%D0%BA&utm_medium=mapframe&utm_source=maps&z=17.51" style="color:#eee;font-size:12px;position:absolute;top:14px;">Несвижский переулок — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUVEBQK-C" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="form form--checklist" id="form-checklist">
+    <div class="container">
+        <div class="form__wrapper">
+            <form class="form__form form__form--checklist" action="#" data-thank="true">
+                <div class="form__items">
+                    <div class="form__item">
+                        <label class="sr-only" for="name">
+                            Введите ваше имя
+                        </label>
+                        <input class="form__field" id="name" name="name" type="text" placeholder="Ваше имя*" required>
+                    </div>
+
+                        <div class="form__item">
+                            <label class="sr-only" for="form-design-email">
+                                Введите вашу почту
+                            </label>
+                            <input class="form__field" id="form-design-email" name="email" type="email" placeholder="Ваша почта*" required>
+                        </div>
+
+                </div>
+                <button class="form__button btn" type="submit">Отправить</button>
+            </form>
+            <div class="form__content">
+                <h2 class="form__title title">
+                    Отправка на почту <span class="form__accent">чек-листа</span>
+                </h2>
+                <p class="form__text form__text--checklist">на что обратить внимание, при выборе кухни</p>
+            </div>
+            <div class="form__img form__img--checklist" style="background-image: url('img/form/checklist-bg.svg')"></div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__top">
+        <div class="container">
+            <div class="footer__wrapper">
+                <address class="footer__left">
+                    <a class="footer__logo logo logo--footer" href="#">
+                        <picture>
+                            <source srcset="img/logo.avif" type="image/avif">
+                            <source srcset="img/logo.webp" type="image/webp">
+                            <img class="logo__img" src="img/logo.png" alt="Логотип" width="165" height="105" loading="lazy">
+                        </picture>
+                    </a>
+                    <div class="footer__contacts">
+                        <div class="footer__contact footer__contact--phone">
+                            <a href="tel:+74842909959">
+                                8 (4842) 90-99-59
+                            </a>
+                        </div>
+                        <div class="footer__contact footer__contact--email">
+                            <a href="mailto:zetta110@zetta.ru">
+                                zetta110@zetta.ru
+                            </a>
+                        </div>
+                        <span class="footer__contact footer__contact--time">
+                            10:00–22:00
+                        </span>
+                        <span class="footer__contact footer__contact--map">
+                            Москва, Расторгуевский пер., д. 1
+                        </span>
+                    </div>
+
+                    <ul class="socials">
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" style="background-image: url('img/socials/facebook.svg');" target="_blank">
+                                <span class="sr-only">facebook</span>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" style="background-image: url('img/socials/vk.svg');" target="_blank">
+                                <span class="sr-only">vk</span>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" style="background-image: url('img/socials/instagram.svg');" target="_blank">
+                                <span class="sr-only">instagram</span>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" style="background-image: url('img/socials/odnoklassniki.svg');" target="_blank">
+                                <span class="sr-only">odnoklassniki</span>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" style="background-image: url('img/socials/youtube.svg');" target="_blank">
+                                <span class="sr-only">youtube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+
+                <ul class="footer__box">
+                    <li class="footer__list">
+                        <h3 class="footer__title">
+                            Каталог
+                        </h3>
+                        <ul class="footer__items">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Каталог</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Кухни Модерн</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Кухни Классика</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link footer__link--active" href="#">Все кухни</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Товары для кухни</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Студио</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Шкафы</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Гардеробные</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Прихожие</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__list">
+                        <h3 class="footer__title">
+                            Клиентам
+                        </h3>
+                        <ul class="footer__items">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Акции
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    On-line заявка
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Советы эксперта
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Купить в кредит
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Доставка и сборка
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Оплата банковской картой
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__list">
+                        <h3 class="footer__title">
+                            О компании
+                        </h3>
+                        <ul class="footer__items">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Поставщики
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Гарантия
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Миссия
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Франшиза
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Партнерам
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Вакансии
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer__bottom">
+            <span class="footer__copy">
+                Copyright © 1998-2022 Zetta. All rights reserved.
+            </span>
+            <a class="footer__privacy" href="#">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js" integrity="sha512-NQWLm7ozXeOcDB639QSEzUWiNDEKD/mPKDIH256UYr9V7dwqF6OW4+1AEAVSaY6iaCaJzjjAR2GV6bPBYEzHig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</body>
+
+</html>

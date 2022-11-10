@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script defer src="js/main.js"></script>
+
+  <title>ZETTA — Фабрика кухкни | Гарантия</title>
+</head>
+
+<body class="body">
+  <div class="wrapper">
+
+<header class="header">
+    <div class="container container--large">
+        <nav class="header__wrapper">
+            <a class="header__logo logo" href="#">
+                <picture>
+                    <source srcset="img/logo.avif" type="image/avif">
+                    <source srcset="img/logo.webp" type="image/webp">
+                    <img class="logo__img" src="img/logo.png" alt="Логотип" width="165" height="105" loading="lazy">
+                </picture>
+            </a>
+            <div class="header__box">
+                <div class="header__top">
+                    <div class="header__inner">
+                        <ul class="header__left">
+                            <li class="header__left-item">
+                                <a class="header__left-link" href="#">Компания</a>
+                            </li>
+                            <li class="header__left-item">
+                                <a class="header__left-link" href="#">Запись в салон</a>
+                            </li>
+                            <li class="header__left-item">
+                                <a class="header__left-link" href="#">Сотрудничество</a>
+                            </li>
+                        </ul>
+                        <div class="header__right">
+                            <button class="header__search" type="button">Поиск</button>
+                            <form class="search search--header" action="#">
+                                <label class="sr-only" for="search-field">Поиск</label>
+                                <input class="search__field" type="search" name="search" id="search-field" placeholder="Поиск..." required>
+                                <button class="search__button" type="submit">
+                                    <span class="sr-only">Найти</span>
+                                </button>
+                            </form>
+                            <ul class="contacts contacts--header">
+                                <li class="contacts__item">
+                                    <a class="contacts__link contacts__link--email" href="mailto:operator2@zetta.ru">
+                                        operator2@zetta.ru
+                                    </a>
+                                </li>
+                                <li class="contacts__item">
+                                    <a class="contacts__link contacts__link--phone" href="tel:+74951896592">
+                                        + 7 (495) 189-65-92
+                                    </a>
+                                </li>
+                            </ul>
+                            <button class="header__call call" type="button">Запись в салон</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <ul class="menu">
+                        <li class="menu__item menu__item--catalog">
+                            <a class="menu__link menu__link--dop" href="#dop-catalog"> Каталог</a>
+                            <div class="catalog" id="dop-catalog">
+                                <div class="container container--large">
+                                    <div class="catalog__wrapper">
+                                        <ul class="catalog-main">
+                                            <li class="catalog-main__item">
+                                                <a class="catalog-main__link catalog-main__link--active" href="#catalog-kitchen">Кухни</a>
+                                            </li>
+                                            <li class="catalog-main__item">
+                                                <a class="catalog-main__link" href="#catalog-furniture">Корпусная мебель</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="catalog-detail catalog-detail--active" id="catalog-kitchen">
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link catalog-detail__link--active" href="#">
+                                                    Современный стиль
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Нео классика
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Классический стиль
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Все кухни
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Распродажи образцов
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="catalog-detail" id="catalog-furniture">
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link catalog-detail__link--active" href="#">
+                                                    Шкафы
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Студио
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Гардеробные
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Прихожие
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="catalog-stock">
+                                            <a class="catalog-stock__link" href="#">
+                                                <img class="catalog-stock__banner" src="img/discounts/2.jpg" alt="Cкидки на технику Bosh" loading="lazy" width="573" height="232">
+                                            </a>
+                                            <a class="catalog-stock__more" href="#">Все акции</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Акции</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--dop" href="#dop-buyers">Покупателям</a>
+                            <div class="catalog" id="dop-buyers">
+                                <div class="container container--large">
+                                    <div class="catalog__wrapper">
+                                        <ul class="catalog-main">
+                                            <li class="catalog-main__item">
+                                                <a class="catalog-main__link catalog-main__link--active" href="#buyers-service">Сервис Zetta</a>
+                                            </li>
+                                            <li class="catalog-main__item">
+                                                <a href="#">О компании</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="catalog-detail catalog-detail--active" id="buyers-service">
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Гардеробные
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Прихожие
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="catalog-stock">
+                                            <a class="catalog-stock__link" href="#">
+                                                <img class="catalog-stock__banner" src="img/discounts/2.jpg" alt="Cкидки на технику Bosh" loading="lazy" width="573" height="232">
+                                            </a>
+                                            <a class="catalog-stock__more" href="#">Все акции</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link menu__link--dop" href="#dop-company">Компания</a>
+                            <div class="catalog" id="dop-company">
+                                <div class="container container--large">
+                                    <div class="catalog__wrapper">
+                                        <ul class="catalog-main">
+                                            <li class="catalog-main__item">
+                                                <a class="catalog-main__link catalog-main__link--active" href="#company-factory">Сервис Zetta</a>
+                                            </li>
+                                            <li class="catalog-main__item">
+                                                <a class="catalog-main__link" href="#company-partners">Партнерам</a>
+                                            </li>
+                                            <li class="catalog-main__item">
+                                                <a class="catalog-main__link" href="#company-service">Сервис Zetta</a>
+                                            </li>
+                                        </ul>
+                                        <ul class="catalog-detail catalog-detail--active" id="company-factory">
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Производство
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Качество и Гарантия 12 лет
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    История компании
+                                                </a>
+                                            </li>
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Миссия и ценности
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="catalog-detail" id="company-partners">
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link catalog-detail__link--active" href="#">
+                                                    Гарантия 12 лет
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="catalog-detail" id="company-service">
+                                            <li class="catalog-detail__item">
+                                                <a class="catalog-detail__link" href="#">
+                                                    Миссия и ценности
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="catalog-stock">
+                                            <a class="catalog-stock__link" href="#">
+                                                <img class="catalog-stock__banner" src="img/discounts/2.jpg" alt="Cкидки на технику Bosh" loading="lazy" width="573" height="232">
+                                            </a>
+                                            <a class="catalog-stock__more" href="#">Все акции</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Адрес салона</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Блог</a>
+                        </li>
+                    </ul>
+                    <button class="btn header__btn froze-btn" type="button">Заказать проект</button>
+                </div>
+            </div>
+            <button class="burger" type="button">
+                <span class="burger__text">Меню</span>
+                <span class="burger__line"></span>
+            </button>
+            <a class="header__tel" href="tel:+74951896592">
+                <span class="sr-only">Позвонить</span>
+            </a>
+            <div class="burger-menu">
+                <div class="burger-menu__top">
+                    <form class="search" action="#">
+                        <label class="sr-only" for="search-field-burger">Поиск</label>
+                        <input class="search__field" type="search" name="search" id="search-field-burger" placeholder="Поиск" required>
+                        <button class="search__button" type="submit">
+                            <span class="sr-only">Найти</span>
+                        </button>
+                    </form>
+                    <ul class="contacts contacts--burger">
+                        <li class="contacts__item">
+                            <a class="contacts__link contacts__link--email" href="mailto:operator2@zetta.ru">
+                                operator2@zetta.ru
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <a class="contacts__link contacts__link--phone" href="tel:+74951896592">
+                                + 7 (495) 189-65-92
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="burger-menu__call call" type="button">Запись в салон</button>
+                <ul class="burger-menu__bottom">
+                    <li class="burger-menu__item burger-menu__item--catalog">
+                        <a class="burger-menu__link burger-menu__link--catalog burger-menu__link--dop" href="#dop-catalog">
+                            Каталог
+                        </a>
+                        <ul class="catalog-mobile">
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    Коропусная мебель
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Современный стиль
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Классический стиль
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Все кухни
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Нео классика
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Распродажа
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    Кухни
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Современный стиль
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Классический стиль
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Все кухни
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Нео классика
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Распродажа
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#">
+                            Акции
+                        </a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link burger-menu__link--dop" href="#dop-buyers">
+                            Покупателям
+                        </a>
+                        <ul class="catalog-mobile">
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    Сервис Zetta
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Гарантия 12 лет
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Замер помещения
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Доставка
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Монтаж мебели
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    О компании
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Доставка
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Монтаж мебели
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link burger-menu__link--dop" href="#dop-company">
+                            Компания
+                        </a>
+                        <ul class="catalog-mobile">
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    Фабрика Zetta
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Производство
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Качество и Гарантия 12 лет
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            История компании
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Миссия и ценности
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    Партнерам
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Качество и Гарантия 12 лет
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Производство
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="catalog-mobile__items">
+                                <button class="catalog-mobile__button" type="button">
+                                    Сервис Zetta
+                                </button>
+                                <ul class="catalog-mobile__menu">
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            Миссия и ценности
+                                        </a>
+                                    </li>
+                                    <li class="catalog-mobile__item">
+                                        <a class="catalog-mobile__link" href="#">
+                                            История компании
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#">
+                            Адреса салонов
+                        </a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a class="burger-menu__link" href="#">
+                            Блог
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="blackout"></div>
+
+<div class="mobile-menu">
+    <div class="container">
+        <ul class="mobile-menu__items">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__link--catalog" href="#">
+                    Каталог
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__link--stock" href="#">
+                    Акции
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__link--address" href="#">
+                    Адреса
+                </a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__link mobile-menu__link--3d" href="#">
+                    Заказать 3D проект
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<section class="modal modal--call">
+    <div class="modal__body">
+        <div class="modal__content">
+            <div class="modal__top">
+                <h2 class="modal__title">Запись в салон</h2>
+                <button class="modal__close" type="button">
+                    <span class="sr-only">Закрыть окно</span>
+                </button>
+            </div>
+            <form class="modal__form" action="#" data-thank="true">
+                <div class="modal__items">
+                    <div class="modal__item">
+                        <label class="sr-only" for="call-name">
+                            Ваше имя
+                        </label>
+                        <input class="modal__field" id="call-name" name="name" type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="modal__item">
+                        <label class="sr-only" for="call-tel">
+                            Ваш номер телефона
+                        </label>
+                        <input class="modal__field" id="call-tel" name="tel" type="tel" placeholder="Ваш номер телефона" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+                    </div>
+                </div>
+                <button class="modal__button btn" type="submit">Отправить</button>
+                <div class="modal__agreement">
+                    <label>
+                        <input class="modal__check" type="checkbox" name="agree" checked required>
+                        Я согласен (а) на
+                        <span class="modal__visible"></span>
+                    </label>
+                    <a class="modal__link" href="#">обработку персональных данных</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="modal modal--froze">
+    <div class="modal__body">
+        <div class="modal__content">
+            <div class="modal__top">
+                <h2 class="modal__title">Заявка</h2>
+                <button class="modal__close" type="button">
+                    <span class="sr-only">Закрыть окно</span>
+                </button>
+            </div>
+            <form class="modal__form" action="#" data-validate data-thank="true">
+                <div class="modal__wrapper">
+                    <div class="modal__inner">
+                        <input class="modal__hidden" type="radio" name="froze" id="froze-design" checked>
+                        <label class="modal__box" for="froze-design">
+                            Бесплатный 3D дизайн-проект
+                        </label>
+                    </div>
+                    <div class="modal__inner">
+                        <input class="modal__hidden" type="radio" name="froze" id="froze-call">
+                        <label class="modal__box" for="froze-call">
+                            Бесплатный вызов дизайнера-замерщика
+                        </label>
+                    </div>
+                </div>
+                <div class="modal__items">
+                    <div class="modal__item">
+                        <label class="sr-only" for="froze-name">
+                            Имя и фамилия
+                        </label>
+                        <input class="modal__field" id="froze-name" name="name" type="text" placeholder="Имя и фамилия" required>
+                    </div>
+                    <div class="modal__item">
+                        <label class="sr-only" for="froze-tel">
+                            Номер телефона
+                        </label>
+                        <input class="modal__field" id="froze-tel" name="tel" type="tel" placeholder="Номер телефона" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+                    </div>
+                    <div class="modal__item">
+                        <label class="sr-only" for="froze-address">
+                            Адрес электронной почты
+                        </label>
+                        <input class="modal__field" id="froze-address" name="address" type="email" placeholder="Адрес электронной почты" required>
+                    </div>
+                </div>
+                <button class="modal__button btn" type="submit">Отправить заявку</button>
+                <div class="modal__agreement">
+                    <label>
+                        <input class="modal__check" type="checkbox" name="agree" checked>
+                        Я согласен (а) на
+                        <span class="modal__visible"></span>
+                    </label>
+                    <a class="modal__link" href="#">обработку персональных данных</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<div class="modal modal--thank">
+    <div class="modal__body">
+        <div class="modal__content">
+            <div class="modal__top">
+                <span class="modal__title">
+                    Ваша заявка принята. Мы свяжемся с вами в ближайшее время
+                </span>
+            </div>
+            <button class="modal__button btn" type="button">Отлично!</button>
+        </div>
+    </div>
+</div>
+
+<main class="main">
+    <section class="guarantee-service section">
+    <div class="container container--large">
+        <div class="guarantee-service__wrapper">
+            <div class="guarantee-service__left">
+                <h1 class="guarantee-service__title title">
+                    Гарантийное обслуживание
+                    <span class="guarantee-service__accent">
+                        12 лет
+                    </span>
+                </h1>
+                <p class="guarantee-service__text">
+                    Фабрика кухни ZETTA предоставляет одну из самых больших гарантий на кухни в России. Наша гарантия действует 12 лет. Она распространяется на все части кухни — от петель до фасадов.
+                </p>
+            </div>
+
+            <div class="guarantee-service__right">
+                <p class="guarantee-service__text">
+                    Такой большой гарантийный срок является следствием многолетнего опыта работы компании и жесточайшего отбора поставщиков. Реальный срок службы наших кухонь составляет 20 лет.
+                </p>
+            </div>
+        </div>
+        <div class="guarantee-service__picture offer">
+            <picture class="guarantee-service__image">
+                <source srcset="img/mission-page/service.avif" type="image/avif">
+                <source srcset="img/mission-page/service.webp" type="image/webp">
+                <img class="guarantee-service__img" src="img/mission-page/service.jpg" alt="Гарантийное обсулживание" width="1920" height="1290" loading="lazy">
+            </picture>
+            <ul class="interactive">
+                <li class="interactive__item" style="top: 40%; left: 28%">
+                    <button class="interactive__btn" type="button">
+                        <span class="interactive__preview" style="background-image: url('img/guarantee/service/1.png');"></span>
+                        <span class="sr-only">Прочный корпус 18 мм</span>
+                    </button>
+
+                    <div class="interactive__content interactive__content--desktop" style="right: -70px; top: 77px;">
+                        <svg class="interactive__line" width="3" height="15" viewBox="0 0 3 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="top: -15px; right: 100px;">
+                            <path d="M1.5 0V15" stroke="#FF4002" stroke-width="2" />
+                        </svg>
+                        <picture>
+                            <source srcset="img/guarantee/service/images/1.avif" type="image/avif">
+                            <source srcset="img/guarantee/service/images/1.webp" type="image/webp">
+                            <img class="interactive__img" src="img/guarantee/service/images/1.jpg" alt="Прочный корпус 18 мм" width="260" height="90" loading="lazy">
+                        </picture>
+                        <h3 class="interactive__title">
+                            Прочный корпус 18 мм
+                        </h3>
+                        <div class="interactive__text">
+                            <p>
+                                Двухцветные корпуса толщиной 18 миллиметров, которые мы используем при создании наших кухонь, обеспечивают дополнительные преимущества для конечного потребителя. Одно из них — усиление жесткости всей конструкции кухни. ЛДСП 18 мм также позволяет добавить современную крепежную фурнитуру, которую невозможно применить в более тонких аналогах.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="interactive__content interactive__content--mobile" style="right: -226px; top: 180px;">
+                        <svg class="interactive__line" width="3" height="150" viewBox="0 0 3 150" fill="none" xmlns="http://www.w3.org/2000/svg" style="top: -150px; right: 235px;">
+                            <path d="M1.5 0V150" stroke="#FF4002" stroke-width="2" />
+                        </svg>
+                        <picture>
+                            <source srcset="img/guarantee/service/images/1.avif" type="image/avif">
+                            <source srcset="img/guarantee/service/images/1.webp" type="image/webp">
+                            <img class="interactive__img" src="img/guarantee/service/images/1.jpg" alt="Прочный корпус 18 мм" width="260" height="90" loading="lazy">
+                        </picture>
+                        <h3 class="interactive__title">
+                            Прочный корпус 18 мм
+                        </h3>
+                        <div class="interactive__text">
+                            <p>
+                                Двухцветные корпуса толщиной 18 миллиметров, которые мы используем при создании наших кухонь, обеспечивают дополнительные преимущества для конечного потребителя. Одно из них — усиление жесткости всей конструкции кухни. ЛДСП 18 мм также позволяет добавить современную крепежную фурнитуру, которую невозможно применить в более тонких аналогах.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="interactive__item" style="top: 62%; right: 48%">
+                    <button class="interactive__btn" type="button">
+                        <span class="interactive__preview" style="background-image: url('img/guarantee/service/2.png');"></span>
+                        <span class="sr-only">Система Click</span>
+                    </button>
+                    <div class="interactive__content interactive__content--desktop" style="top: -36px; right: 62px;">
+                        <svg class="interactive__line" width="49" height="56" viewBox="0 0 49 56" style="top: 67px; right: -49px;">
+                            <mask id="path-1-inside-1_2_247" fill="white">
+                                <path d="M0 0H49V36C49 47.0457 40.0457 56 29 56H0V0Z" />
+                            </mask>
+                            <path d="M0 0H49H0ZM51 36C51 48.1503 41.1503 58 29 58H0V54H29C38.9411 54 47 45.9411 47 36H51ZM0 56V0V56ZM51 0V36C51 48.1503 41.1503 58 29 58V54C38.9411 54 47 45.9411 47 36V0H51Z"
+                                fill="#FF4002" mask="url(#path-1-inside-1_2_247)" />
+                        </svg>
+                        <picture>
+                            <source srcset="img/guarantee/service/images/1.avif" type="image/avif">
+                            <source srcset="img/guarantee/service/images/1.webp" type="image/webp">
+                            <img class="interactive__img" src="img/guarantee/service/images/1.jpg" alt="Система Click" width="260" height="90" loading="lazy">
+                        </picture>
+                        <h3 class="interactive__title">
+                            Система Click
+                        </h3>
+                        <div class="interactive__text">
+                            <p>
+                                В наших кухнях мы используем в петлях только систему Click. Она позволяет за считанные секунды легко снять и повесить обратно фасад, что облегчает монтаж и уборку. При возвращении петли на место повторная регулировка не потребуется.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive__content interactive__content--mobile" style="right: -140px; top: 190px;">
+                        <svg class="interactive__line" width="3" height="170" viewBox="0 0 3 170" fill="none" xmlns="http://www.w3.org/2000/svg" style="top: -170px; right: 147px;">
+                            <path d="M1.5 0V170" stroke="#FF4002" stroke-width="2" />
+                        </svg>
+
+                        <picture>
+                            <source srcset="img/guarantee/service/images/1.avif" type="image/avif">
+                            <source srcset="img/guarantee/service/images/1.webp" type="image/webp">
+                            <img class="interactive__img" src="img/guarantee/service/images/1.jpg" alt="Система Click" width="260" height="90" loading="lazy">
+                        </picture>
+                        <h3 class="interactive__title">
+                            Система Click
+                        </h3>
+                        <div class="interactive__text">
+                            <p>
+                                В наших кухнях мы используем в петлях только систему Click. Она позволяет за считанные секунды легко снять и повесить обратно фасад, что облегчает монтаж и уборку. При возвращении петли на место повторная регулировка не потребуется.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="interactive__item" style="bottom: 43%; left: 75%">
+                    <button class="interactive__btn" type="button">
+                        <span class="interactive__preview" style="background-image: url('img/guarantee/service/3.png');"></span>
+                        <span class="sr-only">Более 4 000 типов корпуса</span>
+                    </button>
+                    <div class="interactive__content interactive__content--desktop" style="top: -36px; right: 62px;">
+                        <svg class="interactive__line" width="49" height="56" viewBox="0 0 49 56" style="top: 67px; right: -49px;">
+                            <mask id="path-1-inside-1_2_247" fill="white">
+                                <path d="M0 0H49V36C49 47.0457 40.0457 56 29 56H0V0Z" />
+                            </mask>
+                            <path d="M0 0H49H0ZM51 36C51 48.1503 41.1503 58 29 58H0V54H29C38.9411 54 47 45.9411 47 36H51ZM0 56V0V56ZM51 0V36C51 48.1503 41.1503 58 29 58V54C38.9411 54 47 45.9411 47 36V0H51Z"
+                                fill="#FF4002" mask="url(#path-1-inside-1_2_247)" />
+                        </svg>
+                        <picture>
+                            <source srcset="img/guarantee/service/images/1.avif" type="image/avif">
+                            <source srcset="img/guarantee/service/images/1.webp" type="image/webp">
+                            <img class="interactive__img" src="img/guarantee/service/images/1.jpg" alt="Газовая плита" width="260" height="90" loading="lazy">
+                        </picture>
+                        <h3 class="interactive__title">
+                            Газовая плита
+                        </h3>
+                        <div class="interactive__text">
+                            <p>
+                                Мы предлагаем более 700 типоразмеров корпуса в 6 цветах — итого 4 200 типов. Это широчайший ассортимент на рынке, которым могут похвастаться единицы. При этом наша уникальная технология производства позволяет нам держать невысокую себестоимость продукции, что гарантирует покупателю адекватную стоимость конечного изделия.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive__content interactive__content--mobile" style="right: -50px; top: 100px;">
+                        <svg class="interactive__line" width="3" height="100" viewBox="0 0 3 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="top: -100px; right: 60px;">
+                            <path d="M1.5 0V100" stroke="#FF4002" stroke-width="2" />
+                        </svg>
+                        <picture class="test">
+                            <source srcset="img/guarantee/service/images/1.avif" type="image/avif">
+                            <source srcset="img/guarantee/service/images/1.webp" type="image/webp">
+                            <img class="interactive__img" src="img/guarantee/service/images/1.jpg" alt="Газовая плита" width="260" height="90" loading="lazy">
+                        </picture>
+                        <h3 class="interactive__title">
+                            Более 4 000 типов корпуса
+                        </h3>
+                        <div class="interactive__text">
+                            <p>
+                                Мы предлагаем более 700 типоразмеров корпуса в 6 цветах — итого 4 200 типов. Это широчайший ассортимент на рынке, которым могут похвастаться единицы. При этом наша уникальная технология производства позволяет нам держать невысокую себестоимость продукции, что гарантирует покупателю адекватную стоимость конечного изделия.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="interactive__item" style="bottom: 24%; right: 36%">
+                    <button class="interactive__btn" type="button">
+                        <span class="interactive__preview" style="background-image: url('img/guarantee/service/4.png');"></span>
+                        <span class="sr-only">Антипылевые треугольники</span>
+                    </button>
+                    <div class="interactive__content interactive__content--desktop" style="top: 75px; right: -74px;">
+                        <svg class="interactive__line" width="3" height="15" viewBox="0 0 3 15" fill="none" xmlns="http://www.w3.org/2000/svg" style="top: -15px; right: 100px;">
+                            <path d="M1.5 0V15" stroke="#FF4002" stroke-width="2" />
+                        </svg>
+                        <picture>
+                            <source srcset="img/guarantee/service/images/1.avif" type="image/avif">
+                            <source srcset="img/guarantee/service/images/1.webp" type="image/webp">
+                            <img class="interactive__img" src="img/guarantee/service/images/1.jpg" alt="Антипылевые треугольники" width="260" height="90" loading="lazy">
+                        </picture>
+                        <h3 class="interactive__title">
+                            Антипылевые треугольники
+                        </h3>
+                        <div class="interactive__text">
+                            <p>
+                                Специальные треугольники «анти-пыль», расположенные в разных уголках столешницы, значительно упростят уборку. Вместе с алюминиевым поддоном в модуле под мойку, полкодержателями с фиксаторами и другими приспособлениями, встраиваемыми в вашу кухню, процесс готовки и очистки всех поверхностей станет простым и быстрым.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive__content interactive__content--mobile" style="right: -40px; top: 74px;">
+                        <svg class="interactive__line" width="177" height="64" viewBox="0 0 177 64" style="right: 64px; top: -63px;">
+                            <mask id="path-1-inside-1_3_1555" fill="white">
+                                <path d="M176.721 62.1858L176.424 0.802105L19.9709 1.55922C8.92536 1.61267 0.0144969 10.6102 0.067949 21.6558L0.268216 63.0397L176.721 62.1858Z" />
+                            </mask>
+                            <path
+                                d="M176.721 62.1858L176.424 0.802105L176.721 62.1858ZM19.9613 -0.440759C7.81113 -0.381962 -1.99082 9.51532 -1.93203 21.6654L-1.73176 63.0494L2.26819 63.03L2.06793 21.6461C2.01982 11.7051 10.0396 3.6073 19.9806 3.55919L19.9613 -0.440759ZM0.268216 63.0397L176.721 62.1858L0.268216 63.0397ZM176.414 -1.19787L19.9613 -0.440759C7.81113 -0.381962 -1.99082 9.51532 -1.93203 21.6654L2.06793 21.6461C2.01982 11.7051 10.0396 3.6073 19.9806 3.55919L176.433 2.80208L176.414 -1.19787Z"
+                                fill="#FF4002" mask="url(#path-1-inside-1_3_1555)" />
+                        </svg>
+                        <picture>
+                            <source srcset="img/guarantee/service/images/1.avif" type="image/avif">
+                            <source srcset="img/guarantee/service/images/1.webp" type="image/webp">
+                            <img class="interactive__img" src="img/guarantee/service/images/1.jpg" alt="Антипылевые треугольники" width="260" height="90" loading="lazy">
+                        </picture>
+                        <h3 class="interactive__title">
+                            Антипылевые треугольники
+                        </h3>
+                        <div class="interactive__text">
+                            <p>
+                                Специальные треугольники «анти-пыль», расположенные в разных уголках столешницы, значительно упростят уборку. Вместе с алюминиевым поддоном в модуле под мойку, полкодержателями с фиксаторами и другими приспособлениями, встраиваемыми в вашу кухню, процесс готовки и очистки всех поверхностей станет простым и быстрым.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="interactive__item" style="bottom: 25%; right: 71%">
+                    <button class="interactive__btn" type="button">
+                        <span class="interactive__preview" style="background-image: url('img/guarantee/service/5.png');"></span>
+                        <span class="sr-only">Петли с особой системой крепления</span>
+                    </button>
+                    <div class="interactive__content interactive__content--desktop" style="top: 47px; right: -356px;">
+
+                        <svg class="interactive__line" width="57" height="50" viewBox="0 0 57 50" fill="none" xmlns="http://www.w3.org/2000/svg" style="top: -40px; right: 270px;">
+                            <mask id="path-1-inside-1_852_113" fill="white">
+                                <path d="M0.5 49.5L0.5 0.5H36.5C47.5457 0.5 56.5 9.45431 56.5 20.5V49.5H0.5Z" />
+                            </mask>
+                            <path
+                                d="M0.5 49.5L0.5 0.5L0.5 49.5ZM36.5 -1.5C48.6503 -1.5 58.5 8.34974 58.5 20.5V49.5H54.5V20.5C54.5 10.5589 46.4411 2.5 36.5 2.5V-1.5ZM56.5 49.5H0.5H56.5ZM0.5 -1.5H36.5C48.6503 -1.5 58.5 8.34974 58.5 20.5H54.5C54.5 10.5589 46.4411 2.5 36.5 2.5H0.5L0.5 -1.5Z"
+                                fill="#FF4002" mask="url(#path-1-inside-1_852_113)" />
+                        </svg>
+                        <picture>
+                            <source srcset="img/guarantee/service/images/1.avif" type="image/avif">
+                            <source srcset="img/guarantee/service/images/1.webp" type="image/webp">
+                            <img class="interactive__img" src="img/guarantee/service/images/1.jpg" alt="Петли с особой системой крепления" width="260" height="90" loading="lazy">
+                        </picture>
+                        <h3 class="interactive__title">
+                            Петли с особой системой крепления
+                        </h3>
+                        <div class="interactive__text">
+                            <p>
+                                Наши петли изготавливаются за рубежом по спецзаказу. Их отличает высокое качество стали, наличие автоматических доводчиков и надежная система крепления к корпусу — не в тело ДСП, а в заранее забитые пластиковые втулки. В модулях под сушку с распашными фасадами устанавливаются петли с увеличенным углом открывания.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="interactive__content interactive__content--mobile" style="right: -300px; top: 52px;">
+                        <svg class="interactive__line" width="57" height="50" viewBox="0 0 57 50" fill="none" xmlns="http://www.w3.org/2000/svg" style="top: -40px; right: 270px;">
+                            <mask id="path-1-inside-1_852_113" fill="white">
+                                <path d="M0.5 49.5L0.5 0.5H36.5C47.5457 0.5 56.5 9.45431 56.5 20.5V49.5H0.5Z" />
+                            </mask>
+                            <path
+                                d="M0.5 49.5L0.5 0.5L0.5 49.5ZM36.5 -1.5C48.6503 -1.5 58.5 8.34974 58.5 20.5V49.5H54.5V20.5C54.5 10.5589 46.4411 2.5 36.5 2.5V-1.5ZM56.5 49.5H0.5H56.5ZM0.5 -1.5H36.5C48.6503 -1.5 58.5 8.34974 58.5 20.5H54.5C54.5 10.5589 46.4411 2.5 36.5 2.5H0.5L0.5 -1.5Z"
+                                fill="#FF4002" mask="url(#path-1-inside-1_852_113)" />
+                        </svg>
+                        <picture>
+                            <source srcset="img/guarantee/service/images/1.avif" type="image/avif">
+                            <source srcset="img/guarantee/service/images/1.webp" type="image/webp">
+                            <img class="interactive__img" src="img/guarantee/service/images/1.jpg" alt="Петли с особой системой крепления" width="260" height="90" loading="lazy">
+                        </picture>
+                        <h3 class="interactive__title">
+                            Петли с особой системой крепления
+                        </h3>
+                        <div class="interactive__text">
+                            <p>
+                                Наши петли изготавливаются за рубежом по спецзаказу. Их отличает высокое качество стали, наличие автоматических доводчиков и надежная система крепления к корпусу — не в тело ДСП, а в заранее забитые пластиковые втулки. В модулях под сушку с распашными фасадами устанавливаются петли с увеличенным углом открывания.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <section class="guarantee-distribute section">
+    <div class="container">
+        <div class="guarantee-distribute__top">
+            <h2 class="guarantee-distribute__title title">
+                Наша
+                <span class="guarantee-distribute__accent">
+                    гарантия
+                </span>
+            </h2>
+            <p class="guarantee-distribute__subtitle">
+                действует на отдельные компоненты кухонь ZETTA
+            </p>
+        </div>
+        <ul class="guarantee-distribute__items">
+            <li class="guarantee-distribute__item">
+                <article class="guarantee-card">
+    <div class="guarantee-card__picture">
+        <picture>
+          <source srcset="img/guarantee/headset/big.avif" type="image/avif">
+          <source srcset="img/guarantee/headset/big.webp" type="image/webp">
+          <img class="guarantee-card__image" src="img/guarantee/headset/big.jpg" alt="Гарнитур и комплектующие" width="460" height="255" loading="lazy">
+        </picture>
+        <div class="guarantee-card__detail">
+            <picture>
+              <source srcset="img/guarantee/headset/small.avif" type="image/avif">
+              <source srcset="img/guarantee/headset/small.webp" type="image/webp">
+              <img class="guarantee-card__img" src="img/guarantee/headset/small.png" alt="Гарнитур и комплектующие детально" width="125" height="125" loading="lazy">
+            </picture>
+        </div>
+    </div>
+    <h3 class="guarantee-card__title">Гарнитур и комплектующие</h3>
+    <p class="guarantee-card__text">Каркасы шкафов, фасады, торцевые модули, накладные панели, петли, цоколи, ножки, поддоны напольного шкафа, а также ламинированные столешницы. А еще проволочные корзины, декоративные карнизы и различные молдинги.</p>
+</article>
+            </li>
+            <li class="guarantee-distribute__item">
+                <article class="guarantee-card">
+    <div class="guarantee-card__picture">
+        <picture>
+          <source srcset="img/guarantee/boxes/big.avif" type="image/avif">
+          <source srcset="img/guarantee/boxes/big.webp" type="image/webp">
+          <img class="guarantee-card__image" src="img/guarantee/boxes/big.jpg" alt="Ящики и полки" width="460" height="255" loading="lazy">
+        </picture>
+        <div class="guarantee-card__detail">
+            <picture>
+              <source srcset="img/guarantee/boxes/small.avif" type="image/avif">
+              <source srcset="img/guarantee/boxes/small.webp" type="image/webp">
+              <img class="guarantee-card__img" src="img/guarantee/boxes/small.png" alt="Ящики и полки детально" width="125" height="125" loading="lazy">
+            </picture>
+        </div>
+    </div>
+    <h3 class="guarantee-card__title">Ящики и полки</h3>
+    <p class="guarantee-card__text">Выдвижные ящики, фронтальные панели ящиков и стопоры для ящиков, цокольные ящики, ящики под духовку. Плюс к этому обычные полки и полки из закаленного стекла или с меламиновой отделкой, полки для бутылок и тарелок, а также полки с ящиками.</p>
+</article>
+            </li>
+            <li class="guarantee-distribute__item">
+                <article class="guarantee-card">
+    <div class="guarantee-card__picture">
+        <picture>
+          <source srcset="img/guarantee/shelves/big.avif" type="image/avif">
+          <source srcset="img/guarantee/shelves/big.webp" type="image/webp">
+          <img class="guarantee-card__image" src="img/guarantee/shelves/big.jpg" alt="Техника" width="460" height="255" loading="lazy">
+        </picture>
+        <div class="guarantee-card__detail">
+            <picture>
+              <source srcset="img/guarantee/shelves/small.avif" type="image/avif">
+              <source srcset="img/guarantee/shelves/small.webp" type="image/webp">
+              <img class="guarantee-card__img" src="img/guarantee/shelves/small.png" alt="Техника детально" width="125" height="125" loading="lazy">
+            </picture>
+        </div>
+    </div>
+    <h3 class="guarantee-card__title">Техника</h3>
+    <p class="guarantee-card__text">Бытовая техника, мойки, посудные сушилки для навесного шкафа и многое другое. Обращаем внимание, что на некоторые товары, которые мы сами не производим, будет установлена гарантия от поставщика, которая может быть менее 12 лет.</p>
+</article>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <section class="guarantee-videos section">
+    <div class="container">
+        <h2 class="guarantee-videos__title title">Видеообзор</h2>
+        <span class="guarantee-videos__subtitle">
+            Почему нас выбирают и как выбрать кухню мечты.
+        </span>
+        <ul class="guarantee-videos__items">
+            <li class="guarantee-videos__item">
+                <iframe class="guarantee-videos__video" src="https://www.youtube.com/embed/bwsjA14VGdI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+            <li class="guarantee-videos__item">
+                <iframe class="guarantee-videos__video" src="https://www.youtube.com/embed/4h2V7YzR1VY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </li>
+        </ul>
+    </div>
+</section>
+</main>
+
+<section class="questions section">
+    <div class="container">
+        <h2 class="questions__title title">
+            Преимущества
+            <span class="questions__accent">работы с нами</span>
+        </h2>
+        <ul class="questions__items">
+            <li class="questions__item">
+                <article class="question-card">
+    <button class="question-card__top" type="button">
+        <span class="question-card__title">Быстрая доставка и сборка</span>
+    </button>
+
+        <div class="question-card__content">
+            <div class="question-card__text"><p>Доставка точно в срок на любой этаж за фиксированную стоимость — 3 990 рублей в пределах Московского малого кольца (автомобильная дорога федерального значения А107). Доставка и сборка осуществляются в один день сразу несколькими специалистами. Доставка в другой город рассчитывается менеджерами компании отдельно.</p></div>
+        </div>
+
+</article>
+            </li>
+            <li class="questions__item">
+                <article class="question-card">
+    <button class="question-card__top" type="button">
+        <span class="question-card__title">Кухни собираются на производстве, а не у клиента дома</span>
+    </button>
+
+        <div class="question-card__content">
+            <div class="question-card__text"><p>Контрольная сборка на производстве обеспечивает дополнительную проверку комплектации и качества произведенной кухни. Таким образом, к вам приедет уже полностью готовая кухня, останется только установить ее в вашей квартире, доме или офисе. Наши специалисты сделают это максимально быстро и качественно. Благодаря такому подходу время монтажа сокращается в два раза.</p></div>
+        </div>
+
+</article>
+            </li>
+            <li class="questions__item">
+                <article class="question-card">
+    <button class="question-card__top" type="button">
+        <span class="question-card__title">Премиальная фурнитура от Grass (Австрия)</span>
+    </button>
+
+        <div class="question-card__content">
+            <div class="question-card__text"><p>Фурнитура Grass — это гарантированные 65 000 открытий и закрытий дверей шкафов. Общий срок службы фурнитуры рассчитан более чем на 25 лет.</p></div>
+        </div>
+
+</article>
+            </li>
+            <li class="questions__item">
+                <article class="question-card">
+    <button class="question-card__top" type="button">
+        <span class="question-card__title">Петли с 5-слойной стальной пластиной и системой Click</span>
+    </button>
+
+        <div class="question-card__content">
+            <div class="question-card__text"><p>Пятислойная стальная пластина придает петле особую жесткость, что позволяет противостоять продольным нагрузкам при открытом состоянии двери, даже если кухня сделана из тяжелых пород дерева. Система Click позволяет за считанные секунды легко снять и повесить обратно фасад, что облегчает монтаж и уборку. При возвращении петли на место повторная регулировка не потребуется.</p></div>
+        </div>
+
+</article>
+            </li>
+            <li class="questions__item">
+                <article class="question-card">
+    <button class="question-card__top" type="button">
+        <span class="question-card__title">Лучшая система крепления корпусов Camar (Италия)</span>
+    </button>
+
+        <div class="question-card__content">
+            <div class="question-card__text"><p>Система крепления шкафов к стене с использованием технологий Camar делает возможной регулировку элементов кухни сразу в нескольких плоскостях. Это крайне удобно при наличии даже заметных неровностей стен. Система также равномерно распределяет нагрузку (каждый модуль выдерживает нагрузку до 100 кг) и позволяет проложить электропроводку для встроенных светильников без штрабления стен.</p></div>
+        </div>
+
+</article>
+            </li>
+            <li class="questions__item">
+                <article class="question-card">
+    <button class="question-card__top" type="button">
+        <span class="question-card__title">Металлические держатели в зоне духового шкафа для особой прочности</span>
+    </button>
+
+        <div class="question-card__content">
+            <div class="question-card__text"><p>Эти элементы устанавливаются вместо обычных полок из ДСП. Их задача — эффективно отводить избыточное тепло и обеспечивать максимальную вентиляцию духовки.</p></div>
+        </div>
+
+</article>
+            </li>
+            <li class="questions__item">
+                <article class="question-card">
+    <button class="question-card__top" type="button">
+        <span class="question-card__title">Монтаж за день в четыре руки</span>
+    </button>
+
+        <div class="question-card__content">
+            <div class="question-card__text"><p>Служба доставки приедет одновременно с сотрудниками службы монтажа нашей компании. Грузчики бережно и аккуратно поднимут вашу готовую кухню на нужный этаж, а наши монтажники оперативно установят все необходимые модули и проверят их работоспособность.</p></div>
+        </div>
+
+</article>
+            </li>
+            <li class="questions__item">
+                <article class="question-card">
+    <button class="question-card__top" type="button">
+        <span class="question-card__title">Избыточный запас прочности и надежности корпусов</span>
+    </button>
+
+        <div class="question-card__content">
+            <div class="question-card__text"><p>За счет всех вышеперечисленных преимуществ продукция Фабрики кухни ZETTA отличается самым высоким качеством, большой прочностью элементов и надежностью сборки. Все это дает нам возможность предоставлять гарантию на нашу продукцию и услуги сроком 12 лет.</p></div>
+        </div>
+
+</article>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="form form--design" id="form-design">
+    <div class="container">
+        <div class="form__wrapper">
+            <form class="form__form form__form--design" action="#" data-thank="true">
+                <div class="form__items">
+                    <div class="form__item">
+                        <label class="sr-only" for="name">
+                            Введите ваше имя
+                        </label>
+                        <input class="form__field" id="name" name="name" type="text" placeholder="Ваше имя*" required>
+                    </div>
+
+                        <div class="form__item">
+                            <label class="sr-only" for="form-design-tel">
+                                Введите ваш телефон
+                            </label>
+                            <input class="form__field" id="form-design-tel" name="tel" type="tel" placeholder="Ваш телефон*" pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required>
+                        </div>
+
+                </div>
+                <button class="form__button btn" type="submit">Отправить</button>
+            </form>
+            <div class="form__content">
+                <h2 class="form__title title">
+                    Закажите <span class="form__accent">бесплатную</span> разработку дизайн-проекта кухни
+                </h2>
+                <p class="form__text form__text--design"></p>
+            </div>
+            <div class="form__img form__img--design" style="background-image: url('img/form/design-bg.svg')"></div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__top">
+        <div class="container">
+            <div class="footer__wrapper">
+                <address class="footer__left">
+                    <a class="footer__logo logo logo--footer" href="#">
+                        <picture>
+                            <source srcset="img/logo.avif" type="image/avif">
+                            <source srcset="img/logo.webp" type="image/webp">
+                            <img class="logo__img" src="img/logo.png" alt="Логотип" width="165" height="105" loading="lazy">
+                        </picture>
+                    </a>
+                    <div class="footer__contacts">
+                        <div class="footer__contact footer__contact--phone">
+                            <a href="tel:+74842909959">
+                                8 (4842) 90-99-59
+                            </a>
+                        </div>
+                        <div class="footer__contact footer__contact--email">
+                            <a href="mailto:zetta110@zetta.ru">
+                                zetta110@zetta.ru
+                            </a>
+                        </div>
+                        <span class="footer__contact footer__contact--time">
+                            10:00–22:00
+                        </span>
+                        <span class="footer__contact footer__contact--map">
+                            Москва, Расторгуевский пер., д. 1
+                        </span>
+                    </div>
+
+                    <ul class="socials">
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" style="background-image: url('img/socials/facebook.svg');" target="_blank">
+                                <span class="sr-only">facebook</span>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" style="background-image: url('img/socials/vk.svg');" target="_blank">
+                                <span class="sr-only">vk</span>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" style="background-image: url('img/socials/instagram.svg');" target="_blank">
+                                <span class="sr-only">instagram</span>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" style="background-image: url('img/socials/odnoklassniki.svg');" target="_blank">
+                                <span class="sr-only">odnoklassniki</span>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a class="socials__link" href="#" style="background-image: url('img/socials/youtube.svg');" target="_blank">
+                                <span class="sr-only">youtube</span>
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+
+                <ul class="footer__box">
+                    <li class="footer__list">
+                        <h3 class="footer__title">
+                            Каталог
+                        </h3>
+                        <ul class="footer__items">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Каталог</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Кухни Модерн</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Кухни Классика</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link footer__link--active" href="#">Все кухни</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Товары для кухни</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Студио</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Шкафы</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Гардеробные</a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">Прихожие</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__list">
+                        <h3 class="footer__title">
+                            Клиентам
+                        </h3>
+                        <ul class="footer__items">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Акции
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    On-line заявка
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Советы эксперта
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Купить в кредит
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Доставка и сборка
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Оплата банковской картой
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__list">
+                        <h3 class="footer__title">
+                            О компании
+                        </h3>
+                        <ul class="footer__items">
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Поставщики
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Новости
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Гарантия
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Миссия
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Франшиза
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Партнерам
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#">
+                                    Вакансии
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="footer__bottom">
+            <span class="footer__copy">
+                Copyright © 1998-2022 Zetta. All rights reserved.
+            </span>
+            <a class="footer__privacy" href="#">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jQueryFormStyler/2.0.2/jquery.formstyler.min.js" integrity="sha512-NQWLm7ozXeOcDB639QSEzUWiNDEKD/mPKDIH256UYr9V7dwqF6OW4+1AEAVSaY6iaCaJzjjAR2GV6bPBYEzHig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
