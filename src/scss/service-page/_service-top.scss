@@ -12,7 +12,7 @@
 			justify-content: flex-start;
 			min-height: 480px;
 			padding-top: 0;
-            padding-bottom: 80px;
+			padding-bottom: 80px;
 		}
 
 		@include mq('phone') {
@@ -62,26 +62,15 @@
 	&__text {
 		position: relative;
 		max-width: 380px;
-		padding-top: 15px;
 
-		&::before,
 		&::after {
 			position: absolute;
+			bottom: -135px;
 			left: 0;
 			width: 100%;
-			content: '';
-		}
-
-		&::before {
-			top: 0;
-			height: 1px;
-			background-color: $grey-400;
-		}
-
-		&::after {
-			bottom: -135px;
 			height: 90px;
 			background-image: url('../img/service-top/decor.svg');
+			content: '';
 			@include bg-img;
 
 			@include mq('xl') {
@@ -149,7 +138,7 @@
 			@include mq('xl') {
 				top: -128px;
 				left: -155px;
-                height: 682px;
+				height: 682px;
 			}
 
 			@include mq('phone') {

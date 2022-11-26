@@ -11,9 +11,13 @@
 		color: $orange-500;
 	}
 
-	&__navigation,
+	
 	&__tab {
 		@include bottom-line;
+
+        &::before {
+            background-color: transparent;
+        }
 	}
 
 	&__navigation {
@@ -22,6 +26,17 @@
 		justify-content: space-between;
 		margin-bottom: 40px;
 		overflow-x: auto;
+
+		&::-webkit-scrollbar {
+			width: 0;
+			height: 5px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: $grey-250;
+			border: 1px solid $white;
+			border-radius: 3px;
+		}
 
 		@include mq('phone') {
 			margin-bottom: 30px;
@@ -128,6 +143,12 @@
 	&__text {
 		font-size: 18px;
 		letter-spacing: 0.02em;
+
+		p {
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
 
 		@include mq('phone') {
 			font-size: 12px;

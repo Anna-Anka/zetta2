@@ -62,6 +62,14 @@
 		display: none;
 	}
 
+    &__text {
+        p {
+            &:not(:last-child) {
+               margin-bottom: 10px;
+            }
+        }
+    }
+
 	&__items {
 		display: flex;
 		flex-direction: column;
@@ -81,5 +89,9 @@
 			border-radius: 50%;
 			content: '';
 		}
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
 	}
 }

@@ -63,6 +63,15 @@
 		margin-bottom: 25px;
 	}
 
+    &__subtext,
+    &__text {
+        p {
+            &:not(:last-child) {
+               margin-bottom: 10px;
+            }
+        }
+    }
+    
 	&__accent {
 		color: $orange-500;
 	}

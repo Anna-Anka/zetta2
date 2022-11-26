@@ -34,6 +34,7 @@ const zip = require('gulp-zip');
 const rootFolder = path.basename(path.resolve());
 const ttf2woff = require('gulp-ttf2woff');
 const ttf2woff2 = require('gulp-ttf2woff2');
+const ghPages = require('gh-pages');
 
 // paths
 const srcFolder = './src';
@@ -316,6 +317,10 @@ const toProd = (done) => {
   done();
 };
 
+const deploy = (cb) => {
+    ghPages.publish(path.join(process.cwd(), 'app'), cb);
+}
+
 exports.default = series(clean, fonts, htmlInclude, scripts, styles, resources, images, webpImages, avifImages, svgSprites, watchFiles);
 
 exports.backend = series(clean, fonts, htmlInclude, scriptsBackend, stylesBackend, resources, images, webpImages, avifImages, svgSprites)
@@ -323,5 +328,7 @@ exports.backend = series(clean, fonts, htmlInclude, scriptsBackend, stylesBacken
 exports.build = series(toProd, clean, fonts, htmlInclude, scripts, styles, resources, images, webpImages, avifImages, svgSprites);
 
 exports.cache = series(cache, rewrite);
+
+exports.deploy = deploy;
 
 exports.zip = zipFiles;

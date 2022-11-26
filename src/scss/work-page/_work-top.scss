@@ -53,6 +53,12 @@
 		font-size: 18px;
 		letter-spacing: 0.02em;
 
+        p {
+            &:not(:last-child) {
+               margin-bottom: 10px;
+            }
+        }
+
 		@include mq('phone') {
 			margin-bottom: 0;
 			font-size: 12px;

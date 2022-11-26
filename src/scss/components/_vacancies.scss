@@ -62,6 +62,12 @@
 		font-size: 18px;
 		letter-spacing: 0.02em;
 
+        p {
+            &:not(:last-child) {
+               margin-bottom: 10px;
+            }
+        }
+
 		@include mq('xl') {
 			margin-bottom: 20px;
 			font-size: 16px;

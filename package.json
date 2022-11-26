@@ -66,6 +66,7 @@
 		"air-datepicker": "^3.2.1",
 		"aos": "^2.3.4",
 		"choices.js": "^10.1.0",
+		"gh-pages": "^4.0.0",
 		"graph-modal": "^1.0.6",
 		"graph-tabs": "^1.0.2",
 		"gulp-concat": "^2.6.1",

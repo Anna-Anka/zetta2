@@ -10,7 +10,7 @@
                         <input class="form__field" id="name" name="name" type="text" placeholder="Ваше имя*" required>
                     </div>
 
-                    @if(context.class === "design" || context.class === "vacancy") {
+                    @if(context.field === "tel") {
                         <div class="form__item">
                             <label class="sr-only" for="form-design-tel">
                                 Введите ваш телефон
@@ -19,7 +19,7 @@
                         </div>
                     }
 
-                    @if(context.class === "checklist") {
+                    @if(context.field === "email") {
                         <div class="form__item">
                             <label class="sr-only" for="form-design-email">
                                 Введите вашу почту

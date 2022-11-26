@@ -29,7 +29,11 @@
     @include('./mission-page/_staff.html')
 
     @include('./components/_production.html', {
-        'class' : 'production--transparent'
+        'title' : '<span class="production__accent">О</span> производстве',
+        'text' : 'В основе нашей компании лежит автоматизированное поточное производство и SEB-концепт. Благодаря ним, многолетнему опыту работы и жесточайшему отбору поставщиков мы уверены: наши кухни прослужат очень долго!',
+        'items' : 'new',
+        'link-1' : 'Подробнее',
+        'link-2' : 'О компании'
     })
 
     @include('./mission-page/_partners.html')
@@ -37,6 +41,7 @@
 
 @include('./components/_forms.html', {
 'class' : 'design',
+'field' : 'email',
 'title' : 'Закажите <span class="form__accent">бесплатную</span> разработку дизайн- проекта кухни',
 'text' : 'Результат отправим Вам онлайн'
 })

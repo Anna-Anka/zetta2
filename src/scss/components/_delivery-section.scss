@@ -5,7 +5,7 @@
 		background-image: linear-gradient(201deg, $white 16.46%, $grey-200 42.59%);
 
 		.delivery-section__wrapper {
-			align-items: flex-end;
+			align-items: center;
 		}
 
 		.delivery-section__picture {
@@ -264,6 +264,14 @@
 		margin-bottom: 10px;
 		@include subtitle;
 	}
+
+    &__text {
+        p {
+            &:not(:last-child) {
+               margin-bottom: 10px;
+            }
+        }
+    }
 
 	&__link {
 		color: $orange-500;

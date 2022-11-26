@@ -20,6 +20,12 @@
 		color: $dark-700;
 		font-size: 18px;
 		letter-spacing: 0.02em;
+
+        p {
+            &:not(:last-child) {
+               margin-bottom: 10px;
+            }
+        }
 	}
 
 	&__wrapper {
