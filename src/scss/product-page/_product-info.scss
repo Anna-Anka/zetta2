@@ -15,7 +15,28 @@
 	}
 
 	&__link {
+		position: relative;
 		display: inline-block;
+
+		&::before {
+            @include open-img;
+			top: 40px;
+			right: 40px;
+			width: 60px;
+			height: 60px;
+			background-size: 30px;
+			border-radius: 16px;
+
+			@include mq('phone') {
+				display: none;
+			}
+		}
+
+        &:hover {
+            &::before {
+                opacity: 1;
+            }
+        }
 	}
 
 	&__img {

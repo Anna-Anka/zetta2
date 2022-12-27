@@ -12,22 +12,21 @@
 	}
 
 	&__wrapper {
-		padding: 60px;
+		padding: 40px;
 		background-color: $white;
-		border-radius: 93px 15px;
-		box-shadow: 0 3px 75px rgba($black, 0.05), 0 0 15px rgba($black, 0.05),
-			15px 3px 30px rgba($black, 0.04);
+		border-radius: 80px 15px;
+		box-shadow: 0 3px 75px rgba($black, 0.05), 0 0 15px rgba($black, 0.05), 15px 3px 30px rgba($black, 0.04);
 
 		@include mq('phone') {
-			padding: 40px 25px;
-			border-radius: 40px 12px;
+			padding: 30px;
+			border-radius: 40px 10px;
 		}
 	}
 
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		gap: 50px 30px;
+		gap: 40px 20px;
 		margin-bottom: 50px;
 
 		@include mq('xl') {

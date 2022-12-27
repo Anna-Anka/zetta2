@@ -111,3 +111,14 @@
 		content: '';
 	}
 }
+
+@mixin open-img {
+	position: absolute;
+	background-color: rgba($black, 0.4);
+	background-image: url('../img/svg/open.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0;
+	transition: opacity 0.4s;
+	content: '';
+}

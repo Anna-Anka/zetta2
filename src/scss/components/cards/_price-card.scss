@@ -1,15 +1,52 @@
 .price-card {
+	position: relative;
 	width: 100%;
+	padding: 20px;
 	font-weight: $fw-800;
 	line-height: 1.1;
+	background-color: $white;
+	border-radius: 10px;
+	transition: box-shadow 0.4s;
+
+	&:hover {
+		box-shadow: 0 0 20px rgba($black, 0.05), 20px 4px 40px rgba($black, 0.04);
+	}
 
 	&__counter {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		z-index: 2;
 		display: block;
 		color: $orange-500;
 		font-size: 18px;
 
 		@include mq('phone') {
 			font-size: 10px;
+		}
+	}
+
+	&__link {
+		position: relative;
+
+		&::before {
+			@include open-img;
+			top: 0;
+			right: 0;
+			width: 35px;
+			height: 35px;
+			background-size: 17px;
+			border-radius: 6px;
+
+            @include mq('phone') {
+                display: none;
+            }
+		}
+
+		&:hover {
+			&::before {
+				opacity: 1;
+			}
 		}
 	}
 
