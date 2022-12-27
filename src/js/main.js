@@ -29,3 +29,6 @@ import './_production-page'
 
 // * article-page
 import './_article-page'
+
+// * review-page
+import './_review-page'

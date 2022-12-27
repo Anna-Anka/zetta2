@@ -4,12 +4,21 @@
 
 @include('./components/_header.html')
 
-@include('./components/_breadcrumbs.html', {
-'count' : '3',
-'1' : 'Главная',
-'2' : 'Акции',
-'current' : 'Акция'
-})
+<div class="breadcrumbs">
+    <div class="container container--small">
+        <ul class="breadcrumbs__items">
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Главная -</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link" href="#">Акции -</a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a class="breadcrumbs__link breadcrumbs__link--current">Акция</a>
+            </li>
+        </ul>
+    </div>
+</div>
 
 @include('./components/_mobile-menu.html')
 

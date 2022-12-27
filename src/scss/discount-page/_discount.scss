@@ -1,4 +1,6 @@
 .discount {
+    font-size: 20px;
+
 	&__top {
 		margin-bottom: 60px;
 		padding-bottom: 12px;
@@ -77,10 +79,4 @@
 		padding-bottom: 30px;
 		font-size: 12px;
 	}
-}
-
-.discount-container {
-	width: 100%;
-	max-width: 1200px;
-	margin: 0 auto;
 }

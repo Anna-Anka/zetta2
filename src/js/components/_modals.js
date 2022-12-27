@@ -9,11 +9,14 @@ export const modalsFunction = () => {
 		const modalFrozeContent = document.querySelector('.modal--froze .modal__content');
 		const modalFroze = document.querySelector('.modal--froze');
 
-        const modalThank = document.querySelector('.modal--thank')
-        const modalThankContent = document.querySelector('.modal--thank .modal__content')
-        const modalThankClose = document.querySelector('.modal--thank .modal__button')
+		const modalThank = document.querySelector('.modal--thank')
+		const modalThank2 = document.querySelector('.modal--thankr')
+		const modalThankContent = document.querySelector('.modal--thank .modal__content')
+		const modalThank2Content = document.querySelector('.modal--thankr .modal__content')
+		const modalThankClose = document.querySelector('.modal--thank .modal__button')
+		const modalThank2Close = document.querySelector('.modal--thankr .modal__button')
 
-        const frozeBtns = document.querySelectorAll('.froze-btn');
+		const frozeBtns = document.querySelectorAll('.froze-btn');
 		const modals = document.querySelectorAll('.modal');
 
 		buttonsCall.forEach((item) => {
@@ -22,11 +25,11 @@ export const modalsFunction = () => {
 			});
 		});
 
-        frozeBtns.forEach(frozeBtn => {
-            frozeBtn.onclick = function () {
-                modalFroze.classList.add('modal--active');
-            }; 
-        });
+		frozeBtns.forEach(frozeBtn => {
+			frozeBtn.onclick = function () {
+				modalFroze.classList.add('modal--active');
+			};
+		});
 
 		buttonsModalClose.forEach((item) => {
 			item.addEventListener('click', () => {
@@ -48,25 +51,40 @@ export const modalsFunction = () => {
 			}
 		});
 
-        document.addEventListener('mousedown', (e) => {
-            if (!modalFrozeContent.contains(e.target) && !modalCallContent.contains(e.target) && !modalThankContent.contains(e.target)) {
-                modalThank.closest('.modal').classList.remove('modal--active');
-            }
-        });
+		document.addEventListener('mousedown', (e) => {
+			if (!modalFrozeContent.contains(e.target) && !modalCallContent.contains(e.target) && !modalThankContent.contains(e.target)) {
+				modalThank.closest('.modal').classList.remove('modal--active');
+			}
+		});
 
-        if (document.querySelector('[data-thank]')) {
-            const forms = document.querySelectorAll('[data-thank]')
+		document.addEventListener('mousedown', (e) => {
+			if (!modalFrozeContent.contains(e.target) && !modalCallContent.contains(e.target) && !modalThank2Content.contains(e.target)) {
+				modalThank2.closest('.modal').classList.remove('modal--active');
+			}
+		});
 
-            forms.forEach(form => {
+		if (document.querySelector('[data-thank]')) {
+			const forms = document.querySelectorAll('[data-thank]')
 
-                form.addEventListener('submit', (e) => {
-                    e.preventDefault()
+			forms.forEach(form => {
 
-                    modalThankClose.addEventListener('click', () => {
-                        modalThank.classList.remove('modal--active');
-                    })
-                })
-            })
-        }
+				form.addEventListener('submit', (e) => {
+					e.preventDefault()
+					form.closest('.modal').classList.remove('modal--active');
+
+					if (form.closest('.modal').classList.contains('modal--reviewsend')) {
+						modalThank2.classList.add('modal--active')
+						modalThank2Close.addEventListener('click', () => {
+							modalThank2.classList.remove('modal--active');
+						})
+					} else {
+						modalThank.classList.add('modal--active')
+						modalThankClose.addEventListener('click', () => {
+							modalThank.classList.remove('modal--active');
+						})
+					}
+				})
+			})
+		}
 	};
 };
