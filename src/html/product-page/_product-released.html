@@ -4,34 +4,58 @@
             <span class="released__accent">Релизованные</span>
             проекты этой модели
         </h2>
-        <div class="released__wrapper">
-            <div class="released__swiper swiper">
-                <ul class="released__items swiper-wrapper">
-                    <li class="released__item swiper-slide">
-                        @include('./../components/cards/_released-card.html', {
-                        'img' : '1'
-                        })
-                    </li>
-                    <li class="released__item swiper-slide">
-                        @include('./../components/cards/_released-card.html', {
-                        'img' : '2'
-                        })
-                    </li>
-                    <li class="released__item swiper-slide">
-                        @include('./../components/cards/_released-card.html', {
-                        'img' : '1'
-                        })
-                    </li>
-                    <li class="released__item swiper-slide">
-                        @include('./../components/cards/_released-card.html', {
-                        'img' : '2'
-                        })
-                    </li>
-                </ul>
-                <button class="released__button released__button--prev swiper-button-prev" type="button"></button>
-                <button class="released__button released__button--next swiper-button-next" type="button"></button>
-            </div>
-        </div>
-        <div class="released__scrollbar swiper-scrollbar"></div>
+        <ul class="released__items">
+            <li class="released__item">
+                @include('./../components/cards/_released-card.html', {
+                'img' : '1'
+                })
+            </li>
+            <li class="released__item">
+                @include('./../components/cards/_released-card.html', {
+                'img' : '2'
+                })
+            </li>
+            <li class="released__item">
+                @include('./../components/cards/_released-card.html', {
+                'img' : '1'
+                })
+            </li>
+            <li class="released__item">
+                @include('./../components/cards/_released-card.html', {
+                'img' : '2'
+                })
+            </li>
+            <li class="released__item">
+                @include('./../components/cards/_released-card.html', {
+                'img' : '1'
+                })
+            </li>
+            <li class="released__item">
+                @include('./../components/cards/_released-card.html', {
+                'img' : '2'
+                })
+            </li>
+            <li class="released__item">
+                @include('./../components/cards/_released-card.html', {
+                'img' : '1'
+                })
+            </li>
+            <li class="released__item">
+                @include('./../components/cards/_released-card.html', {
+                'img' : '2'
+                })
+            </li>
+            <li class="released__item">
+                @include('./../components/cards/_released-card.html', {
+                'img' : '1'
+                })
+            </li>
+            <li class="released__item">
+                @include('./../components/cards/_released-card.html', {
+                'img' : '2'
+                })
+            </li>
+        </ul>
+        <button class="released__button btn btn--border" type="button">Показать еще</button>
     </div>
 </section>

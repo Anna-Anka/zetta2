@@ -18,7 +18,7 @@
 		box-shadow: 0 3px 75px rgba($black, 0.05), 0 0 15px rgba($black, 0.05), 15px 3px 30px rgba($black, 0.04);
 
 		@include mq('phone') {
-			padding: 30px;
+			padding: 25px;
 			border-radius: 40px 10px;
 		}
 	}
@@ -26,7 +26,7 @@
 	&__items {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		gap: 40px 20px;
+		gap: 30px 20px;
 		margin-bottom: 50px;
 
 		@include mq('xl') {
@@ -35,7 +35,7 @@
 
 		@include mq('phone') {
 			grid-template-columns: repeat(2, 1fr);
-			gap: 30px 10px;
+			gap: 20px 10px;
 			margin-bottom: 30px;
 		}
 	}

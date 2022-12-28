@@ -1,15 +1,19 @@
 .price-card {
 	position: relative;
 	width: 100%;
-	padding: 20px;
 	font-weight: $fw-800;
 	line-height: 1.1;
 	background-color: $white;
 	border-radius: 10px;
+	@include adaptiv-value('padding', 20, 12, 1);
 	transition: box-shadow 0.4s;
 
 	&:hover {
 		box-shadow: 0 0 20px rgba($black, 0.05), 20px 4px 40px rgba($black, 0.04);
+
+		@include mq('phone') {
+			box-shadow: none;
+		}
 	}
 
 	&__counter {
@@ -22,6 +26,7 @@
 		font-size: 18px;
 
 		@include mq('phone') {
+			top: 10px;
 			font-size: 10px;
 		}
 	}
@@ -38,9 +43,9 @@
 			background-size: 17px;
 			border-radius: 6px;
 
-            @include mq('phone') {
-                display: none;
-            }
+			@include mq('phone') {
+				display: none;
+			}
 		}
 
 		&:hover {

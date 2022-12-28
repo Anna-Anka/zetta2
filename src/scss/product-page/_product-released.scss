@@ -11,42 +11,26 @@
 		color: $orange-500;
 	}
 
-	&__wrapper {
-		position: relative;
-		margin-bottom: 50px;
+	&__items {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+		@include adaptiv-value('margin-bottom', 60, 30, 1);
 
-		@include mq('phone') {
-			margin-bottom: 30px;
-		}
-	}
-
-	&__button {
-		background-color: $orange-500;
-		transform: translateY(-50%);
-
-		&--prev {
-			left: 0;
-		}
-
-		&--next {
-			right: 0;
-		}
-
-		@include mq('xl') {
-			display: none;
-		}
-	}
-
-	.swiper-button-disabled {
-		opacity: 0.6;
-	}
-
-	&__swiper {
-		position: relative;
+        @include mq('phone') {
+            grid-template-columns: 1fr;
+        }
 	}
 
 	&__item {
 		border-radius: 20px;
 		box-shadow: 0 0 20px rgba($black, 0.05), 20px 4px 40px rgba($black, 0.04);
+	}
+
+	&__button {
+		margin: 0 auto;
+		font-size: 18px;
+		border-radius: 16px;
+		padding: 16px 50px;
 	}
 }
