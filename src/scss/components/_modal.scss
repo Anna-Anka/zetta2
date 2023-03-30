@@ -24,6 +24,10 @@
 
 		.modal__content {
 			top: 20%;
+
+            @include mq('phone') {
+                top: 8%;
+            }
 		}
 	}
 

@@ -9,12 +9,13 @@ export const modalsFunction = () => {
 		const modalFrozeContent = document.querySelector('.modal--froze .modal__content');
 		const modalFroze = document.querySelector('.modal--froze');
 
+        const modalThank2 = document.querySelector('.modal--thankr')
+        const modalThank2Content = document.querySelector('.modal--thankr .modal__content')
+        const modalThank2Close = document.querySelector('.modal--thankr .modal__button')
+
 		const modalThank = document.querySelector('.modal--thank')
-		const modalThank2 = document.querySelector('.modal--thankr')
-		const modalThankContent = document.querySelector('.modal--thank .modal__content')
-		const modalThank2Content = document.querySelector('.modal--thankr .modal__content')
-		const modalThankClose = document.querySelector('.modal--thank .modal__button')
-		const modalThank2Close = document.querySelector('.modal--thankr .modal__button')
+        const modalThankContent = document.querySelector('.modal--thank .modal__content')
+        const modalThankClose = document.querySelector('.modal--thank .modal__button')
 
 		const frozeBtns = document.querySelectorAll('.froze-btn');
 		const modals = document.querySelectorAll('.modal');
@@ -58,33 +59,31 @@ export const modalsFunction = () => {
 		});
 
 		document.addEventListener('mousedown', (e) => {
-			if (!modalFrozeContent.contains(e.target) && !modalCallContent.contains(e.target) && !modalThank2Content.contains(e.target)) {
-				modalThank2.closest('.modal').classList.remove('modal--active');
+			if (!modalFrozeContent.contains(e.target) && !modalCallContent.contains(e.target) && !modalThank2Content?.contains(e.target)) {
+				modalThank2?.closest('.modal').classList.remove('modal--active');
 			}
 		});
 
-		if (document.querySelector('[data-thank]')) {
-			const forms = document.querySelectorAll('[data-thank]')
-
-			forms.forEach(form => {
-
-				form.addEventListener('submit', (e) => {
-					e.preventDefault()
-					form.closest('.modal').classList.remove('modal--active');
-
-					if (form.closest('.modal').classList.contains('modal--reviewsend')) {
-						modalThank2.classList.add('modal--active')
-						modalThank2Close.addEventListener('click', () => {
-							modalThank2.classList.remove('modal--active');
-						})
-					} else {
-						modalThank.classList.add('modal--active')
-						modalThankClose.addEventListener('click', () => {
-							modalThank.classList.remove('modal--active');
-						})
-					}
-				})
-			})
-		}
+        if (document.querySelector('[data-thank]')) {
+            const forms = document.querySelectorAll('[data-thank]');
+            forms.forEach(form => {
+                form.addEventListener('submit', e => {
+                    e.preventDefault();
+                    if (form.closest('.modal')) {
+                        if (form.closest('.modal').classList.contains('modal--reviewsend')) {
+                            modalThank2 === null || modalThank2 === void 0 ? void 0 : modalThank2.classList.add('modal--active');
+                            modalThank2Close === null || modalThank2Close === void 0 ? void 0 : modalThank2Close.addEventListener('click', () => {
+                                modalThank2 === null || modalThank2 === void 0 ? void 0 : modalThank2.classList.remove('modal--active');
+                            });
+                        }
+                    } else {
+                        modalThank.classList.add('modal--active');
+                        modalThankClose.addEventListener('click', () => {
+                            modalThank.classList.remove('modal--active');
+                        });
+                    }
+                });
+            });
+        }
 	};
 };

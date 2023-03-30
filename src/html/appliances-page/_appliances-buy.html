@@ -1,0 +1,43 @@
+<section class="appliances-buy section">
+    <div class="container">
+        <div class="appliances-buy__top">
+            <h2 class="appliances-buy__title title">
+                Выгоды покупки техники вместе с кухней
+            </h2>
+            <p class="appliances-buy__subtitle">
+                Избавьте себя от проблем и получите кухню "под ключ"
+            </p>
+        </div>
+
+        <ul class="appliances-buy__items">
+            <li class="appliances-buy__item">
+                @include('../components/cards/_appliances-card.html', {
+                    'icon' : '1',
+                    'title' : 'Кешбек 30%',
+                    'text' : '<p>Уникальная акция позволяет получить бесплатно любую технику на 30% от цены кухни</p>'
+                })
+            </li>
+            <li class="appliances-buy__item">
+                @include('../components/cards/_appliances-card.html', {
+                    'icon' : '2',
+                    'title' : 'Идеальная совместимость',
+                    'text' : '<p>Мы сами продумаем схемы установки техники в кухню и гарантируем качество</p>'
+                })
+            </li>
+            <li class="appliances-buy__item">
+                @include('../components/cards/_appliances-card.html', {
+                    'icon' : '3',
+                    'title' : 'Закрытые скидки и акции',
+                    'text' : '<p>Прямые контакты с поставщиками позволяют нам давать цены на технику дешевле чем у официальных дилеров</p>'
+                })
+            </li>
+            <li class="appliances-buy__item">
+                @include('../components/cards/_appliances-card.html', {
+                    'icon' : '4',
+                    'title' : 'Доставка и монтаж в один день',
+                    'text' : '<p>Мы закупим всё сами и бесплатно доставим технику вместе с кухней и подключим её в день установки</p>'
+                })
+            </li>
+        </ul>
+    </div>
+</section>

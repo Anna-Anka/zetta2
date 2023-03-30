@@ -104,15 +104,4 @@ export const reviewFunction = () => {
     // END PORTFOLIO FILTER //
 
     // LIKE //
-
-    const likes = document.querySelectorAll('.portfolio__item--likes');
-
-    if (likes.length > 0) {
-
-        likes.forEach((like) => {
-            like.addEventListener('click', () => {
-                like.classList.toggle('done');
-            })
-        })
-    }
 }

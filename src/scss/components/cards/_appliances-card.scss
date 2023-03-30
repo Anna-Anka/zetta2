@@ -1,0 +1,39 @@
+.appliances-card {
+	position: relative;
+	height: 100%;
+	padding: 60px 24px 34px;
+	background-color: $white;
+	border-radius: 20px;
+
+    @include mq('phone') {
+        padding-top: 45px;
+    }
+
+	&__icon {
+		position: absolute;
+		top: 0;
+        @include adaptiv-value('width', 80, 60, 1);
+        @include adaptiv-value('height', 80, 60, 1);
+        @include adaptiv-value('left', 35, 20, 1);
+        @include adaptiv-value('background-size', 60, 40, 1);
+		background-color: $grey-200;
+		background-repeat: no-repeat;
+		background-position: center;
+		border-radius: 50%;
+		transform: translateY(-50%);
+	}
+
+	&__title {
+		@include subtitle;
+		margin-bottom: 12px;
+        @include adaptiv-value('font-size', 20, 16, 1);
+	}
+
+	&__text {
+		p {
+			&:not(:last-child) {
+				margin-bottom: 8px;
+			}
+		}
+	}
+}

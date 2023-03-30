@@ -1,0 +1,29 @@
+.appliances-buy {
+	background-image: linear-gradient(175.45deg, $white 2.12%, $grey-200 41.56%);
+
+    @include adaptiv-value('padding-bottom', 200, 40, 1);
+
+	&__top {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		max-width: 1120px;
+		@include adaptiv-value('margin-bottom', 100, 30, 1);
+	}
+
+	&__title {
+		@include adaptiv-value('margin-bottom', 25, 8, 1);
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 40px 16px;
+	}
+
+	&__item {
+		border-radius: 20px;
+		box-shadow: 0 0 20px rgba($black, 0.05), 20px 4px 40px rgba($black, 0.04);
+	}
+}

@@ -13,6 +13,5 @@ export const productFancybox = () => {
             },
             infobar: true,
         });
-
     }
 }

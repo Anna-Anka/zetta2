@@ -41,6 +41,7 @@
 @import "./components/cards/history-card";
 @import "./components/cards/released-card";
 @import "./components/cards/offer/discount-card";
+@import "./components/cards/appliances-card";
 
 // * salons
 @import "./components/salons/salons";
@@ -169,3 +170,6 @@
 
 // * review-page 
 @import "./review-page/review";
+
+// * appliances-page
+@import "./appliances-page/appliances-buy";
