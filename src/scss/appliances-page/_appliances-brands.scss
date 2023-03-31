@@ -1,0 +1,106 @@
+.appliances-brands {
+	&__title {
+		margin-bottom: 30px;
+		text-align: center;
+
+        @include mq('phone') {
+            text-align: left;
+        }
+	}
+
+	&__accent {
+		color: $orange-500;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__items {
+		display: grid;
+		gap: 10px;
+
+		&--big,
+		&--normal {
+			margin-bottom: 10px;
+
+			@include mq('phone') {
+				margin-bottom: 0;
+			}
+		}
+
+		&--big,
+		&--medium {
+			@include mq('phone') {
+				margin-bottom: 5px;
+			}
+		}
+
+		&--big {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		&--medium {
+			grid-template-columns: repeat(8, 1fr);
+
+			.appliances-brands__item:first-child {
+				grid-column: 1 / 4;
+			}
+
+			.appliances-brands__item:nth-child(2) {
+				grid-column: 4 / 6;
+			}
+
+			.appliances-brands__item:last-child {
+				grid-column: 6 / 9;
+			}
+		}
+
+		&--normal {
+			grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+			gap: 6px;
+
+			.appliances-brands__item {
+				@include adaptiv-value('border-radius', 16, 8, 1);
+				height: 66px;
+
+				@include mq('phone') {
+					height: 46px;
+				}
+			}
+
+			@include mq('phone') {
+				order: 1;
+			}
+		}
+
+		@include mq('phone') {
+			gap: 5px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 150px;
+		padding: 12px;
+		border: 1px solid $grey-400;
+		@include adaptiv-value('border-radius', 20, 12, 1);
+
+		@include mq('phone') {
+			height: 90px;
+		}
+	}
+
+	&__img {
+		max-width: 80%;
+		margin: auto;
+		object-fit: contain;
+
+		@include mq('phone') {
+			max-width: 95%;
+		}
+	}
+}
