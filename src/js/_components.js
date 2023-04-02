@@ -9,6 +9,7 @@ import { questionFunction } from "./components/_questions";
 import { salonsFunction } from "./components/_salons";
 import { sortFunction } from "./components/_sort";
 import { handleMarquee } from "./components/_ticker";
+import { applianceseScroll } from "./components/scroll/_appliances-scroll";
 
 interactiveFunction();
 modalsFunction();
@@ -19,8 +20,8 @@ sortFunction();
 questionFunction();
 handleMarquee();
 
-// * scroll
 productNavigationScroll();
 workScroll();
 cooperationScroll();
 projectScroll();
+applianceseScroll();
