@@ -1,13 +1,10 @@
 .certificate-circle {
-	position: absolute;
-	bottom: 300px;
-	left: 30px;
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 130px;
 	height: 130px;
-	transform: rotate(-30deg);
 
 	@include mq('xxl') {
 		display: none;
